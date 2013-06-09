@@ -1,0 +1,36 @@
+---
+layout:20
+date: "2011-02-21 02:57:13"
+edit: "2013-05-21 22:16:45"
+title: "About"
+category: ""
+slug: "about"
+published: false
+---
+
+notextile. <p itemscope itemtype="http://schema.org/Person">Hello, I'm <span itemprop="name">Lucian Marin</span>. <span itemprop="description">I have a background in electronics engineering and currently doing what I love, designing awesome user experiences. I strongly think that design is all about making impossible possible. I dare to like meticulous design, modern typography, lots of genres of electronic music and everything in between.</span></p>
+
+notextile.  <!-- <div class="id"><a onclick="changeMe();"><img src="/assets/id-iphone.jpg" width="125" height="125" id="face" /></a></div> -->
+
+I created a very popular WordPress theme named "The Journalist":http://www.google.com/search?q=journalist+theme, I was interviewed by the Romanian version of The Setup which is called "digerati":http://digerati.ro/lucian-marin, I was featured on "the official Google blog":http://googleblog.blogspot.com/2009/01/googles-new-favicon.html for my work on their favicon, I have been part of team who wrote the "Newscoop 3 Cookbook":http://lucianmarin.com/archive/i-wrote-a-book, I have been published in "the Icon Handbook":http://lucianmarin.com/archive/an-iconic-book and I probably did other cool stuff that you may never hear about.
+
+I'm a proud owner of a MacBook Pro 3,1 (summer 2007) which helps me building and designing great user experiences. I shot with a "Nikon P300":http://lucianmarin.tumblr.com/ and I listen to music on an iPod classic. I almost forgot about the "Odin's Rage":http://lucianmarin.com/archive/odins-rage watch.
+
+h4. About this site
+
+The site is created using HMTL 5 and latest CSS innovations. It is based on Textpatten and hosted by "ROHOST":http://rohost.com/ — probably the best hosting provider from Romania. I'm using "Lato font family":http://www.latofonts.com/ for the typographic necessities of this site.
+
+Some things on the site are written in 日本語 because I’m a fan of Japanese culture and art. I don’t know the language, but I want to learn it when I'll get the chance.
+
+h4. Contact
+
+p(contact). You’re free to contact me about anything — from Sci-Fi comic books to web projects and anything in between. If you want a price quote on a design project be sure to include as many details as possible.
+
+p(info). <strong>Mail</strong> <span class="name">lucian</span> <span class="domain">lucianmarin</span> com
+
+p(info). <strong>Gtalk</strong> marin.lucian
+
+p(info). <strong>Skype</strong> iamlucian
+
+<!-- I can also be found me on "Twitter":http://twitter.com/lucianmarin, "Instagram":http://instagram.com/lucianmarin/, "SoundCloud":https://soundcloud.com/lucianmarin/likes,  "GitHub":https://github.com/lucianmarin,  "Bēhance":http://www.behance.net/lucianmarin,  "Dribbble":http://dribbble.com/lucianmarin and "Tumblr":http://lucianmarin.tumblr.com/. -->
+

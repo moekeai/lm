@@ -1,0 +1,22 @@
+---
+layout: post
+date: 2009-04-06 00:50:18
+edit: 2013-03-19 20:18:46
+title: "I Love You"
+category: coffee-in-the-morning
+slug: i-love-you
+---
+
+I wanted to make a stop motion movie, but ended up with over 2 minutes of footage filmed on May 11, 2007. Last Sunday I discovered it on a tape. Thinking that I can do something with it, I speed it up 4 times and correct the colors in iMovie '09. All the zooming/blurring effects that you'll see are made with camera itself. Now I will let you enjoy this short clip:
+
+<video width="500" height="375" poster="/assets/video/i-love-you.jpg" preload controls>
+  <source src="/assets/video/i-love-you.m4v" type="video/mp4" />
+  <source src="/assets/video/i-love-you.webm" type="video/webm" />
+  <source src="/assets/video/i-love-you.ogv" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+
+I also want to mention that the clip was on "Kontain":http://www.kontain.com/lucianmarin/ front page for a day and received lots of views. You can "download":/assets/video/i-love-you.m4v the movie clip or watch it on "Flickr":http://www.flickr.com/photos/kalphegor/3394501047/ instead.
+
+??After all that being said, he will try to say the right things at the right time in the -past- future.??
+

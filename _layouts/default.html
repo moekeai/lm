@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    <meta name="description" content="The designer Google can't afford and Apple won't hire." />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/main.css">
+<div class="menu">
+    <div class="content">
+        <ul>
+           <li class="journal {% if page.section == "journal" %}selected{% endif %}"><a href="/">Journal</a></li>
+           <li class="archive {% if page.section == None %}selected{% endif %}"><a href="/archive/">Archive</a></li>
+           <li class="work"><a href="/page/work">Work</a></li>
+           <li class="themes"><a href="/page/themes">Themes</a></li>
+           <li class="about {% if page.section == "about" %}selected{% endif %}"><a href="/page/about">About</a></li>
+        </ul>
+    </div>
+</div>
 
-    </head>
-    <body>
+<div class="header">
+    <div class="content">
+        <h1 class="title">
+            {% if page.section == "journal" %}
+                Journal
+            {% elsif page.section == "about" %}
+                About
+            {% else %}
+                Archive
+            {% endif %}
+        </h1>
+    </div>
+</div>
 
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-            </div>
-     
-                {{ content }}
+<div class="main">
+    <div class="content">
+        {{ content }}
+    </div>
+</div>
 
-            <div class="footer">
-              <div class="contact">
-                <p>
-                  Your Name<br />
-                  What You Are<br />
-                  your@email.com
-                </p>
-              </div>
-              <div class="contact">
-                <p>
-                  <a href="http://github.com/yourusername/">github.com/yourusername</a><br />
-                  <a href="http://twitter.com/yourusername/">twitter.com/yourusername</a><br />
-                </p>
-              </div>
-            </div>
-
-        </div> <!-- /container -->
-
-    </body>
+</body>
 </html>

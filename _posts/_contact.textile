@@ -1,0 +1,20 @@
+---
+layout: post
+date: "2012-05-26 15:14:56"
+edit: "2012-11-10 15:35:01"
+title: "Contact"
+category: ""
+slug: "contact"
+published: false
+---
+
+p(email). You can reach me at this email address: <i class="name">lucian</i> <i class="domain">lucianmarin</i> <i>com</i>
+
+You’re free to contact me about anything — from Sci-Fi comic books to web projects and anything in between. If you want a price quote on a design project be sure to include as much details as possible.
+
+I can also be contacted directly on Google Talk. I’m using marin.lucian as the username.
+
+Portfolio on "Bēhance":http://www.behance.net/lucianmarin
+
+Resume on "LinkedIn":http://ro.linkedin.com/in/marinlucian
+

@@ -1,3 +1,4 @@
-name: Your New Jekyll Site
+name: Lucian Marin
 pygments: false
-permalink: /archive/:title.html
+permalink: /archive/:title/
+paginate: 4
