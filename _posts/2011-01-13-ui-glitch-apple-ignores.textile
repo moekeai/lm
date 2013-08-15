@@ -9,7 +9,7 @@ slug: the-ui-glitch-apple-ignores
 
 The problem here is that the arrow doesn't point the center of the icon highlighted on Dock. It only appears on Exposé mode of the Dock, when you click and hold an icon in the Dock. The UI glitch was introduced in 10.6.5 update of Snow Leopard and I reported it on "my Twitter account":http://twitter.com/lucianmarin/status/6891287198310401 in November last year.
 
-!images/21.jpg(Dock Exposé Glitch)!
+!/images/21.jpg(Dock Exposé Glitch)!
 
 After 10.6.6 update of Mac OS X, I looked to see if this was fixed, but for my surprise, it wasn't. How come a company that emphasis the design of its products as a feature, doesn't care for small details like this? I looked to see if this bug was reported on any Apple related blog and I didn't find any related stories. How come nobody noticed it and report it to Apple?
 

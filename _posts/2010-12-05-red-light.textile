@@ -7,7 +7,7 @@ category: les-fleurs-du-mal
 slug: red-light
 ---
 
-!images/16.jpg(Red Light)!
+!/images/16.jpg(Red Light)!
 
 In the picture above you can see what we call "Romanian Airmen Heroes Memorial":http://en.wikipedia.org/wiki/Monument_to_the_Heroes_of_the_Air, located in the Aviators' Square, on Aviators’ Boulevard, Bucharest.
 

@@ -2,17 +2,26 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-
-<div class="meta">
-    <span>{{ page.date | date: "%d %b %Y" }}</span>
-    <span>{{ page.date | date: "%H:%M" }}</span>
+<div class="entry">
+    <h2>{{ page.title }}</h2>
+    <div class="meta">
+        <span>{{ page.date | date: "%e %b %Y" }}</span>
+        <span>{{ page.date | date: "%H:%M" }}</span>
+        <span>
+            <a href="/category/{{ page.category }}/">
+                {{ page.category | replace: '-', ' ' }}
+            </a>
+        </span>
+    </div>
+    <div class="post">
+        {{ content }}
+    </div>
+    <div class="share">
+        Replies should be sent @<a href="http://twitter.com/lucianmarin">lucianmarin</a> &mdash; thank you!
+    </div>
 </div>
 
-<div class="post">
-    {{ content }}
-</div>
-
+<!--
 <div class="category">
     {% if page.category == "meaningful-labor" %}
         Meaningful Labor
@@ -38,3 +47,4 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+-->

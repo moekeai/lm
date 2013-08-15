@@ -21,7 +21,7 @@ h4. The Second Idea
 
 Oh man, this should be much more fun. I bet everyone knows about blogroll, that's what makes your blog a little bit more "social". Since the beginning of "EVNO":http://evno.ro/ authors where listed different, they had a picture, their name and a status. That's pretty static, you might say. But what if this was interactive? Like a distributed social network where everyone can hook up, if they have a site (blog) or they are already on a social network.
 
-!images/7.png(Social Roll)!
+!/images/7.png(Social Roll)!
 
 By the way, I got a new phone, it's a dumb phone, but it has 1GB internal memory with microSD option and a very nice music player. I liked Opera Mini on Sony Ericsson K8OOi (this 3 years old phone has a better camera than the new iPhone 3GS; I had to say it); and I hope it will stay the same beautiful piece of software in the future.
 

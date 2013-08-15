@@ -13,7 +13,7 @@ I wanted to get rid of the static pages, it was hard to update those. I wanted t
 
 You might noticed that there isn't a logo anywhere. That's because I have new ideas about how a new logo should look like.
 
-!images/11.png(New logo design process)!
+!/images/11.png(New logo design process)!
 
 Comments are disabled because they are the only thing that makes a journal to be a blog. I don't want a blog, I want a journal of my online activities. I may also want feedback, but I think a short and interesting e-mail will do it better—of course I will answer to any of them.
 

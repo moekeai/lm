@@ -2,21 +2,39 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
+    -->
     <meta name="description" content="The designer Google can't afford and Apple won't hire." />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
 
 <div class="menu">
     <div class="content">
         <ul>
-           <li class="journal {% if page.section == "journal" %}selected{% endif %}"><a href="/">Journal</a></li>
-           <li class="archive {% if page.section == None %}selected{% endif %}"><a href="/archive/">Archive</a></li>
-           <li class="work"><a href="/page/work">Work</a></li>
-           <li class="themes"><a href="/page/themes">Themes</a></li>
-           <li class="about {% if page.section == "about" %}selected{% endif %}"><a href="/page/about">About</a></li>
+            <li class="journal {% if page.section == "journal" %}selected{% endif %}">
+                <a href="/">Journal</a>
+            </li>
+            <li class="archive {% if page.section == None or page.section == "archive" or page.section == "category" %}selected{% endif %}">
+                <a href="/archive/">Archive</a>
+            </li>
+            <!--
+            <li class="work {% if page.section == "work" %}selected{% endif %}"><a href="/page/work">Work</a></li>
+            -->
+            <li class="{% if page.section == "work" %}selected{% endif %}">
+                <a href="/work/">Work</a>
+            </li>
+            <li class="{% if page.section == "projects" %}selected{% endif %}">
+                <a href="/projects/">Projects</a>
+            </li>
+            <li class="{% if page.section == "grid" %}selected{% endif %}">
+                <a href="/grid/">Grid</a>
+            </li>
+            <li class="{% if page.section == "about" %}selected{% endif %}">
+                <a href="/about/">About</a>
+            </li>
         </ul>
     </div>
 </div>
@@ -24,10 +42,19 @@
 <div class="header">
     <div class="content">
         <h1 class="title">
+            <!--
             {% if page.section == "journal" %}
                 Journal
+            {% elsif page.section == "work" %}
+                Portfolio
             {% elsif page.section == "about" %}
                 About
+            {% else %}
+                Archive
+            {% endif %}
+            -->
+            {% if page.subtitle %}
+                {{ page.subtitle }}
             {% else %}
                 Archive
             {% endif %}
@@ -35,9 +62,52 @@
     </div>
 </div>
 
+            <!--
+
+        <div class="pagination">
+            <ul class="pages">
+                <li class="page">{% if paginator.page == 1 %}<span class="current-page">1</span>{% else %}<a href="/">1</a>{% endif %}</li>
+                {% for count in (2..paginator.total_pages) %}
+                <li class="page">{% if count == paginator.page %}<span class="current-page">{{ count }}</span>{% else %}<a href="/page{{ count }}">{{ count }}</a>{% endif %}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+            {% if paginator.previous_page %}
+                <div class="previous">
+                    {% if paginator.previous_page == 1 %}
+                        <a href="/">&larr;</a>
+                    {% else %}
+                        <a href="/{{ paginator.previous_page_path }}">&larr;</a>
+                    {% endif %}
+                </div>
+            {% else %}
+                <div class="previous disabled"><span>&larr;</span></div>
+            {% endif %}
+            {% if paginator.next_page %}
+                <div class="next">
+                    <a href="/{{ paginator.next_page_path }}">&rarr;</a>
+                </div>
+            {% else %}
+                <div class="next disabled"><span>&rarr;</span></div>
+            {% endif %}
+            -->
+
 <div class="main">
     <div class="content">
         {{ content }}
+    </div>
+</div>
+
+<div class="footer">
+    <div class="content">
+        {% if paginator.page == 1 and page.section == "journal" %}
+            <p class="sponsor">Sponsored by <a href="http://www.kledinginsider.nl/">Kleding</a></p>
+        {% else %}
+            <a href="/" class="sign">
+                <span class="plus"><b>Lucian Marin</b></span>
+            </a>
+        {% endif %}
     </div>
 </div>
 

@@ -7,7 +7,7 @@ category: coffee-in-the-morning
 slug: no-dribbble-no-fun
 ---
 
-!images/10.png(No fun)!
+!/images/10.png(No fun)!
 
 Sometimes you just have to have the ball in order to play. Can I have "some ball":http://dribbble.com/, please? Or should I go all over the -place- web for "a slam dunk":http://www.pleaseinvitemetodribbble.com/?
 

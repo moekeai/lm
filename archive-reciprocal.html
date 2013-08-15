@@ -1,0 +1,28 @@
+---
+layout: default
+title: Lucian Marin
+subtitle: Reciprocal Affection
+permalink: /category/reciprocal-affection/
+section: category
+category: reciprocal-affection
+---
+
+<div class="archive">
+    <ol>
+    {% for post in site.posts %}
+        {% if post.category == "reciprocal-affection" %}
+            <li>
+                <a href="{{ post.url }}">
+                    <span class="title">
+                        {{ post.title }}
+                    </span>
+                    <span class="date">
+                        <b>{{ post.date | date: "%b" }}</b>
+                        {{ post.date | date: "%Y" }}
+                    </span>
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ol>
+</div>

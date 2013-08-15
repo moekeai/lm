@@ -11,7 +11,7 @@ I always forget there are more than a hundred of people reading this particular 
 
 Last month I started working on a different kind of project, namely "Peculiar":http://lucianmarin.com/peculiar/. An icon package that is made only in CSS with the purpose to help designers create user interfaces for the web without use of software programs and to help developers achieve as few HTTP requests as possible, thus speeding up web applications. This a challenge for me and for anyone interested in the future of user interfaces for the web, to make use of CSS as intelligently as possible — creating designs in Adobe Photoshop, slicing images and putting them as backgrounds in CSS doesn't make "a lot of sense anymore":http://jasonsantamaria.com/articles/a-real-web-design-application/.
 
-!images/12.png(Peculiar)!
+!/images/12.png(Peculiar)!
 
 I want to say thank you to a couple of blogs for spreading the news about the development of this peculiar project. In no particular order, here they are: "Think Vitamin":http://thinkvitamin.com/design/pure-css-icons-pure-madness/, "Echo Enduring":http://blog.echoenduring.com/2010/08/14/are-we-taking-css-too-far/, "Faruk Ateş":http://farukat.es/journal/2010/08/469-pure-css-icons-make-madness-stop, "Matthias Schütz":http://matthiasschuetz.com/peculiar-icon-package-mit-css-symbolen and those Chinese blogs. I also want to thank to the man that bought the first license for Peculiar.
 

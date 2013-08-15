@@ -1,0 +1,28 @@
+---
+layout: default
+title: Lucian Marin
+subtitle: Les Fleurs du mal
+permalink: /category/les-fleurs-du-mal/
+section: category
+category: les-fleurs-du-mal
+---
+
+<div class="archive">
+    <ol>
+    {% for post in site.posts %}
+        {% if post.category == "les-fleurs-du-mal" %}
+            <li>
+                <a href="{{ post.url }}">
+                    <span class="title">
+                        {{ post.title }}
+                    </span>
+                    <span class="date">
+                        <b>{{ post.date | date: "%b" }}</b>
+                        {{ post.date | date: "%Y" }}
+                    </span>
+                </a>
+            </li>
+        {% endif %}
+    {% endfor %}
+    </ol>
+</div>
