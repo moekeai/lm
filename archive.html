@@ -6,20 +6,10 @@ permalink: /archive/
 section: archive
 ---
 
-<div class="archive">
+<div class="entry archive">
     <ol>
-    {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url }}">
-                <span class="title">
-                    {{ post.title }}
-                </span>
-                <span class="date">
-                    <b>{{ post.date | date: "%B" }}</b>
-                    {{ post.date | date: "%Y" }}
-                </span>
-            </a>
-        </li>
-    {% endfor %}
+        {% for post in site.posts %}
+            {% include item.html %}
+        {% endfor %}
     </ol>
 </div>

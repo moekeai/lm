@@ -2,15 +2,21 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!--
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
-    -->
     <meta name="description" content="The designer Google can't afford and Apple won't hire." />
     <title>{{ page.title }}</title>
+    <link rel="apple-touch-icon" href="/images/touch-icon.png"/>
     <link rel="stylesheet" href="/static/style.css">
     {% if page.permalink == "/peculiar/" %}
         <link rel="stylesheet" href="/static/peculiar.css">
     {% endif %}
+    {% if page.syntax == true %}
+        <link rel="stylesheet" href="/static/code.css">
+    {% endif %}
+    {% if page.permalink == "/work/" %}
+        {% include slides.html %}
+    {% endif %}
+    {% include analytics.html %}
 </head>
 <body>
 
@@ -26,11 +32,11 @@
             <li class="work {% if page.section == "work" %}selected{% endif %}">
                 <a href="/work/">Work</a>
             </li>
-            <li class="project {% if page.section == "projects" %}selected{% endif %}">
+            <li class="project {% if page.section == "project" %}selected{% endif %}">
                 <a href="/projects/">Projects</a>
             </li>
-            <li class="grid {% if page.section == "grid" %}selected{% endif %}">
-                <a href="/grid/">Grid</a>
+            <li class="gallery {% if page.section == "gallery" %}selected{% endif %}">
+                <a href="/gallery/">Gallery</a>
             </li>
             <li class="about {% if page.section == "about" %}selected{% endif %}">
                 <a href="/about/">About</a>
@@ -59,8 +65,10 @@
 
 <div class="footer">
     <div class="content">
-        {% if paginator.page == 1 and page.section == "journal" %}
+        {% if page.section == "journal" %}
             <p class="sponsor">Sponsored by <a href="http://www.kledinginsider.nl/">Kleding</a></p>
+        {% elsif page.section == "project" %}
+            <p class="sponsor">Sponsored by <a href="https://www.digitalocean.com/?refcode=3a552597bc77" rel="nofollow">DigitalOcean</a></p>
         {% else %}
             <a href="/" class="sign">
                 <span class="plus"><b>Lucian Marin</b></span>

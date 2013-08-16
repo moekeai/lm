@@ -1,0 +1,49 @@
+#DirectoryIndex index.php index.html
+#Options +FollowSymLinks
+#Options -Indexes
+#ErrorDocument 403 default
+
+ErrorDocument 404 /404.html
+
+#php_value register_globals 0
+#php_flag zlib.output_compression On
+#php_value zlib.output_compression 16386
+#php_value zlib.output_compression_level -1
+
+<IfModule mod_mime.c>
+    AddType video/ogg .ogv
+    AddType video/mp4 .m4v
+    AddType video/webm .webm
+    AddType image/svg+xml  svg svgz
+    AddEncoding gzip       svgz
+</IfModule>
+
+<FilesMatch "\.(html|js|css)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css)$">
+Header set Expires "Fri, 21 Dec 2012 00:00:00 GMT"
+Header set Cache-Control "max-age=2419200, public"
+</FilesMatch>
+
+<FilesMatch "\.(html|htm)$">
+Header set Cache-Control "max-age=360, private, proxy-revalidate"
+</FilesMatch>
+
+redirect 301 /page/themes /journalist
+redirect 301 /page/emoticons /projects
+redirect 301 /page/desktops /gallery
+redirect 301 /page/work /work
+redirect 301 /page/about /about
+redirect 301 /grid /gallery
+
+redirect 301 /write http://markdawn.com
+redirect 301 /anatomie/pagina/organism/ http://omenesc.ro/
+
+RedirectMatch 301 /category/(.*)/ /category/$1.html
+
+RedirectMatch 301 /anatomie/pagina/(.*)/ http://omenesc.ro/$1.html
+RedirectMatch 301 /anatomie/(.*) http://omenesc.ro/$1
+
+Options All -Indexes

@@ -5,6 +5,7 @@ edit: 2013-03-19 20:58:17
 title: "Character Counter in Textpattern"
 category: meaningful-labor
 slug: character-counter-in-textpattern
+syntax: true
 ---
 
 The recent "announcement":https://dev.twitter.com/blog/changes-coming-to-twitter-api by Twitter made me sad. I talked about the issues with social networks in _A Dash in Space-Time Continuum_ and _Disconnected_, so I'm not gonna discuss it again.
@@ -17,18 +18,20 @@ h4. Back on the subject
 
 It's pretty easy to add charCount.js from "CSS Globe":http://cssglobe.com/jquery-plugin-simplest-twitterlike-dynamic-character-count-for-textareas/ since TextPattern comes by default with jQuery. All you have to do is to edit _txplib_head.php_ from _/textpattern/lib/_. The you have to add the code below after jQuery declaration:
 
-bc. <!-- character count -->
+{% highlight html linenos %}
+<!-- character count -->
 <script type="text/javascript" src="charCount.js">
 </script>
 <script type="text/javascript">
-	$(document).ready(function(){	
-  		$("#link-description").charCount();
-	});
+    $(document).ready(function(){	
+        $("#link-description").charCount();
+    });
 </script>
 <style type="text/css">
-  .counter { position: absolute; }
-  .counter.warning { color: #e40; }
+    .counter { position: absolute; }
+    .counter.warning { color: #e40; }
 </style>
 <!-- count the end too -->
+{% endhighlight %}
 
 Make sure you backup the original _txplib_head.php_ before you do this and upload charCount.js where jquery.js file is located. The same thing can be applied to the textarea for article editing, all you have to do is to add the right ID in the code above.

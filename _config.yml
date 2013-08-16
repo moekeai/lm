@@ -1,4 +1,5 @@
 name: Lucian Marin
-pygments: false
-permalink: /archive/:title/
-paginate: 4
+pygments: true
+permalink: /archive/:title.html
+exclude: readme.md, project-brooklyn.html
+include: .htaccess

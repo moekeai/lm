@@ -11,7 +11,7 @@ body {
     }
 
 .content {
-    width: 520px;
+    width: 500px;
     margin: 0 auto;
     }
 
@@ -26,10 +26,10 @@ body {
         .menu ul li {
             display: inline;
             margin-right: 20px;
-            padding-bottom: 6px;
             }
             .menu ul li a {
                 color: #888;
+                padding-bottom: 7px;
                 }
             .menu ul li a:hover {
                 color: #bbb;
@@ -37,7 +37,7 @@ body {
             .menu ul li.selected a {
                 color: #00b290;
                 }
-        .menu ul li.selected {
+        .menu ul li.selected a {
             border-bottom: rgb(95,100,100) 7px solid;
             }
 
@@ -45,13 +45,15 @@ body {
     background-color: #949696;
     background-color: rgb(130,133,133);
     color: #fff;
-    padding-top: 20px;
+    padding-top: 25px;
     }
     .header h1 {
         font-weight: 300;
-        font-size: 50px;
-        line-height: 80px;
+        font-size: 45px;
+        line-height: 75px;
         letter-spacing: -1px;
+        white-space: nowrap;
+        overflow: hidden;
         }
 
 .subheader {
@@ -119,7 +121,6 @@ body {
             color: #00b290;
             }
 
-
 .archive {
     }
     .archive ol {
@@ -133,6 +134,7 @@ body {
         .archive li a {
             padding: 0 15px;
             display: block;
+            white-space: nowrap;
             }
             .archive li a:hover {
                 background-color: #eee;
@@ -151,9 +153,12 @@ body {
             color: #00b290 !important;        
             }
 
-.entry, .archive, .about, .work {
-    margin-top: 25px;
-    margin-bottom: 25px;
+.fade {
+    opacity: 0.4;
+    }
+
+.entry {
+    margin: 25px 0;
     }
 
 .post {
@@ -175,6 +180,10 @@ body {
             line-height: 15px;
             color: #bbb;
             }
+    .post ul {
+        list-style: square;
+        margin-left: 50px;
+        }
     .post h4 {
         font-size: 17px;
         line-height: 23px;
@@ -184,17 +193,12 @@ body {
         margin-top: 10px;
         margin-bottom: 5px;
         }
-    .post blockquote,
-    .post pre {
+    .post blockquote {
         margin-left: 20px;
         border-left: #ddd 1px solid;
         padding-left: 19px;
         margin-top: 10px;
         margin-bottom: 10px;
-        }
-    .post pre {
-        font-size: 12px;
-        line-height: 18px;
         }
     .post a {
         color: #333;
@@ -203,15 +207,46 @@ body {
     .post a:hover {
         color: #00b290;
         }
+    .post .info {
+        font-style: italic;
+        text-indent: 0;
+        }
+        .post .info .name:after {
+            font-style: italic;
+            color: #bbb;
+            content: " at ";
+            }
+        .post .info .domain:after {
+            font-style: italic;
+            color: #bbb;
+            content: " dot ";
+            }
+        .post .info strong {
+            font-weight: normal;
+            width: 50px;
+            display: block;
+            float: left;
+            color: #bbb;
+            text-align: right;
+            margin-right: 15px;
+            }
 
-.share {
+.share,
+.browse {
     margin: 15px 0;
     margin-left: 50px;
     }
 .share,
-.sponsor {
+.sponsor,
+.browse {
     color: #888;
     }
+.browse a {
+    color: #888;
+    }
+    .browse a:hover {
+        color: #00b290;
+        }
 .share a,
 .sponsor a {
     color: #00b290;
@@ -221,73 +256,7 @@ body {
         color: #333;
         }
 
-.pagination {
-    overflow: hidden;
-    }
-
-.pagination .pages {
-    list-style: none;
-    font-size: 12px;
-    letter-spacing: 1px;
-    }
-    .pagination .pages li {
-        display: inline;
-        }
-        .pagination .pages li:first-child a,
-        .pagination .pages li:first-child .current-page {
-            border-left: rgb(65,70,75) 1px solid;
-            }
-        .pagination .pages li a {
-            background-color: rgb(95,100,105);
-            display: block;
-            float: left;
-            color: rgb(220,225,230);
-            padding: 0 10px;
-            /*margin-right: 1px;*/
-            transition: background-color 0.1s;
-            border-right: rgb(65,70,75) 1px solid;
-            }
-            .pagination .pages li a:hover {
-                background-color: rgb(65,70,75);
-                }
-        .current-page {
-            background-color: rgb(65,70,75);
-            color: #00b290;
-            display: block;
-            float: left;
-            padding: 0 10px;
-            /*margin-right: 1px;*/
-            border-right: rgb(65,70,75) 1px solid;
-            }
-
-.pagination .previous,
-.pagination .next {
-    color: #fff;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    }
-    .pagination .previous a,
-    .pagination .next a {
-        margin-right: 1px;
-        background-color: #00b290;
-        padding: 0 10px;
-        float: left;
-        display: block;
-        color: #fff;
-        transition: background-color 0.1s;
-        }
-        .pagination .previous a:hover,
-        .pagination .next a:hover {
-            background-color: #888;
-            }
-
-.pagination .disabled {
-    display: none;
-    }
-
 .grid {
-    margin: 25px 0;
     overflow: hidden;
     }
     .grid img {
@@ -297,13 +266,79 @@ body {
         }
     .grid .box {
         float: left;
-        width: 170px;
-        margin-right: 5px;
-        margin-bottom: 5px;
+        width: 166px;
+        margin-right: 1px;
+        margin-bottom: 1px;
         }
         .grid .box:nth-child(3n+0) {
             margin-right: 0;
         }
+
+.section {
+    overflow: hidden;
+    height: 490px;
+    padding-top: 10px;
+    transition: all 0.3s ease-in-out
+    }
+.section.hidden {
+    height: 30px;
+    transition: all 0.3s ease-in-out
+    }
+
+.section h4 {
+    display: block;
+    margin-bottom: 15px;
+    overflow: hidden;
+    }
+    .section h4 strong,
+    .section h4 b {
+        display: block;
+        font-size: 11px;
+        line-height: 25px;
+        padding: 0 15px;
+        font-weight: normal;
+        float: left;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        }
+    .section h4 strong {
+        background-color: #00b290;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        }
+        .section h4 strong:hover {
+            background-color: #2ac19e;
+            }
+    .section.personal h4 strong {
+        background-color: #fee300;
+        color: #333;
+        }
+        .section.personal h4 strong:hover {
+            background-color: #ebd100;
+            }
+    .section h4 b {
+        color: #bbb;
+        }
+.section .description,
+.section .image {
+    margin-bottom: 10px;
+    }
+    .section .description a {
+        border-bottom: #00b290 2px solid;
+        }
+    .section .description a:hover {
+        color: #888;
+        }
+    .section.personal .description a {
+        border-bottom: #fee300 2px solid;
+        }
+    .section.personal .description a:hover {
+        color: #888;
+        }
+.section .image img {
+    display: block;
+    }
 
 .sign {
     display: block;
@@ -346,8 +381,19 @@ body {
         left: 7px;
         }
 
-@media (max-width: 540px) {
+@media (max-width: 555px) {
     .content {
         width: 90%;
+        }
+    .menu ul li.work,
+    .menu ul li.gallery {
+        display: none;
+        }
+    .post p img {
+        width: 100%;
+        height: auto;
+        }
+    .archive .date {
+        display: none;
         }
     }

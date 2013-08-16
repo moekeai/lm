@@ -8,7 +8,7 @@ layout: default
         <span>{{ page.date | date: "%e %b %Y" }}</span>
         <span>{{ page.date | date: "%H:%M" }}</span>
         <span>
-            <a href="/category/{{ page.category }}/">
+            <a href="/category/{{ page.category }}.html">
                 {{ page.category | replace: '-', ' ' }}
             </a>
         </span>
@@ -18,5 +18,19 @@ layout: default
     </div>
     <div class="share">
         Replies should be sent to @<a href="http://twitter.com/lucianmarin">lucianmarin</a> &mdash; thank you!
+    </div>
+    <div class="browse">
+        {% if page.previous.url %}
+            <p>
+                &larr; &nbsp;
+                <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+            </p>
+        {% endif %}
+        {% if page.next.url %}
+            <p>
+                &rarr; &nbsp;
+                <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+            </p>
+        {% endif %}
     </div>
 </div>

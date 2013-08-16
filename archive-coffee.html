@@ -2,27 +2,17 @@
 layout: default
 title: Lucian Marin
 subtitle: Coffee in the Morning
-permalink: /category/coffee-in-the-morning/
+permalink: /category/coffee-in-the-morning.html
 section: category
 category: coffee-in-the-morning
 ---
 
-<div class="archive">
+<div class="entry archive">
     <ol>
-    {% for post in site.posts %}
-        {% if post.category == "coffee-in-the-morning" %}
-            <li>
-                <a href="{{ post.url }}">
-                    <span class="title">
-                        {{ post.title }}
-                    </span>
-                    <span class="date">
-                        <b>{{ post.date | date: "%b" }}</b>
-                        {{ post.date | date: "%Y" }}
-                    </span>
-                </a>
-            </li>
-        {% endif %}
-    {% endfor %}
+        {% for post in site.posts %}
+            {% if post.category == "coffee-in-the-morning" %}
+                {% include item.html %}
+            {% endif %}
+        {% endfor %}
     </ol>
 </div>
