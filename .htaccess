@@ -18,16 +18,16 @@ ErrorDocument 404 /404.html
     AddEncoding gzip       svgz
 </IfModule>
 
-<FilesMatch "\.(html|js|css)$">
+<FilesMatch "\.(html|js|css|xml)$">
 SetOutputFilter DEFLATE
 </FilesMatch>
 
 <FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css)$">
-Header set Expires "Fri, 21 Dec 2012 00:00:00 GMT"
+Header set Expires "access plus 1 month"
 Header set Cache-Control "max-age=2419200, public"
 </FilesMatch>
 
-<FilesMatch "\.(html|htm)$">
+<FilesMatch "\.(html|htm|xml)$">
 Header set Cache-Control "max-age=360, private, proxy-revalidate"
 </FilesMatch>
 
@@ -37,6 +37,7 @@ redirect 301 /page/desktops /gallery
 redirect 301 /page/work /work
 redirect 301 /page/about /about
 redirect 301 /grid /gallery
+redirect 301 /rss/ /feed.xml
 
 redirect 301 /write http://markdawn.com
 redirect 301 /anatomie/pagina/organism/ http://omenesc.ro/
