@@ -5,5 +5,5 @@ url: http://lucianmarin.com
 pygments: true
 permalink: /archive/:title.html
 
-exclude: readme.md, project-brooklyn.html
-include: .htaccess
+exclude: [readme.md, project-brooklyn.html]
+include: [.htaccess]
