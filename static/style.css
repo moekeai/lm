@@ -25,7 +25,7 @@ body {
     font-family: "emtypo";
     font-weight: normal;
     font-style: normal;
-    font-size: 10px;
+    font-size: 12px;
     }
     a.emtypo {
         background-color: #888;
@@ -36,7 +36,7 @@ body {
         width: 20px;
         text-align: center;
         float: right;
-        margin-right: 1px;
+        margin: 0 1px;
         }
         a.emtypo:active {
             background-color: #00b290;
@@ -46,8 +46,8 @@ body {
             }
 
 .social {
-    width: 147px;
-    height: 20px;
+    width: 154px;
+    height: 23px;
     margin: 0 auto;
     }
 
@@ -62,15 +62,18 @@ body {
     margin-top: 15px;
     }
     .menu ul {
+        display: block;
+        height: 30px;
         list-style: none;
         }
         .menu ul li {
-            display: inline;
+            display: block;
+            float: left;
             margin-right: 20px;
             }
             .menu ul li a {
+                display: block;
                 color: #888;
-                padding-bottom: 7px;
                 }
             .menu ul li a:hover {
                 color: #bbb;
@@ -335,7 +338,7 @@ body {
     margin-bottom: 15px;
     overflow: hidden;
     }
-    .section h4 strong,
+    .section h4 a,
     .section h4 b {
         display: block;
         font-size: 11px;
@@ -346,20 +349,20 @@ body {
         letter-spacing: 1px;
         text-transform: uppercase;
         }
-    .section h4 strong {
+    .section h4 a {
         background-color: #00b290;
         color: #fff;
         cursor: pointer;
         transition: background-color 0.2s;
         }
-        .section h4 strong:hover {
+        .section h4 a:hover {
             background-color: #2ac19e;
             }
-    .section.personal h4 strong {
+    .section.personal h4 a {
         background-color: #fee300;
         color: #333;
         }
-        .section.personal h4 strong:hover {
+        .section.personal h4 a:hover {
             background-color: #ebd100;
             }
     .section h4 b {
