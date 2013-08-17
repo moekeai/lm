@@ -7,7 +7,7 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/static/style.css">
     <link rel="apple-touch-icon" href="/images/touch-icon.png"/>
-    <link rel="alternate" type="application/rss+xml" title="Lucian Marin" href="/feed.xml"/>
+    <link rel="alternate" type="application/rss+xml" title="Lucian Marin" href="/rss.xml"/>
     {% if page.permalink == "/peculiar/" %}
         <link rel="stylesheet" href="/static/peculiar.css">
     {% endif %}
@@ -71,9 +71,48 @@
         {% elsif page.section == "project" %}
             <p class="sponsor">Sponsored by <a href="https://www.digitalocean.com/?refcode=3a552597bc77" rel="nofollow">DigitalOcean</a></p>
         {% else %}
-            <a href="/" class="sign">
-                <span class="plus"><b>Lucian Marin</b></span>
-            </a>
+            {% comment %}
+                <a href="/" class="sign">
+                    <span class="plus"><b>Lucian Marin</b></span>
+                </a>
+            {% endcomment %}
+            <div class="social">
+                <a
+                    href="http://lucianmarin.com/rss.xml"
+                    title="RSS Feed" class="emtypo">
+                    &#xe80f;
+                </a>
+                <a
+                    href="http://twitter.com/lucianmarin"
+                    title="Twitter" class="emtypo" rel="nofollow">
+                    &#xe800;
+                </a>
+                <a
+                    href="http://lucianmarin.tumblr.com/"
+                    title="Tumblr" class="emtypo" rel="nofollow">
+                    &#xe80e;
+                </a>
+                <a
+                    href="http://instagram.com/lucianmarin"
+                    title="Instagram" class="emtypo" rel="nofollow">
+                    &#xe808;
+                </a>
+                <a
+                    href="http://github.com/lucianmarin"
+                    title="GitHub" class="emtypo" rel="nofollow">
+                    &#xe801;
+                </a>
+                <a
+                    href="http://dribbble.com/lucianmarin"
+                    title="Dribbble" class="emtypo" rel="nofollow">
+                    &#xe803;
+                </a>
+                <a
+                    href="http://behance.com/lucianmarin"
+                    title="Behance" class="emtypo" rel="nofollow">
+                    &#xe80a;
+                </a>
+            </div>
         {% endif %}
     </div>
 </div>

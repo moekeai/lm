@@ -1,5 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic);
 
+@font-face {
+    font-family: 'emtypo';
+    src: url('/static/font/emtypo.eot?71862012');
+    src: url('/static/font/emtypo.eot?71862012#iefix') format('embedded-opentype'),
+         url('/static/font/emtypo.woff?71862012') format('woff'),
+         url('/static/font/emtypo.ttf?71862012') format('truetype'),
+         url('/static/font/emtypo.svg?71862012#emtypo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
 * { margin: 0; padding: 0; }
 a { text-decoration: none; color: #333; transition: color 0.2s; }
 
@@ -8,6 +19,36 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: #333;
+    }
+
+.emtypo {
+    font-family: "emtypo";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 10px;
+    }
+    a.emtypo {
+        background-color: #888;
+        color: #fff;
+        display: block;
+        line-height: 20px;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        float: right;
+        margin-right: 1px;
+        }
+        a.emtypo:active {
+            background-color: #00b290;
+            }
+        a.emtypo:hover {
+            background-color: #bbb;
+            }
+
+.social {
+    width: 147px;
+    height: 20px;
+    margin: 0 auto;
     }
 
 .content {
@@ -34,6 +75,7 @@ body {
             .menu ul li a:hover {
                 color: #bbb;
                 }
+            .menu ul li a:active,
             .menu ul li.selected a {
                 color: #00b290;
                 }
@@ -67,6 +109,7 @@ body {
 .footer {
     margin-bottom: 25px;
     text-align: center;
+    overflow: hidden;
     }
 
 .category {
@@ -385,9 +428,9 @@ html {
     -ms-text-size-adjust: 100%;
     }
 
-@media (max-width: 555px) {
+@media (max-width: 625px) {
     .content {
-        width: 90%;
+        width: 80%;
         }
     .menu ul li.work,
     .menu ul li.gallery {
@@ -403,4 +446,13 @@ html {
     .archive li a {
         white-space: nowrap;
         }
+    .share, .browse {
+        margin-left: 0;
+        }
+    }
+
+@media (max-width: 375px) {
+    .content {
+        width: 90%;
+        }    
     }
