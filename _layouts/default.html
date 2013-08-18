@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
     <meta name="description" content="The designer Google can't afford and Apple won't hire." />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="apple-touch-icon" href="/images/touch-icon.png"/>
-    <link rel="alternate" type="application/rss+xml" title="Lucian Marin" href="/rss.xml"/>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="apple-touch-icon" href="/images/touch-icon.png" />
+    <link rel="alternate" type="application/rss+xml" title="Lucian Marin" href="/rss.xml" />
+    {% if page.slug %}
+        <link rel="author" href="https://plus.google.com/117162526572776655872" />
+    {% endif %}
     {% if page.permalink == "/peculiar/" %}
-        <link rel="stylesheet" href="/static/peculiar.css">
+        <link rel="stylesheet" href="/static/peculiar.css" />
     {% endif %}
     {% if page.syntax == true %}
-        <link rel="stylesheet" href="/static/code.css">
+        <link rel="stylesheet" href="/static/code.css" />
     {% endif %}
     {% if page.permalink == "/work/" %}
         {% include slides.html %}
@@ -70,7 +73,7 @@
             <p class="sponsor">Sponsored by <a href="http://www.kledinginsider.nl/">Kleding</a></p>
         {% elsif page.section == "project" %}
             <p class="sponsor">Sponsored by <a href="https://www.digitalocean.com/?refcode=3a552597bc77" rel="nofollow">DigitalOcean</a></p>
-        {% else %}
+        {% elsif page.section != "error" %}
             {% include social.html %}
         {% endif %}
     </div>

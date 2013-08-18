@@ -3,7 +3,7 @@ description: Designer
 url: http://lucianmarin.com
 
 pygments: true
-permalink: /archive/:title.html
+permalink: /article/:title.html
 
 exclude: [readme.md, project-brooklyn.html]
 include: [.htaccess]

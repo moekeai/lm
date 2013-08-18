@@ -3,6 +3,7 @@
 #Options -Indexes
 #ErrorDocument 403 default
 
+ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
 
 #php_value register_globals 0
@@ -41,8 +42,6 @@ redirect 301 /rss/ /rss.xml
 
 redirect 301 /write http://markdawn.com
 redirect 301 /anatomie/pagina/organism/ http://omenesc.ro/
-
-RedirectMatch 301 /category/(.*)/ /category/$1.html
 
 RedirectMatch 301 /anatomie/pagina/(.*)/ http://omenesc.ro/$1.html
 RedirectMatch 301 /anatomie/(.*) http://omenesc.ro/$1
