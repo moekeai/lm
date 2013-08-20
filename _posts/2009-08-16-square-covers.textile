@@ -7,9 +7,9 @@ category: meaningful-labor
 slug: square-covers
 ---
 
-Over the last year or so, I started collecting "album covers":https://www.dropbox.com/gallery/63362/1/Covers?h=eb60c0 and squaring each one for better use in media players like iTunes. The purpose of all this was to build my first web app using Django.
+Over the last year or so, I started collecting <a href="https://www.dropbox.com/gallery/63362/1/Covers?h=eb60c0" rel="nofollow">album covers</a> and squaring each one for better use in media players like iTunes. The purpose of all this was to build my first web app using Django.
 
-But since always dreams don't manage to become reality, I decided to make "this small collection":https://www.dropbox.com/gallery/63362/1/Covers?h=eb60c0 public. There are over 200 covers right now and sorted by the artist name. I have one small request, if you like Dropbox please use "this link":https://www.dropbox.com/referrals/NTYzMzYyOQ to register for an account; it gives both of us 250 MB extra space.
+But since always dreams don't manage to become reality, I decided to make <a href="https://www.dropbox.com/gallery/63362/1/Covers?h=eb60c0" rel="nofollow">this small collection</a> public. There are over 200 covers right now and sorted by the artist name. I have one small request, if you like Dropbox please use <a href="https://www.dropbox.com/referrals/NTYzMzYyOQ" rel="nofollow">this link</a> to register for an account; it gives both of us 250 MB extra space.
 
 !/images/8.jpg(Square Covers)!
 

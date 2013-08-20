@@ -7,11 +7,11 @@ category: meaningful-labor
 slug: i-wrote-a-book
 ---
 
-Sourcefabric organized a book sprint near Berlin, where an international team wrote a book in just five days. The book is actually a manual for getting started creating templates and using "Newscoop":http://www.sourcefabric.org/en/products/newscoop_overview/ at its full power. Newscoop is a content management system (CMS) specialized for news sites, magazines and mass media publications. Of course, my theme "The Journalist" is already ported to this new CMS.
+Sourcefabric organized a book sprint near Berlin, where an international team wrote a book in just five days. The book is actually a manual for getting started creating templates and using <a href="http://www.sourcefabric.org/en/products/newscoop_overview/" rel="nofollow">Newscoop</a> at its full power. Newscoop is a content management system (CMS) specialized for news sites, magazines and mass media publications. Of course, my theme "The Journalist" is already ported to this new CMS.
 
 h4. The Book
 
-Newscoop 3 Cookbook can already be order from "Lulu":http://www.lulu.com/browse/search.php?fSearch=newscoop and will be available for free on "FLOSS Manuals":http://en.flossmanuals.net/. I wrote a full section describing the best practices for designing websites. Here I talked about templates grids, golden ratio, typography, article and comments design for Newscoop. I also wrote a few other sections regarding Facebook, HTML 5 and best practices for SEO.
+Newscoop 3 Cookbook can already be order from <a href="http://www.lulu.com/browse/search.php?fSearch=newscoop" rel="nofollow">Lulu</a> and will be available for free on <a href="http://en.flossmanuals.net/" rel="nofollow">FLOSS Manuals</a>. I wrote a full section describing the best practices for designing websites. Here I talked about templates grids, golden ratio, typography, article and comments design for Newscoop. I also wrote a few other sections regarding Facebook, HTML 5 and best practices for SEO.
 
 !/images/22.jpg(SoundCloud Workflow Diagrams)!
 
@@ -21,5 +21,5 @@ h4.  The Team and the place
 
 !/images/23.jpg(The Cookbook Team)!
 
-Each member from the team was from a different country. New Zeeland, USA, Romania, Belarus, Serbia, Columbia and Germany were the countries that we originate from. We stayed at "Schloss Neuhausen":http://www.schloss-neuhausen.de/ where a few black cats entertained us and blossoming trees put some light on our faces. I'm not sure if it's important, but I got the biggest room and I enjoyed each moment spent here.
+Each member from the team was from a different country. New Zeeland, USA, Romania, Belarus, Serbia, Columbia and Germany were the countries that we originate from. We stayed at <a href="http://www.schloss-neuhausen.de/" rel="nofollow">Schloss Neuhausen</a> where a few black cats entertained us and blossoming trees put some light on our faces. I'm not sure if it's important, but I got the biggest room and I enjoyed each moment spent here.
 

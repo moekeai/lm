@@ -25,5 +25,5 @@ My recipe varies by the ingredients that I have. Although the basics are the sam
 * Honey, but don't use much. You can add sugar if you want it sweeter.
 * Cold mineral water with or without lemon. Schweppes can be a life savior in this case.
 
-Regarding the blender, any cheap blender from "Amazon":http://amzn.to/PiG6cH will do the trick. It's more of a personal taste than anything. I don't recommend juicy extractors. You lose more than 50% of the content of the fruit by using them, even on citrus fruits.
+Regarding the blender, any cheap blender from <a href="http://amzn.to/PiG6cH" rel="nofollow">Amazon</a> will do the trick. It's more of a personal taste than anything. I don't recommend juicy extractors. You lose more than 50% of the content of the fruit by using them, even on citrus fruits.
 

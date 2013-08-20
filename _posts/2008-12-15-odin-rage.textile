@@ -7,7 +7,7 @@ category: reciprocal-affection
 slug: odin-rage
 ---
 
-This is my new watch and it's a present from my family for my birthday. You can find more information about it on the "official site":http://www.01theone.com/.
+This is my new watch and it's a present from my family for my birthday. You can find more information about it on the <a href="http://www.01theone.com/" rel="nofollow">official site</a>.
 
 !/images/2.jpg!
 

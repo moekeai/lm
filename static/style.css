@@ -178,6 +178,10 @@ a.emtypo {
   border-bottom: #00b290 2px solid; }
   .post a:hover {
     color: #00b290; }
+  .post a.follow {
+    border-bottom: #fee300 2px solid; }
+    .post a.follow:hover {
+      color: #b1b2b0; }
 .post .info {
   font-style: italic;
   text-indent: 0; }

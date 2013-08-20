@@ -36,7 +36,7 @@
             <li class="work {% if page.section == "work" %}selected{% endif %}">
                 <a href="/work/">Work</a>
             </li>
-            <li class="project {% if page.section == "project" %}selected{% endif %}">
+            <li class="project {% if page.section == "project" or page.section == "projects" %}selected{% endif %}">
                 <a href="/projects/">Projects</a>
             </li>
             <li class="gallery {% if page.section == "gallery" %}selected{% endif %}">
@@ -72,7 +72,7 @@
         {% if page.section == "journal" %}
             <p class="sponsor">Sponsored by <a href="http://www.kledinginsider.nl/">Kleding</a></p>
         {% elsif page.section == "project" %}
-            <p class="sponsor">Sponsored by <a href="https://www.digitalocean.com/?refcode=3a552597bc77" rel="nofollow">DigitalOcean</a></p>
+            <p class="sponsor">Sponsored by <a href="http://www.shops2b.co.uk/">Shops2b</a></p>
         {% elsif page.section != "error" %}
             {% include social.html %}
         {% endif %}
