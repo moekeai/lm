@@ -94,7 +94,7 @@ a.emtypo {
 .main h2 {
   font-weight: normal;
   font-size: 28px;
-  line-height: 40px;
+  line-height: 35px;
   letter-spacing: -1px;
   color: #7d7f7e; }
   .main h2 a {
@@ -106,7 +106,7 @@ a.emtypo {
   font-size: 11px;
   text-transform: uppercase;
   color: #b1b2b0;
-  margin: 5px 0 10px 0;
+  margin: 10px 0;
   letter-spacing: 1px; }
   .meta span {
     margin-right: 25px; }
