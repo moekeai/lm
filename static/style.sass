@@ -1,12 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic)
 
-@font-face
-    font-family: 'emtypo'
-    src: url('/static/font/emtypo.eot?71862012')
-    src: url('/static/font/emtypo.eot?71862012#iefix') format('embedded-opentype'), url('/static/font/emtypo.woff?71862012') format('woff'), url('/static/font/emtypo.ttf?71862012') format('truetype'), url('/static/font/emtypo.svg?71862012#emtypo') format('svg')
-    font-weight: normal
-    font-style: normal
-
 $black: #343536
 $white: #fff
 $silver: #b1b2b0
@@ -29,30 +22,37 @@ body
     line-height: 20px
     color: $black
 
-.emtypo
-    font-family: "emtypo"
-    font-weight: normal
-    font-style: normal
-    font-size: 12px
-
-a.emtypo
-    background-color: $grey
-    color: $white
+a.typo
+    background: $grey url(social.png) no-repeat
+    background-position: 0px 0px
+    background-size: 140px 20px
     display: block
     line-height: 20px
     height: 20px
     width: 20px
-    text-align: center
     float: right
     margin: 0 1px
+    transition: background-color 0.2s
     &:active
         background-color: $teal
     &:hover
         background-color: $silver
+    &.rss
+        background-position: -120px 0px
+    &.twitter
+        background-position: -100px 0px
+    &.tumblr
+        background-position: -80px 0px
+    &.instagram
+        background-position: -60px 0px
+    &.github
+        background-position: -40px 0px
+    &.dribbble
+        background-position: -20px 0px
 
 .social
     width: 154px
-    height: 23px
+    height: 20px
     margin: 0 auto
 
 .content
@@ -121,22 +121,22 @@ a.emtypo
     span
         margin-right: 25px
     a
-        color: $silver   
+        color: $silver
         &:hover
             color: $teal
-        
+
 .archive
     ol
         font-size: 18px
         list-style: none
         li
             line-height: 36px
-            margin: 0 -15px    
+            margin: 0 -15px
             a
                 padding: 0 15px
-                display: block    
+                display: block
                 &:hover
-                    background-color: #eee        
+                    background-color: #eee
     .title
         color: $black !important
     .date
@@ -146,7 +146,7 @@ a.emtypo
         b
             font-weight: 300
             margin-right: 10px
-            color: $teal !important        
+            color: $teal !important
 
 .fade
     opacity: 0.4
@@ -170,6 +170,8 @@ a.emtypo
             color: $silver
     ul
         list-style: square
+        margin-left: 50px
+    ol
         margin-left: 50px
     h4
         font-size: 17px
@@ -230,7 +232,7 @@ a.emtypo
         color: $grey
         &:hover
             color: $teal
-    
+
 .share a,
 .sponsor a
     color: $teal
@@ -239,6 +241,8 @@ a.emtypo
 
 .grid
     overflow: hidden
+    width: 580px
+    margin-left: -40px
     img
         display: block
         width: 100%
@@ -246,8 +250,9 @@ a.emtypo
     .box
         float: left
         width: 166px
-        margin-right: 1px
-        margin-bottom: 1px
+        width: 192px
+        margin-right: 2px
+        margin-bottom: 2px
         &:nth-child(3n+0)
             margin-right: 0
 
@@ -289,6 +294,12 @@ a.emtypo
     .description,
     .image
         margin-bottom: 10px
+    .image
+        img
+            transition: height 0.6s, opacity 0.6s
+        .hidden
+            height: 0
+            opacity: 0
     .description
         a
             border-bottom: $teal 2px solid
@@ -333,7 +344,7 @@ a.emtypo
         height: 8px
         position: absolute
         top: 4px
-        left: 7px 
+        left: 7px
 
 html
     -webkit-text-size-adjust: 100%
@@ -347,11 +358,11 @@ html
     .menu ul li.work,
     .menu ul li.gallery
         display: none
-    
+
     .post p img
         width: 100%
         height: auto
-    
+
     .archive
         .date
             display: none

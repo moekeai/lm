@@ -1,11 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,400italic);
-@font-face {
-  font-family: "emtypo";
-  src: url("/static/font/emtypo.eot?71862012");
-  src: url("/static/font/emtypo.eot?71862012#iefix") format("embedded-opentype"), url("/static/font/emtypo.woff?71862012") format("woff"), url("/static/font/emtypo.ttf?71862012") format("truetype"), url("/static/font/emtypo.svg?71862012#emtypo") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -21,30 +14,37 @@ body {
   line-height: 20px;
   color: #343536; }
 
-.emtypo {
-  font-family: "emtypo";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 12px; }
-
-a.emtypo {
-  background-color: #7d7f7e;
-  color: white;
+a.typo {
+  background: #7d7f7e url(social.png) no-repeat;
+  background-position: 0px 0px;
+  background-size: 140px 20px;
   display: block;
   line-height: 20px;
   height: 20px;
   width: 20px;
-  text-align: center;
   float: right;
-  margin: 0 1px; }
-  a.emtypo:active {
+  margin: 0 1px;
+  transition: background-color 0.2s; }
+  a.typo:active {
     background-color: #00b290; }
-  a.emtypo:hover {
+  a.typo:hover {
     background-color: #b1b2b0; }
+  a.typo.rss {
+    background-position: -120px 0px; }
+  a.typo.twitter {
+    background-position: -100px 0px; }
+  a.typo.tumblr {
+    background-position: -80px 0px; }
+  a.typo.instagram {
+    background-position: -60px 0px; }
+  a.typo.github {
+    background-position: -40px 0px; }
+  a.typo.dribbble {
+    background-position: -20px 0px; }
 
 .social {
   width: 154px;
-  height: 23px;
+  height: 20px;
   margin: 0 auto; }
 
 .content {
@@ -159,6 +159,8 @@ a.emtypo {
 .post ul {
   list-style: square;
   margin-left: 50px; }
+.post ol {
+  margin-left: 50px; }
 .post h4 {
   font-size: 17px;
   line-height: 23px;
@@ -227,7 +229,9 @@ a.emtypo {
     color: #343536; }
 
 .grid {
-  overflow: hidden; }
+  overflow: hidden;
+  width: 580px;
+  margin-left: -40px; }
   .grid img {
     display: block;
     width: 100%;
@@ -235,8 +239,9 @@ a.emtypo {
   .grid .box {
     float: left;
     width: 166px;
-    margin-right: 1px;
-    margin-bottom: 1px; }
+    width: 192px;
+    margin-right: 2px;
+    margin-bottom: 2px; }
     .grid .box:nth-child(3n+0) {
       margin-right: 0; }
 
@@ -278,6 +283,11 @@ a.emtypo {
   .section .description,
   .section .image {
     margin-bottom: 10px; }
+  .section .image img {
+    transition: height 0.6s, opacity 0.6s; }
+  .section .image .hidden {
+    height: 0;
+    opacity: 0; }
   .section .description a {
     border-bottom: #00b290 2px solid; }
     .section .description a:hover {

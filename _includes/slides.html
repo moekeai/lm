@@ -5,5 +5,21 @@
             $(this).parents().siblings(".section").addClass("hidden");
             $(this).parents(".section").removeClass("hidden");
         });
+        $(".project-1 .first").click(function() {
+            $(this).addClass("hidden");
+            $(".project-1 .second").removeClass("hidden");
+        });
+        $(".project-1 .second").click(function() {
+            $(this).addClass("hidden");
+            $(".project-1 .first").removeClass("hidden");
+        });
+        $(".project-2 .first").click(function() {
+            $(this).addClass("hidden");
+            $(".project-2 .second").removeClass("hidden");
+        });
+        $(".project-2 .second").click(function() {
+            $(this).addClass("hidden");
+            $(".project-2 .first").removeClass("hidden");
+        });
     });
 </script>
