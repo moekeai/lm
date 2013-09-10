@@ -23,7 +23,7 @@ It's pretty easy to add charCount.js from <a href="http://cssglobe.com/jquery-pl
 <script type="text/javascript" src="charCount.js">
 </script>
 <script type="text/javascript">
-    $(document).ready(function(){	
+    $(document).ready(function(){
         $("#link-description").charCount();
     });
 </script>

@@ -14,13 +14,17 @@ code {
 
 .highlight {
     margin: 10px 0;
+    margin-left: 44px;
     }
     .highlight .lineno {
         color: #ccc;
-        margin-left: 21px;
-        margin-right: 7px;
+        margin-left: -40px;
+        position: absolute;
+        text-align: right;
+        display: block;
+        width: 30px;
         }
- 
+
 .highlight .c { color: #586E75 } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
 .highlight .g { color: #93A1A1 } /* Generic */
