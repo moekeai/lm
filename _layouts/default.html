@@ -54,6 +54,8 @@
         <h1 class="title">
             {% if page.subtitle %}
                 {{ page.subtitle }}
+            {% elsif page.category %}
+                Article
             {% else %}
                 Archive
             {% endif %}
