@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2012-07-15 07:40:31
-edit: 2013-04-03 15:59:20
-title: "Let's Get Frisky"
-category: coffee-in-the-morning
-slug: get-frisky
+layout:     post
+date:       2012-07-15 07:40:31
+edit:       2013-04-03 15:59:20
+title:      "Let's Get Frisky"
+category:   coffee-in-the-morning
+slug:       get-frisky
 ---
 
 I am a very complicated man, I change my mind every now and then. A few months ago I bought a new domain: friskr.com. The idea was to create a brand new web application where people can upload only black and white photography. The plan was to also build an iPhone app that will let you create dramatic grey scaled photos.

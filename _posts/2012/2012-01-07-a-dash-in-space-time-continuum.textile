@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2012-01-07 16:00:17
-edit: 2013-03-19 20:56:04
-title: "A Dash in Space-Time Continuum"
-category: meaningful-labor
-slug: a-dash-in-space-time-continuum
+layout:     post
+date:       2012-01-07 16:00:17
+edit:       2013-03-19 20:56:04
+title:      "A Dash in Space-Time Continuum"
+category:   meaningful-labor
+slug:       a-dash-in-space-time-continuum
 ---
 
 Back in 2009 I wanted to make a change in the way I use social networks. I simply <a href="/article/disconnected.html" class="follow">disconnected from everything</a>. It was a good thing to do because I managed to spare myself some time, otherwise it could be wasted on stalking pretty girls on Facebook. I'm joking, of course. No, I probably didn't joke, but I'm sure you'll get the idea.

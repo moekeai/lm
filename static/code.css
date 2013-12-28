@@ -3,21 +3,21 @@ SYNTAX HIGHLIGHTING
 Solarized Light
 */
 
-@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
 
 pre,
 code {
-    font-family: "Oxygen Mono", monospace;
-    font-size: 12px;
-    line-height: 18px;
+    font-family: "Source Code Pro", monospace;
+    font-size: 14px;
+    line-height: 21px;
     }
 
 .highlight {
     margin: 10px 0;
-    margin-left: 44px;
+    padding-left: 35px;
     }
     .highlight .lineno {
-        color: #ccc;
+        color: #b4b2b0;
         margin-left: -40px;
         position: absolute;
         text-align: right;

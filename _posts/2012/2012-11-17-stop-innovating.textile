@@ -1,10 +1,11 @@
 ---
-layout: post
-date: 2012-11-17 05:07:12
-edit: 2013-03-19 20:59:16
-title: "Stop Innovating!"
-category: coffee-in-the-morning
-slug: stop-innovating
+layout:     post
+date:       2012-11-17 05:07:12
+edit:       2013-03-19 20:59:16
+title:      "Stop Innovating!"
+tag:        "Start Something"
+category:   coffee-in-the-morning
+slug:       stop-innovating
 ---
 
 We should strive for invention (discovery), not for innovation (something new). Why? Because a great idea is always better than a new idea. Greatness is not a given, it can only be achieved.

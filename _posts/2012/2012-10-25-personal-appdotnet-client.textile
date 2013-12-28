@@ -1,10 +1,11 @@
 ---
-layout: post
-date: 2012-10-25 15:25:00
-edit: 2013-03-19 20:58:44
-title: "Personal App.net Client"
-category: hope-for-the-future
-slug: personal-appdotnet-client
+layout:     post
+date:       2012-10-25 15:25:00
+edit:       2013-03-19 20:58:44
+title:      "Personal App.net Client"
+category:   hope-for-the-future
+slug:       personal-appdotnet-client
+published:  false
 ---
 
 Most of us don't want to use our credit cards to pay online, some of us just can't, others prefer PayPal, some think that web should just be free. App.net charges up front if you want use their web application. These two premises don't add up.

@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2012-08-09 16:34:50
-edit: 2013-03-19 20:57:43
-title: "Write More, Do More"
-category: hope-for-the-future
-slug: write-more-do-more
+layout:     post
+date:       2012-08-09 16:34:50
+edit:       2013-03-19 20:57:43
+title:      "Write More, Do More"
+category:   hope-for-the-future
+slug:       write-more-do-more
 ---
 
 A few years ago when I begun writing on a Romanian blog I got people telling me to write more. I perfectly understood _why_, but I never understood _when_ as in how much. This got me thinking lately.

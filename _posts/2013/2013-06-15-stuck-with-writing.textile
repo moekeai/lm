@@ -1,9 +1,10 @@
 ---
-layout: post
-date: 2013-06-15 14:12:26
-title: "I'm Stuck with Writing"
-category: coffee-in-the-morning
-slug: stuck-with-writing
+layout:     post
+date:       2013-06-15 14:12:26
+title:      "I'm Stuck with Writing"
+tag:        "Perfectionist"
+category:   coffee-in-the-morning
+slug:       stuck-with-writing
 ---
 
 Before I begin, I want to say that writing isn't a easy task for me. I'm not a native English speaker and I mostly feel embarrassed every time I think I make a mistake. This happens probably because being a designer, I'm also a perfectionist. Sometimes perfection gets in the way of doing things. So, this piece of text is about how can I solve the perfectionist writing complex.

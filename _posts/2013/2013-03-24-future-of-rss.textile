@@ -1,10 +1,11 @@
 ---
-layout: post
-date: 2013-03-24 15:51:31
-edit: 2013-03-29 16:22:20
-title: "The Future Of RSS Is Microdata"
-category: hope-for-the-future
-slug: future-of-rss-is-microdata
+layout:     post
+date:       2013-03-24 15:51:31
+edit:       2013-03-29 16:22:20
+title:      "The Future Of RSS Is Microdata"
+tag:        "Big Data"
+category:   hope-for-the-future
+slug:       future-of-rss
 ---
 
 Thanks to Google the web is free again. Reader wasn't quite friendly towards web standards. It wasn't that the Reader acted like a prison for RSS, it was the fact that it felt more like an hospice. It kept us sane every morning, but at the end of the day we worshiped a service that wasn't open. Now it is gone and web is free again. One day I want to say the same thing about social networks.
@@ -19,4 +20,4 @@ h4. Microdata saves the day
 
 Microdata is an invisible interface added to the HTML code. It can provide the basic feed functionality using descriptors for different parts of content and can be extended using schemas. For example, the first paragraph from my "About" page contains the name and a small description of me. This "thing" is called a <a href="http://schema.org/Person" rel="nofollow">Person</a>. The Person can have multiple properties which can be defined within inline HTML elements like _span_, _b_ or _i_.
 
-Let's say I want my readers to know how many times an article was read. Can I past this information to a RSS reader? No, not with a twenty years old format that can't be extended in any way. All I have to do with Microdata is to define the access counter as <a href="http://schema.org/UserPageVisits" rel="nofollow">UserPageVisits</a> and past this information as an <a href="http://schema.org/UserInteraction" rel="nofollow">interactionCount</a>. Now any robot that will parse the page will interpret the data as any human will do. Clever, isn't it?
+Let's say I want my readers to know how many times an article was read. Can I past this information to a RSS reader? No, not with a twenty years old format that can't be extended in any way. All I have to do with Microdata is to define the access counter as <a href="http://schema.org/UserPageVisits" rel="nofollow">UserPageVisits</a> and past this information as <a href="http://schema.org/UserInteraction" rel="nofollow">interactionCount</a>. Now any robot that will parse the page will interpret the data as any human will do. Clever, isn't it?

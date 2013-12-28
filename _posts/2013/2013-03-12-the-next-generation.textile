@@ -1,10 +1,11 @@
 ---
-layout: post
-date: 2013-03-12 23:04:43
-edit: 2013-03-19 20:59:50
-title: "What Our Kids Will Think About Us?"
-category: reciprocal-affection
-slug: the-next-generation
+layout:     post
+date:       2013-03-12 23:04:43
+edit:       2013-03-19 20:59:50
+title:      "What Our Kids Will Think About Us?"
+tag:        "Next Generation"
+category:   reciprocal-affection
+slug:       the-next-generation
 ---
 
 We say stupid things on Twitter, we post almost naked pictures on Instagram, we do the same thing on Facebook, but when we are actually drunk. The worst of all these things get shared on Tumblr. Everything is broadcasted live 24/7.

@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2012-08-13 18:37:10
-edit: 2013-03-19 20:57:57
-title: "Juicy Fruits in the Mix"
-category: meaningful-labor
-slug: juicy-fruits-in-the-mix
+layout:     post
+date:       2012-08-13 18:37:10
+edit:       2013-03-19 20:57:57
+title:      "Juicy Fruits in the Mix"
+category:   meaningful-labor
+slug:       juicy-fruits-in-the-mix
 ---
 
 I know, I know… I shouldn't have started this article with such a catchy title. I should have gone with "Fruit Madness", "This is Sparta, Fruit" or maybe "Return of the Fruit". But making juice is like listening to the summer hit. I don't know what this summer hit is, but now I know how to make juice.

@@ -1,10 +1,11 @@
 ---
-layout: post
-date: 2013-02-08 13:25:23
-edit: 2013-03-19 20:59:35
-title: "Learn HTML and CSS Easily"
-category: meaningful-labor
-slug: learn-html-and-css-easily
+layout:     post
+date:       2013-02-08 13:25:23
+edit:       2013-03-19 20:59:35
+title:      "Learn HTML and CSS Easily"
+tag:        "Easy Code"
+category:   meaningful-labor
+slug:       learn-html-and-css-easily
 ---
 
 I often see articles like <a href="http://jasonvanlue.com/notes/13737881/getting-started-with-web-design" rel="nofollow">Getting Started with Web Design</a> where the author recommends to read a few—not very small—books even for something easy as learning HTML and CSS.
