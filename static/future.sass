@@ -1,30 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic,700italic&subset=latin,latin-ext)
-@import url(http://fonts.googleapis.com/css?family=Ubuntu)
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic&subset=latin,latin-ext)
 
-// before
 $black: #343536
 $white: #fff
 $silver: #b1b2b0
 $grey: #7d7f7e
 $teal: #00b290
 $yellow: #fee300
-
-$d: 0.25s
-
-// after
-$bg: #e4e2e0
-// $bg: #eae9e7
-$black: #484440
-$silver: #b4b2b0
-$grey: #7a7977
-$yellow: #fdc200
-
-// pantone
-$teal: #009ea0
-$yellow: #fcb514 
-
-// invert-bg: #1b1d1f
-// invert-pink: #ff615f
 
 *
     margin: 0
@@ -33,24 +14,17 @@ $yellow: #fcb514
 a
     text-decoration: none
     color: $black
-    transition: color 0.25s
+    transition: color 0.2s
 
 body
-    background-color: $bg
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif
     font-size: 16px
     line-height: 23px
     color: $black
     text-rendering: optimizeLegibility
 
-::-moz-selection
-    background: lighten($yellow, 25%)
-
-::selection
-    background: lighten($yellow, 25%)
-
 a.typo
-    background: darken($bg, 10%) url(social.png) no-repeat
+    background: $grey url(social.png) no-repeat
     background-position: 0px 0px
     background-size: 140px 20px
     display: block
@@ -58,119 +32,102 @@ a.typo
     height: 20px
     width: 20px
     float: right
-    margin: 0 1px 0 0
-    border: darken($bg, 10%) 3px solid
-    transition: background-color 0.5s, border 0.5s, box-shadow 1.5s
+    margin: 0 1px
+    border: $grey 2px solid
+    transition: background-color 0.2s, border 0.2s
+    &:active
+        border: $teal 2px solid
+        background-color: $teal
     &:hover
+        border: $silver 2px solid
         background-color: $silver
-        border-color: $white
-    &.behance
-        &:hover
-            border-color: #1769ff
-            background-color: #1769ff
     &.rss
         background-position: -120px 0px
-        &:hover
-            border-color: #f82
-            background-color: #f82
     &.twitter
         background-position: -100px 0px
-        &:hover
-            border-color: #00aced
-            background-color: #00aced
     &.tumblr
         background-position: -80px 0px
-        &:hover
-            border-color: #2c4762
-            background-color: #2c4762
     &.instagram
         background-position: -60px 0px
-        &:hover
-            border-color: #3f729b
-            background-color: #3f729b
     &.github
         background-position: -40px 0px
-        &:hover
-            border-color: #444
-            background-color: #444
     &.dribbble
         background-position: -20px 0px
-        &:hover
-            border-color: #ea4c89
-            background-color: #ea4c89
 
 .social
-    width: 189px
-    padding: 1px
-    height: 26px
+    width: 154px
+    width: 182px
+    height: 20px
     margin: 0 auto
 
 .content
-    width: 600px
+    width: 580px
     margin: 0 auto
 
 .menu
-    padding: 18px 0 14px 0
-    height: 36px
-    line-height: 36px
+    //font-size: 15px
+    height: 35px
+    line-height: 35px
+    margin-top: 15px
     ul
         display: block
         list-style: none
         li
             display: block
             float: left
-            &:first-child
-                margin-left: -12px
+            margin-right: 23px
             &:last-child
-                margin-right: -12px
+                margin-right: 0px
             a
-                padding: 0 12px
                 display: block
-                color: lighten($grey, 10%)
+                color: $grey
                 &:hover
                     color: $silver
-            &.selected a
-                color: $teal
+                &:active
+                    color: $teal
+            &.selected
+                a
+                    color: $teal
+                    border-bottom: #666768 7px solid
 
 .header
+    background-color: #949696
     color: $white
-    padding-bottom: 32px
-    cursor: default
-    overflow: hidden
+    padding-top: 26px
+    padding-bottom: 4px
     h1
-        font-weight: bold
-        font-size: 96px
-        line-height: 70px
-        letter-spacing: -4px
+        //font-family: "Lato", Helvetica, Arial, sans-serif
+        font-weight: 200
+        font-size: 42px
+        line-height: 50px
+        letter-spacing: -2px
         white-space: nowrap
+        overflow: hidden
 
 .footer
-    margin-bottom: 32px
+    margin-bottom: 25px
     text-align: center
     overflow: hidden
 
 .main
     h2
-        font-weight: bold
-        font-size: 30px
-        line-height: 34px
+        font-weight: 600
+        font-size: 24px
+        line-height: 27px
         letter-spacing: -1px
-        color: $black
+        color: $grey
         a
-            color: $black
-            transition: color 0.6s
+            color: #444
             &:hover
-                color: $silver
+                color: $grey
 
 .meta
-    font-family: "Ubuntu", Helvetica, Arial, sans-serif
-    font-size: 13px
+    font-size: 14px
+    line-height: 20px
     text-transform: uppercase
     color: $silver
-    margin: 7px 0 6px 0
+    margin: 9px 0 7px 0
     letter-spacing: 1px
-    white-space: nowrap
-    overflow: hidden
     span
         margin-right: 25px
     a
@@ -180,20 +137,18 @@ a.typo
 
 .archive
     ol
-        margin-top: -10px
         font-size: 20px
+        letter-spacing: -0.33px
         list-style: none
+        margin-top: -5px
         li
-            line-height: 40px
+            line-height: 38px
             margin: 0 -15px
             a
                 padding: 0 15px
                 display: block
-                background-color: transparent
-                transition: background-color 0.5s
-                border-radius: 4px
                 &:hover
-                    background-color: $white
+                    background-color: #eee
     .title
         color: $black !important
     .date
@@ -209,31 +164,39 @@ a.typo
     opacity: 0.4
 
 .entry
-    margin: 0 0 30px 0
+    margin: 25px 0
     &.work
-        margin: 7px 0 32px 0
-    &.archive
-        margin-top: 6px
+        margin-top: 20px
     &.about
-        margin-top: 2px
+        margin-top: 27px
 
 .post
     p
-        //line-height: 26px
+        //line-height: 21px
         //text-align: justify
         text-indent: 40px
         &:first-child
             text-indent: 0
         img
-            margin: 10px 0
-            margin-left: 40px
+            width: 110.34%
+            height: auto
+            margin: 10px -5.17%
             display: block
-            border: $white 6px solid
-            border-radius: 4px
+        &.clear img
+            box-shadow: 0 0 1px #ddd
         sup
             font-size: 12px
             line-height: 15px
             color: $silver
+        &.caption
+            background-color: #eee
+            margin-top: -10px
+            margin-bottom: 15px
+            padding: 10px 15px
+            color: #888
+            font-size: 15px
+            line-height: 20px
+            text-indent: 0
     ul
         list-style: square
         margin-left: 40px
@@ -241,12 +204,12 @@ a.typo
         margin-left: 40px
     h4
         font-size: 20px
-        line-height: 24px
+        line-height: 23px
+        letter-spacing: -0.33px
         font-weight: normal
         text-indent: 40px
         color: $teal
-        margin-top: 8px
-        margin-bottom: 8px
+        margin: 10px 0
     blockquote
         margin-left: 20px
         border-left: #ddd 1px solid
@@ -254,22 +217,14 @@ a.typo
         margin-top: 10px
         margin-bottom: 10px
     a
-        background-color: lighten($yellow, 25%)
         color: $black
-        border-bottom: lighten($yellow, 25%) 2px solid
-        border-radius: 4px
-        padding: 0 4px
-        transition: background-color 0.3s, color 0.3s, border 0.3s
+        border-bottom: $teal 1px solid
         &:hover
-            background-color: $yellow
-            border-bottom: $yellow 2px solid
+            color: $teal
         &.follow
-            background-color: lighten($yellow, 25%)
-            border-bottom: lighten($yellow, 25%) 2px solid
+            border-bottom: $yellow 1px solid
             &:hover
-                color: $black
-                background-color: $yellow
-                border-bottom: $yellow 2px solid
+                color: $silver
     .info
         font-style: italic
         text-indent: 0
@@ -283,7 +238,7 @@ a.typo
             content: " dot "
         strong
             font-weight: normal
-            width: 40px
+            width: 50px
             display: block
             float: left
             color: $silver
@@ -293,8 +248,7 @@ a.typo
 .share,
 .browse
     margin: 15px 0
-    p
-        padding-left: 40px
+    margin-left: 50px
 
 .share,
 .sponsor,
@@ -303,12 +257,7 @@ a.typo
 
 .browse
     color: $teal
-    p
-        line-height: 30px
-        &:first-child
-            border-bottom: darken($bg, 4%) 1px solid
     a
-        padding-left: 5px
         color: $grey
         &:hover
             color: $teal
@@ -321,55 +270,55 @@ a.typo
 
 .grid
     overflow: hidden
-    width: 684px
-    margin-left: -42px
-    margin-bottom: -38px
-    margin-top: 12px
+    width: 642px
+    margin-top: 11px
+    margin-left: -31px
     img
         display: block
         width: 100%
         height: auto
-        border: $white 6px solid
-        border-radius: 4px
     .box
         float: left
         width: 166px
-        width: 200px
-        margin-right: 36px
-        margin-bottom: 36px
+        width: 192px
+        width: 212px
+        margin: 1px
         &:nth-child(3n+0)
-            margin-right: 0
+            //margin-right: 0
+    .huge
+        width: 640px
+    .big
+        width: 426px
+    .medium
+        width: 319px
 
 .section
     overflow: hidden
-    height: 510px
-    margin-bottom: 18px
-    transition: all 0.6s ease-in-out
+    height: 490px
+    height: 496px
+    padding-top: 12px
+    transition: all 0.3s ease-in-out
     &.hidden
-        height: 26px
-        transition: all 0.6s ease-in-out
+        height: 30px
+        transition: all 0.3s ease-in-out
     h4
-        font-family: "Ubuntu", Helvetica, Arial, sans-serif
         display: block
-        margin-bottom: 18px
+        margin-bottom: 15px
         overflow: hidden
-        border-radius: 4px
         a, b
             display: block
-            font-size: 13px
+            font-size: 14px
             line-height: 25px
-            padding: 0 15px
+            padding: 1px 15px 0 15px
             font-weight: normal
             float: left
             letter-spacing: 1px
             text-transform: uppercase
-            padding-top: 1px
         a
-            border-radius: 4px
             background-color: $teal
             color: $white
             cursor: pointer
-            transition: background-color 0.6s
+            transition: background-color 0.2s
             &:hover
                 background-color: lighten($teal, 5%)
         b
@@ -382,27 +331,21 @@ a.typo
     .description,
     .image
         margin-bottom: 10px
-        margin-left: 42px
     .image
         img
-            border: $white 6px solid
-            border-radius: 4px
             transition: height 0.6s, opacity 0.6s
         .hidden
             height: 0
             opacity: 0
-            border-top: 0 none
-            border-bottom: 0 none
     .description
         a
-            background-color: lighten($yellow, 25%)
-            border-bottom: lighten($yellow, 25%) 2px solid
-            padding: 0 4px
-            border-radius: 4px
-            transition: color 0.3s, background-color 0.3s, border 0.3s
+            border-bottom: $teal 2px solid
             &:hover
-                background-color: $yellow
-                border-color: $yellow
+                color: $grey
+    &.personal .description a
+        border-bottom: #fee300 2px solid
+        &:hover
+            color: $grey
     .image img
         display: block
 
@@ -444,20 +387,13 @@ html
     -webkit-text-size-adjust: 100%
     -ms-text-size-adjust: 100%
 
-// responsive
 
-@media (max-width: 700px)
+@media (max-width: 725px)
     .content
         width: 80%
 
-    .menu ul li.work,
     .menu ul li.gallery
         display: none
-
-    .post p img
-        width: 100%
-        height: auto
-        margin-left: -6px
 
     .archive
         .date
@@ -465,16 +401,23 @@ html
         li a
             white-space: nowrap
 
-@media (max-width: 375px)
-    .content
-        width: 87.5%
+    .share, .browse
+        margin-left: 0
+
+@media (max-width: 360px)
+    .menu
+        font-size: 15px
+    .menu ul li
+        margin-right: 17px
+    .post p img
+        width: 320px
+        margin-left: -16px
+        margin-right: -16px
     .meta
         span
             display: none
-        span:first-child,
-        span:last-child
-            display: inline
-    .share, .browse
-        p
-            padding-left: 0
-
+            &:first-child,
+            &:last-child
+                display: inline
+    .content
+        width: 90%

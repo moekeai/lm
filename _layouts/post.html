@@ -3,7 +3,9 @@ layout: default
 ---
 
 <div class="entry" itemscope itemtype="http://schema.org/BlogPosting">
-    <h2 itemprop="name">{{ page.title }}</h2>
+    <h2 itemprop="name">
+        <a href="{{ page.url }}">{{ page.title }}</a>
+    </h2>
     <div class="meta">
         <span itemprop="datePublished">{{ page.date | date: "%e %b %Y" }}</span>
         <span>{{ page.date | date: "%H:%M" }}</span>
