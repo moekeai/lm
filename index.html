@@ -1,25 +1,57 @@
 ---
 layout: default
 title: Lucian Marin
-subtitle: Journal
+subtitle: make design
 section: journal
 syntax: true
 ---
 
-{% for post in site.posts limit:4 %}
-    <div class="entry">
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <div class="meta">
-            <span>{{ post.date | date: "%e %b %Y" }}</span>
-            <span>{{ post.date | date: "%H:%M" }}</span>
-            <span>
-                <a href="/category/{{ post.category }}.html">
-                    {{ post.category | replace: '-', ' ' }}
-                </a>
-            </span>
+<div class="entry">
+    {% include svg-design.html %}
+    <h2>Design perfect interfaces</h2>
+    <div class="post">
+        <p>Interaction, user experience, graphics, wireframes, workflows, responsive and fluid interfaces, mobile or desktop — no detail will be left untouched or not taking care of. We can work together on all of these and sometimes I'm curious to learn more or simply do more.</p>
+    </div>
+</div>
+
+<div class="entry">
+    {% include svg-develop.html %}
+    <h2>Build great systems</h2>
+    <div class="post">
+        <p>I'm using technologies like Django, Jekyll, jQuery, PostgreSQL and Sass to build and maintain highly scalabled systems. These tools provide a very good package which in return can power all sorts of sites and applications. A great system not only solves a problem, but it might also save someone's life.</p>
+    </div>
+</div>
+
+<div class="entry">
+    <div class="quote">
+        <p>The measure of intelligence is</p>
+        <p>the ability to change.</p>
+    </div>
+    <div class="author">Albert Einstein</div>
+</div>
+
+<div class="entry">
+    <div class="grid">
+        <div class="box">
+            <a href="/markdawn/">
+                <img width="240" height="180" src="/images/work-13-markdawn.jpg" />
+            </a>
+            <h4>Markdawn</h4>
+            <p>content platform</p>
         </div>
-        <div class="post">
-            {% assign lines = post.content | split: '</p>' %}{{ lines[0] }}</p>
+        <div class="box">
+            <a href="/moss/">
+                <img width="240" height="180" src="/pictures/moss-retina.jpg" />
+            </a>
+            <h4>Moss</h4>
+            <p>content platform</p>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img width="240" height="280" src="/images/work-07-mdl.jpg" />
+            </a>
+            <h4>MDL</h4>
+            <p>content platform</p>
         </div>
     </div>
-{% endfor %}
+</div>

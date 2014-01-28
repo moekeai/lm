@@ -1,11 +1,16 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic&subset=latin,latin-ext)
 
-$black: #343536
+$black: #000
 $white: #fff
 $silver: #b1b2b0
 $grey: #7d7f7e
-$teal: #00b290
+$teal: #9dddee
 $yellow: #fee300
+
+$grey: #4a4f54
+$silver: #9ca1a7
+
+$d: 0.2s
 
 *
     margin: 0
@@ -15,16 +20,28 @@ $yellow: #fee300
     width: 40px
     height: 20px
 
+#icon
+    path
+        fill: $teal
+
 a
     text-decoration: none
-    color: $black
-    transition: color 0.2s
+    color: $teal
+    transition: color $d
+
+h1,h2,h3,h4
+    font-weight: normal
+
+i, b
+    font-style: normal
+    font-weight: normal
 
 body
+    background-color: $black
     font-family: "Source Sans Pro", Helvetica, Arial, sans-serif
-    font-size: 16px
-    line-height: 23px
-    color: $black
+    font-size: 15px
+    line-height: 20px
+    color: $silver
     text-rendering: optimizeLegibility
 
 a.typo
@@ -64,15 +81,22 @@ a.typo
     height: 20px
     margin: 0 auto
 
+.share
+    margin-top: 20px
+    i
+        margin-left: 5px
+        margin-right: 20px
+
 .content
-    width: 580px
+    width: 640px
     margin: 0 auto
 
 .menu
-    //font-size: 15px
-    height: 35px
-    line-height: 35px
-    margin-top: 15px
+    height: 40px
+    font-size: 14px
+    line-height: 20px
+    margin-top: 20px
+    text-transform: uppercase
     .logo
         display: block
         float: left
@@ -84,112 +108,144 @@ a.typo
         li
             display: block
             float: left
-            margin-right: 23px
+            margin-right: 20px
             &:last-child
                 margin-right: 0px
             a
                 display: block
-                color: $grey
-                &:hover
-                    color: $silver
-                &:active
-                    color: $teal
-            &.selected
-                a
-                    color: $teal
-                    border-bottom: #666768 7px solid
+                color: $silver
+            a:hover
+                color: $white
+            &.selected a
+                color: $teal
 
 .header
-    background-color: #949696
-    color: $white
-    padding-top: 26px
-    padding-bottom: 4px
+    color: $silver
+    overflow: hidden
     h1
-        //font-family: "Lato", Helvetica, Arial, sans-serif
         font-weight: 200
-        font-size: 42px
-        line-height: 50px
-        letter-spacing: -2px
+        font-size: 28px
+        line-height: 40px
+        letter-spacing: -1px
         white-space: nowrap
-        overflow: hidden
+        text-transform: lowercase
+        border-bottom: #323e48 1px solid
+        display: block
+        width: 304px
+        float: left
+        span
+            display: block
+            float: left
+            margin-bottom: -1px
+            border-bottom: #5b6770 1px solid
 
 .footer
     margin-bottom: 25px
     text-align: center
     overflow: hidden
 
-.main
-    h2
-        font-weight: 600
-        font-size: 24px
-        line-height: 27px
-        letter-spacing: -1px
+
+h2
+    font-weight: 600
+    font-size: 22px
+    line-height: 30px
+    letter-spacing: -1px
+    color: $white
+    margin-left: 60px
+    a
+        color: $white
+        &:hover
+            color: $silver
+    i
+        float: right
+        font-weight: 300
         color: $grey
-        a
-            color: #444
-            &:hover
-                color: $grey
+        margin-right: 60px
 
 .meta
     font-size: 14px
     line-height: 20px
     text-transform: uppercase
-    color: $silver
-    margin: 9px 0 7px 0
+    color: $grey
+    margin: 7px 0 7px 60px
     letter-spacing: 1px
     span
         margin-right: 25px
     a
-        color: $silver
+        color: $grey
         &:hover
-            color: $teal
+            color: $silver
 
 .archive
     ol
-        font-size: 20px
-        letter-spacing: -0.33px
+        font-size: 15px
         list-style: none
-        margin-top: -5px
+        margin: 0 60px
         li
-            line-height: 38px
+            line-height: 30px
             margin: 0 -15px
             a
+                color: $white
                 padding: 0 15px
                 display: block
                 &:hover
-                    background-color: #eee
-    .title
-        color: $black !important
-    .date
-        font-weight: 300
+                    background-color: $grey
+    i
         text-transform: lowercase
         float: right
+        color: $teal
         b
-            font-weight: 300
             margin-right: 10px
-            color: $teal !important
-
-.fade
-    opacity: 0.4
 
 .entry
     margin: 25px 0
-    &.work
-        margin-top: 20px
-    &.about
-        margin-top: 27px
+    #icon
+        position: absolute
+        margin-left: 5px
+
+.quote
+    color: $black
+    text-transform: uppercase
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: -1px
+    width: 290px
+    position: relative
+    margin-left: 15px
+    &:before
+        content: '"'
+        color: $teal
+        display: block
+        position: absolute
+        left: -15px
+        width: 20px
+        height: 24px
+    p
+        background-color: $teal
+        margin-bottom: 1px
+        padding: 0 10px
+        &:last-child:after
+            margin-left: 10px
+            content: '"'
+
+.author
+    color: $teal
+    margin-top: 5px
+    margin-left: 30px
 
 .post
     p
         //line-height: 21px
         //text-align: justify
-        text-indent: 40px
+        margin-left: 60px
+        margin-right: 60px
+        text-indent: 30px
         &:first-child
             text-indent: 0
         img
-            width: 110.34%
+            width: 640px
             height: auto
-            margin: 10px -5.17%
+            margin: 10px -60px
             display: block
         &.clear img
             box-shadow: 0 0 1px #ddd
@@ -198,25 +254,19 @@ a.typo
             line-height: 15px
             color: $silver
         &.caption
-            background-color: #eee
-            margin-top: -10px
-            margin-bottom: 15px
-            padding: 10px 15px
-            color: #888
-            font-size: 15px
-            line-height: 20px
+            margin-bottom: 20px
             text-indent: 0
     ul
         list-style: square
-        margin-left: 40px
+        margin-left: 90px
     ol
-        margin-left: 40px
+        margin-left: 90px
     h4
         font-size: 20px
         line-height: 23px
         letter-spacing: -0.33px
         font-weight: normal
-        text-indent: 40px
+        text-indent: 60px
         color: $teal
         margin: 10px 0
     blockquote
@@ -226,14 +276,9 @@ a.typo
         margin-top: 10px
         margin-bottom: 10px
     a
-        color: $black
-        border-bottom: $teal 1px solid
+        text-decoration: underline
         &:hover
             color: $teal
-        &.follow
-            border-bottom: $yellow 1px solid
-            &:hover
-                color: $silver
     .info
         font-style: italic
         text-indent: 0
@@ -275,25 +320,33 @@ a.typo
 .sponsor a
     color: $teal
     &:hover
-        color: $black
+        color: $silver
 
 .grid
     overflow: hidden
     width: 642px
     margin-top: 11px
-    margin-left: -31px
+    margin-left: -1px
     img
         display: block
         width: 100%
         height: auto
     .box
         float: left
-        width: 166px
-        width: 192px
         width: 212px
         margin: 1px
-        &:nth-child(3n+0)
-            //margin-right: 0
+        h4, p
+            color: $grey
+            margin-left: 30px
+        h4
+            font-size: 14px
+            text-transform: uppercase
+            margin-top: 8px
+            color: $white
+        a img
+            transition: opacity $d
+        a img:hover
+            opacity: 0.4
     .huge
         width: 640px
     .big
@@ -397,11 +450,11 @@ html
     -ms-text-size-adjust: 100%
 
 
-@media (max-width: 725px)
+@media (max-width: 640px)
     .content
-        width: 80%
+        width: 90%
 
-    .menu ul li.gallery
+    #icon
         display: none
 
     .archive
@@ -413,11 +466,42 @@ html
     .share, .browse
         margin-left: 0
 
-@media (max-width: 360px)
+    .grid
+        margin-left: -5.55%
+        width: 111.11%
+        .box
+            width: 100%
+            margin: 0
+            margin-bottom: 2px
+            p
+                margin-bottom: 5px
+
+    h2, .meta
+        margin-left: 0
+
+    h2 i
+        margin-right: 0
+
+    .archive
+        ol
+            margin-left: 0
+            margin-right: 0
+        b, i
+            display: none
+
+    .post
+        p
+            margin: 0
+        h4
+            text-indent: 0
+        ol, ul
+            margin-left: 30px
+
     .menu
-        font-size: 15px
-    .menu ul li
-        margin-right: 17px
+        ul
+            margin-left: 15px
+            li
+                margin-right: 15px
     .post p img
         width: 320px
         margin-left: -16px
@@ -428,5 +512,3 @@ html
             &:first-child,
             &:last-child
                 display: inline
-    .content
-        width: 90%

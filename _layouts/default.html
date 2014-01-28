@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimal-ui" />
     <meta name="description" content="The designer Google can't afford and Apple won't hire." />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/static/future.css" />
+    <link rel="stylesheet" href="/static/noir.css" />
     <link rel="apple-touch-icon" href="/images/touch-icon.png" />
     <link rel="alternate" type="application/rss+xml" title="Lucian Marin" href="/rss.xml" />
     {% if page.slug %}
@@ -26,21 +26,28 @@
 
 <div class="menu">
     <div class="content">
+        <a href="/" class="logo">
+            {% include svg-logo.html %}
+        </a>
         <ul>
+            <!--
             <li class="journal {% if page.section == "journal" %}selected{% endif %}">
                 <a href="/">Journal</a>
             </li>
+            -->
             <li class="archive {% if page.section == None or page.section == "archive" or page.section == "category" %}selected{% endif %}">
-                <a href="/archive/">Archive</a>
+                <a href="/archive/">Articles</a>
             </li>
             <li class="work {% if page.section == "work" %}selected{% endif %}">
                 <a href="/work/">Work</a>
             </li>
+            <!--
             <li class="project {% if page.section == "project" or page.section == "projects" %}selected{% endif %}">
                 <a href="/projects/">Projects</a>
             </li>
+            -->
             <li class="gallery {% if page.section == "gallery" %}selected{% endif %}">
-                <a href="/gallery/">Gallery</a>
+                <a href="/gallery/">Photos</a>
             </li>
             <li class="about {% if page.section == "about" %}selected{% endif %}">
                 <a href="/about/">About</a>
@@ -53,11 +60,11 @@
     <div class="content">
         <h1 class="title">
             {% if page.subtitle %}
-                {{ page.subtitle }}
+                <span>{{ page.subtitle }}</span>
             {% elsif page.category %}
-                Article
+                Archived
             {% else %}
-                Archive
+                Archived
             {% endif %}
         </h1>
     </div>
@@ -73,8 +80,6 @@
     <div class="content">
         {% if page.section == "journal" %}
             <p class="sponsor">Sponsored by <a href="http://www.kledinginsider.nl/">Kleding</a></p>
-        {% elsif page.section == "project" %}
-            <p class="sponsor">Sponsored by <a href="http://www.shops2b.co.uk/">Shops2b</a></p>
         {% elsif page.section != "error" %}
             {% include social.html %}
         {% endif %}
