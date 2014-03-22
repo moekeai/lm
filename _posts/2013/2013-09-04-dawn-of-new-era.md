@@ -1,11 +1,9 @@
 ---
 layout:     post
-date:       2013-09-04 13:37
+date:       2013-09-04 13:37:00
 title:      "The Dawn of a New Era"
-tag:        "Markdawn"
 category:   meaningful-labor
 slug:       dawn-of-new-era
-published:  true
 ---
 
 This article is about a man, a machine and a thousand lines of code. Scratch that, it's about an idea. This is [how things begin](http://markdawn.com/post/1/ "Markdown social network"). You got an idea, you work it &mdash; there's nothing else. My idea started way back in 2007 when I created a WordPress theme to relieve the pain of bad designed templates people had to deal with.
@@ -27,5 +25,5 @@ Knowing all this stuff, I still think I should try.  Why? Well, these are the to
 5. Markdown documents storage in the cloud
 6. Designed by one of the best UX designers
 
-Now you know why I have written [I'm Stuck with Writing](/article/stuck-with-writing.html), because I was busy creating Markdawn &mdash; a new way to write digitally. I hope this won't be the last article here, since I'll continue to write on my [Markdawn space](http://markdawn.com/lucianmarin/) from now on.
+Now you know why I have written [I'm Stuck with Writing](/archive/stuck-with-writing.html), because I was busy creating Markdawn &mdash; a new way to write digitally. I hope this won't be the last article here, since I'll continue to write on my [Markdawn space](http://markdawn.com/lucianmarin/) from now on.
 

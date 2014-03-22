@@ -2,24 +2,21 @@
 layout: default
 ---
 
-<div class="entry" itemscope itemtype="http://schema.org/BlogPosting">
-    <h2 itemprop="name">
+<div class="entry">
+    <h2>
         <a href="{{ page.url }}">{{ page.title }}</a>
     </h2>
     <div class="meta">
-        <span itemprop="datePublished">{{ page.date | date: "%e %b %Y" }}</span>
-        <span>{{ page.date | date: "%H:%M" }}</span>
+        <span class="date">{{ page.date | date: "%e %b %Y" }}</span>
+        <span class="time">{{ page.date | date: "%H:%M" }}</span>
         <span>
-            <a href="/category/{{ page.category }}.html" itemprop="articleSection">
+            <a href="/category/{{ page.category }}.html">
                 {{ page.category | replace: '-', ' ' | capitalize }}
             </a>
         </span>
     </div>
-    <div class="post full" itemprop="articleBody">
+    <div class="post article">
         {{ content }}
-    </div>
-    <div class="share">
-        <p>I'm also writing on +<a href="http://markdawn.com/lucianmarin/">lucianmarin</a> &mdash; thank you!</p>
     </div>
     <div class="browse">
         {% if page.previous.url %}

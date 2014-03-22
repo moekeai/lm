@@ -3,25 +3,19 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimal-ui" />
-    <meta name="description" content="The designer Google can't afford and Apple won't hire." />
+    <meta name="description" content="Pro designer with a passion for perfection and deep aesthetics." />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/static/noir.css" />
-    <link rel="apple-touch-icon" href="/images/touch-icon.png" />
-    <link rel="alternate" type="application/rss+xml" title="Lucian Marin" href="/rss.xml" />
-    {% if page.slug %}
-        <link rel="author" href="https://plus.google.com/117162526572776655872" />
-    {% endif %}
+    <link rel="stylesheet" href="/static/pro.css" />
+    <link rel="apple-touch-icon" href="/static/touch.png" />
     {% if page.permalink == "/peculiar/" %}
         <link rel="stylesheet" href="/static/peculiar.css" />
     {% endif %}
     {% if page.syntax == true %}
         <link rel="stylesheet" href="/static/code.css" />
     {% endif %}
-    {% if page.permalink == "/work/" %}
-        {% include slides.html %}
-    {% endif %}
     {% include analytics.html %}
 </head>
+
 <body>
 
 <div class="menu">
@@ -30,24 +24,14 @@
             {% include svg-logo.html %}
         </a>
         <ul>
-            <!--
-            <li class="journal {% if page.section == "journal" %}selected{% endif %}">
-                <a href="/">Journal</a>
-            </li>
-            -->
             <li class="archive {% if page.section == None or page.section == "archive" or page.section == "category" %}selected{% endif %}">
                 <a href="/archive/">Articles</a>
             </li>
-            <li class="work {% if page.section == "work" %}selected{% endif %}">
+            <li class="work {% if page.section == "work" or page.section == "projects" %}selected{% endif %}">
                 <a href="/work/">Work</a>
             </li>
-            <!--
-            <li class="project {% if page.section == "project" or page.section == "projects" %}selected{% endif %}">
-                <a href="/projects/">Projects</a>
-            </li>
-            -->
             <li class="gallery {% if page.section == "gallery" %}selected{% endif %}">
-                <a href="/gallery/">Photos</a>
+                <a href="/photo/">Photos</a>
             </li>
             <li class="about {% if page.section == "about" %}selected{% endif %}">
                 <a href="/about/">About</a>
@@ -56,15 +40,15 @@
     </div>
 </div>
 
-<div class="header">
-    <div class="content">
+<div class="content">
+    <div class="header">
         <h1 class="title">
             {% if page.subtitle %}
                 <span>{{ page.subtitle }}</span>
             {% elsif page.category %}
-                Archived
+                <span>{{ page.category | replace: '-', ' ' | capitalize }}</span>
             {% else %}
-                Archived
+                <span>Archived</span>
             {% endif %}
         </h1>
     </div>
@@ -80,6 +64,10 @@
     <div class="content">
         {% if page.section == "journal" %}
             <p class="sponsor">Sponsored by <a href="http://www.kledinginsider.nl/">Kleding</a></p>
+        {% elsif page.section == "projects" %}
+            <p class="sponsor">Sponsored by <a href="http://www.qdp.com/">QDP</a></p>
+        {% elsif page.section == "gallery" %}
+            <p class="sponsor">Sponsored by <a href="http://www.shops2b.co.uk/">Shops2b</a></p>
         {% elsif page.section != "error" %}
             {% include social.html %}
         {% endif %}

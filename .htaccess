@@ -33,14 +33,16 @@ Header set Cache-Control "max-age=360, private, proxy-revalidate"
 </FilesMatch>
 
 redirect 301 /page/themes /journalist
-redirect 301 /page/emoticons /projects
-redirect 301 /page/desktops /gallery
+redirect 301 /page/emoticons /work
+redirect 301 /page/desktops /photo
 redirect 301 /page/work /work
 redirect 301 /page/about /about
 redirect 301 /grid /gallery
-redirect 301 /rss/ /rss.xml
 
+redirect 301 /rss/ http://markdawn.com/lucianmarin/rss/
+redirect 301 /rss.xml http://markdawn.com/lucianmarin/rss/
 redirect 301 /write http://markdawn.com
+
 redirect 301 /anatomie/pagina/organism/ http://omenesc.ro/
 
 RedirectMatch 301 /anatomie/pagina/(.*)/ http://omenesc.ro/$1.html

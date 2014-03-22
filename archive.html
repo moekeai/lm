@@ -9,6 +9,21 @@ section: archive
 <div class="entry archive">
     <ol>
         <li>
+            <a href="http://markdawn.com/post/51/">
+                Insanely Simple <i><b>december</b> 2013</i>
+            </a>
+        </li>
+        <li>
+            <a href="http://markdawn.com/post/36/">
+                Hesitation Marks The Day <i><b>november</b> 2013</i>
+            </a>
+        </li>
+        <li>
+            <a href="http://markdawn.com/post/13/">
+                Empowering Free Spirits <i><b>octomber</b> 2013</i>
+            </a>
+        </li>
+        <li>
             <a href="http://markdawn.com/post/3/">
                 Speed Up Your Web Development <i><b>september</b> 2013</i>
             </a>
@@ -21,16 +36,24 @@ section: archive
     </ol>
 </div>
 
-<div class="header">
-    <h1 class="title">
-        <span>archived</span>
-    </h1>
-</div>
-
-<div class="entry archive">
+{% comment %}
     <ol>
         {% for post in site.posts %}
             {% include item.html %}
         {% endfor %}
     </ol>
-</div>
+{% endcomment %}
+
+{% for post in site.posts %}
+    {% capture month %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% capture nmonth %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if month != nmonth %}
+            {% if forloop.index != 1 %}</ol></div>{% endif %}
+            <div class="header">
+                <h1><span>{{ post.date | date: '%Y' }}</span></h1>
+            </div>
+            <div class="entry archive">
+                <ol>
+        {% endif %}
+    {% include item.html %}
+{% endfor %}
