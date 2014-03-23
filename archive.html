@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Lucian Marin
-subtitle: Recently Marked
 permalink: /archive/
 section: archive
 ---
 
+{% comment %}
 <div class="entry archive">
     <ol>
         <li>
@@ -35,6 +35,8 @@ section: archive
         </li>
     </ol>
 </div>
+{% endcomment %}
+
 
 {% comment %}
     <ol>
@@ -48,12 +50,9 @@ section: archive
     {% capture month %}{{ post.date | date: '%Y' }}{% endcapture %}
     {% capture nmonth %}{{ post.next.date | date: '%Y' }}{% endcapture %}
         {% if month != nmonth %}
-            {% if forloop.index != 1 %}</ol></div>{% endif %}
-            <div class="header">
-                <h1><span>{{ post.date | date: '%Y' }}</span></h1>
-            </div>
-            <div class="entry archive">
-                <ol>
+            {% if forloop.index != 1 %}</ul>{% endif %}
+            <h1 class="title">{{ post.date | date: '%Y' }}</h1>
+            <ul class="archive year">
         {% endif %}
     {% include item.html %}
 {% endfor %}

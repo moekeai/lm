@@ -1,57 +1,41 @@
 ---
 layout: default
 title: Lucian Marin
-subtitle: make design
 section: journal
 syntax: true
 ---
 
-<div class="entry">
-    {% include svg-design.html %}
-    <h2>Design perfect interfaces</h2>
+<div class="design">
+    <h1 class="title">Design</h1>
+    <div class="icon">{% include svg-design.html %}</div>
     <div class="post">
-        <p>The perfect interface has the right balance of intuitivity and purpose. Interaction and user experience, graphics and workflows, responsive or fluid interfaces, mobile or desktop &mdash; no detail should be left untouched or not taking care of. I like to work with you on all of these fronts until we reach <em>perfection</em>.</p>
+        <p>The perfect interface has the right balance of intuitivity and purpose. Interaction and user experience, graphics and workflows, responsive or fluid interfaces, mobile or desktop &mdash; no detail should be left untouched or not taking care of.</p>
+        <p>I like to work with you on all of these fronts until we reach <em>perfection</em>.</p>
     </div>
 </div>
 
-<div class="entry">
-    {% include svg-develop.html %}
-    <h2>Build great systems</h2>
+<div class="build">
+    <h1 class="title">Build</h1>
+    <div class="icon">{% include svg-build.html %}</div>
     <div class="post">
-        <p>I'm using technologies like Django, Jekyll, jQuery, PostgreSQL and Sass to build and maintain highly scalabled systems. These tools provide a very good package which in return can power all sorts of sites and applications. A great system not only solves a problem, but it might also save someone's life.</p>
+        <p>I'm using technologies like Django, Jekyll, jQuery, PostgreSQL and Sass to build and maintain highly scalabled systems. These tools provide a very good package which in return can power all sorts of sites and applications.</p>
+        <p>A great system not only solves a problem, but it might also save someone's life.</p>
     </div>
 </div>
 
-<div class="entry">
-    <div class="quote">
-        <p>The measure of intelligence is</p>
-        <p>the ability to change.</p>
-    </div>
+<div class="quote">
     <div class="author">Albert Einstein</div>
-</div>
-
-<div class="entry">
-    <div class="grid">
-        <div class="box">
-            <a href="/markdawn/">
-                <img width="240" height="180" src="/pictures/md-square.jpg" />
-            </a>
-            <h4>Markdawn</h4>
-            <p>content platform</p>
-        </div>
-        <div class="box">
-            <a href="/moss/">
-                <img width="240" height="180" src="/pictures/moss-retina.jpg" />
-            </a>
-            <h4>Moss</h4>
-            <p>os experiment</p>
-        </div>
-        <div class="box">
-            <a href="/mdl/">
-                <img width="240" height="180" src="/pictures/mdl-render.jpg" />
-            </a>
-            <h4>MDL</h4>
-            <p>360° experience</p>
-        </div>
+    <div class="text">
+        <p>“Everything should be made as simple as possible, but not simpler.”</p>
     </div>
 </div>
+
+{% for post in site.posts limit:4 %}
+    <ul class="archive">
+        <li>
+            <b>{{ post.date | date: "%B %e" }}</b>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+    </ul>
+{% endfor %}
+

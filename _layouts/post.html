@@ -2,34 +2,37 @@
 layout: default
 ---
 
-<div class="entry">
-    <h2>
-        <a href="{{ page.url }}">{{ page.title }}</a>
-    </h2>
-    <div class="meta">
-        <span class="date">{{ page.date | date: "%e %b %Y" }}</span>
-        <span class="time">{{ page.date | date: "%H:%M" }}</span>
-        <span>
-            <a href="/category/{{ page.category }}.html">
-                {{ page.category | replace: '-', ' ' | capitalize }}
-            </a>
-        </span>
+<h1 class="title">{{ page.title }}</h1>
+
+<div class="meta">
+    <div class="icon">
+        {% include svg-read.html %}
     </div>
-    <div class="post article">
-        {{ content }}
+    <div class="time">
+        <h4>Published</h4>
+        <p><a href="{{ page.url }}">{{ page.date | date: "%e %B %Y" }}</a></p>
     </div>
-    <div class="browse">
-        {% if page.previous.url %}
-            <p>
-                &larr; &nbsp;
-                <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
-            </p>
-        {% endif %}
-        {% if page.next.url %}
-            <p>
-                &rarr; &nbsp;
-                <a href="{{ page.next.url }}">{{ page.next.title }}</a>
-            </p>
-        {% endif %}
+    <div class="topic">
+        <h4>Topic</h4>
+        <p><a href="/archive/topics.html">{{ page.category | replace: '-', ' ' }}</a></p>
     </div>
 </div>
+
+<div class="post single">
+    {{ content }}
+</div>
+
+<ul class="archive browse">
+    {% if page.previous.url %}
+        <li>
+            <b>Previously</b>
+            <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+        </li>
+    {% endif %}
+    {% if page.next.url %}
+        <li>
+            <b>Up next</b>
+            <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+        </li>
+    {% endif %}
+</ul>

@@ -1,432 +1,231 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic&subset=latin,latin-ext)
+@font-face
+    font-family: 'Vegur'
+    src: url('font/vegur-bold-webfont.eot')
+    src: url('font/vegur-bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/vegur-bold-webfont.woff') format('woff'), url('font/vegur-bold-webfont.ttf') format('truetype'), url('font/vegur-bold-webfont.svg#vegurbold') format('svg')
+    font-weight: bold
+    font-style: normal
 
-$black: #343536
+@font-face
+    font-family: 'Vegur'
+    src: url('font/vegur-light-webfont.eot')
+    src: url('font/vegur-light-webfont.eot?#iefix') format('embedded-opentype'), url('font/vegur-light-webfont.woff') format('woff'), url('font/vegur-light-webfont.ttf') format('truetype'), url('font/vegur-light-webfont.svg#vegurlight') format('svg')
+    font-weight: 200
+    font-style: normal
+
+@font-face
+    font-family: 'Vegur'
+    src: url('font/vegur-regular-webfont.eot')
+    src: url('font/vegur-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/vegur-regular-webfont.woff') format('woff'), url('font/vegur-regular-webfont.ttf') format('truetype'), url('font/vegur-regular-webfont.svg#vegurregular') format('svg')
+    font-weight: normal
+    font-style: normal
+
+$black: #000
+$metal: #444
+$grey: #888
+$silver: #bbb
+$snow: #eee
 $white: #fff
-$silver: #b1b2b0
-$grey: #7d7f7e
-$teal: #00b290
-$yellow: #fee300
+
+$d: 0.2s
 
 *
     margin: 0
     padding: 0
 
-#logo
-    width: 40px
-    height: 20px
-
-a
-    text-decoration: none
-    color: $black
-    transition: color 0.2s
-
 body
-    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif
-    font-size: 16px
-    line-height: 23px
-    color: $black
+    font-family: "Vegur", Helvetica, Arial, sans-serif
+    font-size: 15px
+    line-height: 20px
     text-rendering: optimizeLegibility
 
-a.typo
-    background: $grey url(social.png) no-repeat
-    background-position: 0px 0px
-    background-size: 140px 20px
-    display: block
-    line-height: 20px
-    height: 20px
-    width: 20px
-    float: right
-    margin: 0 1px
-    border: $grey 2px solid
-    transition: background-color 0.2s, border 0.2s
-    &:active
-        border: $teal 2px solid
-        background-color: $teal
-    &:hover
-        border: $silver 2px solid
-        background-color: $silver
-    &.rss
-        background-position: -120px 0px
-    &.twitter
-        background-position: -100px 0px
-    &.tumblr
-        background-position: -80px 0px
-    &.instagram
-        background-position: -60px 0px
-    &.github
-        background-position: -40px 0px
-    &.dribbble
-        background-position: -20px 0px
+a
+    color: $black
+    text-decoration: none
 
-.social
-    width: 154px
-    width: 182px
-    height: 20px
-    margin: 0 auto
+ul
+    list-style: none
+
+b, i
+    font-style: normal
+    font-weight: normal
+
+img
+    display: block
 
 .content
-    width: 580px
+    width: 640px
     margin: 0 auto
 
 .menu
-    //font-size: 15px
-    height: 35px
-    line-height: 35px
-    margin-top: 15px
+    padding: 24px 0
+    height: 32px
+    line-height: 32px
     .logo
         display: block
+        width: 32px
+        height: 32px
         float: left
     ul
-        margin-left: 20px
-        display: block
-        list-style: none
         float: left
         li
-            display: block
-            float: left
-            margin-right: 23px
-            &:last-child
-                margin-right: 0px
+            margin-left: 16px
+            display: inline
             a
-                display: block
-                color: $grey
-                &:hover
-                    color: $silver
-                &:active
-                    color: $teal
-            &.selected
-                a
-                    color: $teal
-                    border-bottom: #666768 7px solid
+                color: $metal
+            &.selected a
+                color: $silver
 
-.header
-    background-color: #949696
-    color: $white
-    padding-top: 26px
-    padding-bottom: 4px
-    h1
-        //font-family: "Lato", Helvetica, Arial, sans-serif
+.title
+    font-size: 30px
+    line-height: 40px
+    margin-bottom: 20px
+    i
         font-weight: 200
-        font-size: 42px
-        line-height: 50px
-        letter-spacing: -2px
-        white-space: nowrap
-        overflow: hidden
-
-.footer
-    margin-bottom: 25px
-    text-align: center
-    overflow: hidden
-
-.main
-    h2
-        font-weight: 600
-        font-size: 24px
-        line-height: 27px
-        letter-spacing: -1px
-        color: $grey
-        a
-            color: #444
-            &:hover
-                color: $grey
-
-.meta
-    font-size: 14px
-    line-height: 20px
-    text-transform: uppercase
-    color: $silver
-    margin: 9px 0 7px 0
-    letter-spacing: 1px
-    span
-        margin-right: 25px
-    a
         color: $silver
-        &:hover
-            color: $teal
+
+.me
+    margin-top: -60px
+    float: left
+
+.design
+    margin-bottom: 20px
+
+.quote
+    margin: 40px 0
+    .text
+        margin-left: 140px
+        border-top: $white 2px solid
+        border-bottom: $white 2px solid
+        padding: 20px 0
+    .author
+        margin-top: 22px
+        float: left
+        color: $silver
 
 .archive
-    ol
-        font-size: 20px
-        letter-spacing: -0.33px
-        list-style: none
-        margin-top: -5px
-        li
-            line-height: 38px
-            margin: 0 -15px
-            a
-                padding: 0 15px
-                display: block
-                &:hover
-                    background-color: #eee
-    .title
-        color: $black !important
-    .date
-        font-weight: 300
-        text-transform: lowercase
-        float: right
-        b
-            font-weight: 300
-            margin-right: 10px
-            color: $teal !important
-
-.fade
-    opacity: 0.4
-
-.entry
-    margin: 25px 0
-    &.work
-        margin-top: 20px
-    &.about
-        margin-top: 27px
-
-.post
-    p
-        //line-height: 21px
-        //text-align: justify
-        text-indent: 40px
-        &:first-child
-            text-indent: 0
-        img
-            width: 110.34%
-            height: auto
-            margin: 10px -5.17%
-            display: block
-        &.clear img
-            box-shadow: 0 0 1px #ddd
-        sup
-            font-size: 12px
-            line-height: 15px
-            color: $silver
-        &.caption
-            background-color: #eee
-            margin-top: -10px
-            margin-bottom: 15px
-            padding: 10px 15px
-            color: #888
-            font-size: 15px
-            line-height: 20px
-            text-indent: 0
-    ul
-        list-style: square
-        margin-left: 40px
-    ol
-        margin-left: 40px
-    h4
-        font-size: 20px
-        line-height: 23px
-        letter-spacing: -0.33px
-        font-weight: normal
-        text-indent: 40px
-        color: $teal
+    li
         margin: 10px 0
-    blockquote
-        margin-left: 20px
-        border-left: #ddd 1px solid
-        padding-left: 19px
-        margin-top: 10px
-        margin-bottom: 10px
-    a
-        color: $black
-        border-bottom: $teal 1px solid
-        &:hover
-            color: $teal
-        &.follow
-            border-bottom: $yellow 1px solid
-            &:hover
-                color: $silver
-    .info
-        font-style: italic
-        text-indent: 0
-        .name:after
-            font-style: italic
-            color: $silver
-            content: " at "
-        .domain:after
-            font-style: italic
-            color: $silver
-            content: " dot "
-        strong
-            font-weight: normal
-            width: 50px
-            display: block
-            float: left
-            color: $silver
-            text-align: right
-            margin-right: 15px
-
-.share,
-.browse
-    margin: 15px 0
-    margin-left: 50px
-
-.share,
-.sponsor,
-.browse
-    color: $grey
-
-.browse
-    color: $teal
-    a
-        color: $grey
-        &:hover
-            color: $teal
-
-.share a,
-.sponsor a
-    color: $teal
-    &:hover
-        color: $black
-
-.grid
-    overflow: hidden
-    width: 642px
-    margin-top: 11px
-    margin-left: -31px
-    img
-        display: block
-        width: 100%
-        height: auto
-    .box
-        float: left
-        width: 166px
-        width: 192px
-        width: 212px
-        margin: 1px
-        &:nth-child(3n+0)
-            //margin-right: 0
-    .huge
-        width: 640px
-    .big
-        width: 426px
-    .medium
-        width: 319px
-
-.section
-    overflow: hidden
-    height: 490px
-    height: 496px
-    padding-top: 12px
-    transition: all 0.3s ease-in-out
-    &.hidden
-        height: 30px
-        transition: all 0.3s ease-in-out
-    h4
-        display: block
-        margin-bottom: 15px
-        overflow: hidden
-        a, b
-            display: block
-            font-size: 14px
-            line-height: 25px
-            padding: 1px 15px 0 15px
-            font-weight: normal
-            float: left
-            letter-spacing: 1px
-            text-transform: uppercase
         a
-            background-color: $teal
-            color: $white
-            cursor: pointer
-            transition: background-color 0.2s
-            &:hover
-                background-color: lighten($teal, 5%)
-        b
-            color: $silver
-    &.personal h4 a
-        background-color: $yellow
-        color: $black
-        &:hover
-            background-color: darken($yellow, 5%)
-    .description,
-    .image
-        margin-bottom: 10px
-    .image
-        img
-            transition: height 0.6s, opacity 0.6s
-        .hidden
-            height: 0
-            opacity: 0
-    .description
-        a
-            border-bottom: $teal 2px solid
+            transition: color $d
             &:hover
                 color: $grey
-    &.personal .description a
-        border-bottom: #fee300 2px solid
-        &:hover
-            color: $grey
-    .image img
+        b
+            display: block
+            width: 140px
+            color: $silver
+            float: left
+    &.year
+        margin-bottom: 20px
+
+.handle:after
+    content: "at"
+    padding: 0 5px
+    color: $silver
+
+.domain:after
+    content: "dot"
+    padding: 0 5px
+    color: $silver
+
+.icon
+    float: left
+    margin-top: 16px
+
+.post
+    margin-left: 140px
+    p
+        margin: 10px 0
+    a
+        color: $grey
+        text-decoration: underline
+    &.single
+        border-bottom: $white 2px solid
+        padding-bottom: 20px
+        margin-bottom: 30px
+    .clear
+        margin-left: -140px
+        img
+            width: 100%
+            height: auto
+    .caption
+        margin: 20px 0
+        &:last-child
+            margin-bottom: 0
+
+.main
+    background-color: $snow
+    padding: 20px 0
+
+.meta
+    overflow: hidden
+    color: $grey
+    font-size: 14px
+    margin-bottom: 20px
+    .icon
+        width: 140px
+        height: 40px
+        float: left
+        margin-top: 3px
+    .time,
+    .topic
+        height: 40px
+        float: left
+        width: 33%
+        text-transform: lowercase
+    a
+        color: $grey
+    h4
+        font-weight: normal
+        text-transform: uppercase
+        font-size: 12px
+        color: $silver
+
+.grid
+    width: 726px
+    margin-left: -43px
+    overflow: hidden
+    margin-bottom: 20px
+    border: $white 1px solid
+    .box
+        width: 240px
+        height: auto
+        float: left
+        border: $white 1px solid
+        img
+            width: 100%
+            height: auto
+
+.label
+    width: 726px
+    margin-left: -43px
+    overflow: hidden
+    margin-top: -20px
+    height: 50px
+    .box
+        width: 240px
+        height: auto
+        float: left
+        margin-left: 2px
+        &:first-child
+            margin-left: 0
+        h4
+            background-color: $white
+            float: left
+            padding: 5px 10px 3px 10px
+            font-weight: normal
+        p
+            display: none
+
+.peculiar
+    margin-left: -140px
+    margin-top: 10px
+
+.footer
+    padding: 20px 0
+    color: $silver
+    p, ins
+        margin-left: 140px
+    ins
+        width: 468px
+        height: 60px
         display: block
-
-.sign
-    display: block
-    width: 16px
-    height: 16px
-    margin: 0 auto
-    &:hover .plus
-        background-color: $silver
-
-.plus
-    background-color: $grey
-    display: block
-    width: 16px
-    height: 16px
-    position: relative
-    transition: background-color 0.2s
-    b
-        display: none
-    &:before
-        background-color: $white
-        content: " "
-        width: 8px
-        height: 2px
-        position: absolute
-        top: 7px
-        left: 4px
-    &:after
-        background-color: $white
-        content: " "
-        width: 2px
-        height: 8px
-        position: absolute
-        top: 4px
-        left: 7px
-
-html
-    -webkit-text-size-adjust: 100%
-    -ms-text-size-adjust: 100%
-
-
-@media (max-width: 725px)
-    .content
-        width: 80%
-
-    .menu ul li.gallery
-        display: none
-
-    .archive
-        .date
-            display: none
-        li a
-            white-space: nowrap
-
-    .share, .browse
-        margin-left: 0
-
-@media (max-width: 360px)
-    .menu
-        font-size: 15px
-    .menu ul li
-        margin-right: 17px
-    .post p img
-        width: 320px
-        margin-left: -16px
-        margin-right: -16px
-    .meta
-        span
-            display: none
-            &:first-child,
-            &:last-child
-                display: inline
-    .content
-        width: 90%
