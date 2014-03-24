@@ -1,21 +1,21 @@
 @font-face
     font-family: 'Vegur'
     src: url('font/vegur-bold-webfont.eot')
-    src: url('font/vegur-bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/vegur-bold-webfont.woff') format('woff'), url('font/vegur-bold-webfont.ttf') format('truetype'), url('font/vegur-bold-webfont.svg#vegurbold') format('svg')
+    src: url('font/vegur-bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/vegur-bold-webfont.woff') format('woff'), url('font/vegur-bold-webfont.ttf') format('truetype')
     font-weight: bold
     font-style: normal
 
 @font-face
     font-family: 'Vegur'
     src: url('font/vegur-light-webfont.eot')
-    src: url('font/vegur-light-webfont.eot?#iefix') format('embedded-opentype'), url('font/vegur-light-webfont.woff') format('woff'), url('font/vegur-light-webfont.ttf') format('truetype'), url('font/vegur-light-webfont.svg#vegurlight') format('svg')
+    src: url('font/vegur-light-webfont.eot?#iefix') format('embedded-opentype'), url('font/vegur-light-webfont.woff') format('woff'), url('font/vegur-light-webfont.ttf') format('truetype')
     font-weight: 200
     font-style: normal
 
 @font-face
     font-family: 'Vegur'
     src: url('font/vegur-regular-webfont.eot')
-    src: url('font/vegur-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/vegur-regular-webfont.woff') format('woff'), url('font/vegur-regular-webfont.ttf') format('truetype'), url('font/vegur-regular-webfont.svg#vegurregular') format('svg')
+    src: url('font/vegur-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/vegur-regular-webfont.woff') format('woff'), url('font/vegur-regular-webfont.ttf') format('truetype')
     font-weight: normal
     font-style: normal
 
@@ -181,40 +181,12 @@ img
         color: $silver
 
 .grid
-    width: 726px
-    margin-left: -43px
+    width: 720px
+    margin-left: -40px
     overflow: hidden
     margin-bottom: 20px
-    border: $white 1px solid
-    .box
-        width: 240px
-        height: auto
+    img
         float: left
-        border: $white 1px solid
-        img
-            width: 100%
-            height: auto
-
-.label
-    width: 726px
-    margin-left: -43px
-    overflow: hidden
-    margin-top: -20px
-    height: 50px
-    .box
-        width: 240px
-        height: auto
-        float: left
-        margin-left: 2px
-        &:first-child
-            margin-left: 0
-        h4
-            background-color: $white
-            float: left
-            padding: 5px 10px 3px 10px
-            font-weight: normal
-        p
-            display: none
 
 .peculiar
     margin-left: -140px
@@ -223,9 +195,34 @@ img
 .footer
     padding: 20px 0
     color: $silver
-    p, ins
+    p
         margin-left: 140px
-    ins
-        width: 468px
-        height: 60px
-        display: block
+
+html
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+
+@media (max-width: 700px)
+    .content
+        width: 85%
+    .icon,
+    .quote .author,
+    .archive li b,
+    .me,
+    .label
+        display: none
+    .post,
+    .quote .text,
+    .post .clear,
+    .peculiar,
+    .footer p
+        margin-left: 0
+    .meta .time,
+    .meta .topic
+        width: 50%
+    .grid
+        width: 100%
+        margin-left: 0
+        img
+            width: 33.33%
+            height: auto
