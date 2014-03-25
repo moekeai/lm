@@ -1,4 +1,10 @@
 <li>
-    <b>{{ post.date | date: "%B %e" }}</b>
+    <b>
+        {% if page.section == "topics" %}
+            {{ post.date | date: "%Y" }}
+        {% else %}
+            {{ post.date | date: "%B %e" }}
+        {% endif %}
+    </b>
     <a href="{{ post.url }}">{{ post.title }}</a>
 </li>

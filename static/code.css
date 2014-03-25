@@ -8,13 +8,12 @@ Solarized Light
 pre,
 code {
     font-family: "Source Code Pro", monospace;
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 13px;
+    line-height: 18px;
     }
 
 .highlight {
     margin: 10px 0;
-    padding-left: 50px;
     }
     .highlight .lineno {
         color: #586E75;

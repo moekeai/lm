@@ -90,6 +90,11 @@ img
 .design
     margin-bottom: 20px
 
+.design, .build
+    .icon
+        float: left
+        margin-top: 16px
+
 .quote
     margin: 40px 0
     .text
@@ -127,17 +132,18 @@ img
     padding: 0 5px
     color: $silver
 
-.icon
-    float: left
-    margin-top: 16px
-
 .post
     margin-left: 140px
-    p
+    p, ul, ol
         margin: 10px 0
+    ul, ol
+        li
+            line-height: 24px
     a
         color: $grey
         text-decoration: underline
+    pre
+        font-size: 12px
     &.single
         border-bottom: $white 2px solid
         padding-bottom: 20px
@@ -164,8 +170,8 @@ img
     .icon
         width: 140px
         height: 40px
+        margin-top: 0
         float: left
-        margin-top: 3px
     .time,
     .topic
         height: 40px

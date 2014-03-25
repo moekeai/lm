@@ -78,6 +78,10 @@ img {
 .design {
   margin-bottom: 20px; }
 
+.design .icon, .build .icon {
+  float: left;
+  margin-top: 16px; }
+
 .quote {
   margin: 40px 0; }
   .quote .text {
@@ -114,17 +118,17 @@ img {
   padding: 0 5px;
   color: #bbbbbb; }
 
-.icon {
-  float: left;
-  margin-top: 16px; }
-
 .post {
   margin-left: 140px; }
-  .post p {
+  .post p, .post ul, .post ol {
     margin: 10px 0; }
+  .post ul li, .post ol li {
+    line-height: 24px; }
   .post a {
     color: #888888;
     text-decoration: underline; }
+  .post pre {
+    font-size: 12px; }
   .post.single {
     border-bottom: white 2px solid;
     padding-bottom: 20px;
@@ -151,8 +155,8 @@ img {
   .meta .icon {
     width: 140px;
     height: 40px;
-    float: left;
-    margin-top: 3px; }
+    margin-top: 0;
+    float: left; }
   .meta .time,
   .meta .topic {
     height: 40px;

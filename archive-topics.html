@@ -2,55 +2,45 @@
 layout: default
 title: Lucian Marin
 permalink: /archive/topics.html
-section: archive
+section: topics
 ---
 
 <h1 class="title">Coffee in the Morning</h1>
 
 <ul class="archive year">
-    {% for post in site.posts %}
-        {% if post.category == "coffee-in-the-morning" %}
-            {% include item-tag.html %}
-        {% endif %}
+    {% for post in site.categories.coffee-in-the-morning %}
+        {% include item.html %}
     {% endfor %}
 </ul>
 
 <h1 class="title">Les Fleurs du mal</h1>
 
 <ul class="archive year">
-    {% for post in site.posts %}
-        {% if post.category == "les-fleurs-du-mal" %}
-            {% include item-tag.html %}
-        {% endif %}
+    {% for post in site.categories.les-fleurs-du-mal %}
+        {% include item.html %}
     {% endfor %}
 </ul>
 
 <h1 class="title">Hope for the Future</h1>
 
 <ul class="archive year">
-    {% for post in site.posts %}
-        {% if post.category == "hope-for-the-future" %}
-            {% include item-tag.html %}
-        {% endif %}
+    {% for post in site.categories.hope-for-the-future %}
+        {% include item.html %}
     {% endfor %}
 </ul>
 
 <h1 class="title">Meaningful Labor</h1>
 
 <ul class="archive year">
-    {% for post in site.posts %}   
-        {% if post.category == "meaningful-labor" %}
-            {% include item-tag.html %}
-        {% endif %}
+    {% for post in site.categories.meaningful-labor %}
+        {% include item.html %}
     {% endfor %}
 </ul>
 
 <h1 class="title">Reciprocal Affection</h1>
 
 <ul class="archive">
-    {% for post in site.posts %}
-        {% if post.category == "reciprocal-affection" %}
-            {% include item-tag.html %}
-        {% endif %}
+    {% for post in site.categories.reciprocal-affection %}
+        {% include item.html %}
     {% endfor %}
 </ul>
