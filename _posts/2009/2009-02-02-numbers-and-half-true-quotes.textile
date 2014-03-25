@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2009-02-02 06:36:41
-edit: 2013-03-19 20:16:51
-title: "Numbers and Half True Quotes"
-category: meaningful-labor
-slug: numbers-and-half-true-quotes
+layout:     post
+date:       2009-02-02 06:36:41
+edit:       2013-03-19 20:16:51
+title:      "Numbers and Half True Quotes"
+category:   meaningful-labor
+slug:       numbers-and-half-true-quotes
 ---
 
 In this post I wanted to write about <a href="http://www.flickr.com/photos/kalphegor/3216395914/" rel="nofollow">numbers</a> and their contributions to user interfaces, mostly on today top web applications. But after some thinking, it just didn't make sense. Numbers can be interpreted in different ways, depending on user perspective. 

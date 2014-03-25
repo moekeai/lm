@@ -1,7 +1,7 @@
 ---
 layout:     post
-draft:      2013-08-18 01:14
 date:       2014-03-25 01:14
+draft:      2013-08-18 01:14
 title:      "Just Another Avatar"
 category:   reciprocal-affection
 slug:       just-another-avatar

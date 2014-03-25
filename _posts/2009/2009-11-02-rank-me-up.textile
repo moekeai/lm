@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2009-11-02 23:30:03
-edit: 2013-03-19 20:49:34
-title: "Rank Me Up"
-category: coffee-in-the-morning
-slug: rank-me-up
+layout:     post
+date:       2009-11-02 23:30:03
+edit:       2013-03-19 20:49:34
+title:      "Rank Me Up"
+category:   coffee-in-the-morning
+slug:       rank-me-up
 ---
 
 Please, don't. At least not on social networks like Twitter. Some days ago Eric Schmidt had an interview which is published on <a href="http://www.readwriteweb.com/archives/google_web_in_five_years.php" rel="nofollow">ReadWriteWeb</a> and it's about what web will look like in five years. One of his questions was "We can index real-time info now - but how do we rank it?".

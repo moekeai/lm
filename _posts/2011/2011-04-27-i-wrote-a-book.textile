@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2011-04-27 20:27:12
-edit: 2013-03-19 20:54:08
-title: "I Wrote a Book"
-category: meaningful-labor
-slug: i-wrote-a-book
+layout:     post
+date:       2011-04-27 20:27:12
+edit:       2013-03-19 20:54:08
+title:      "I Wrote a Book"
+category:   meaningful-labor
+slug:       i-wrote-a-book
 ---
 
 Sourcefabric organized a book sprint near Berlin, where an international team wrote a book in just five days. The book is actually a manual for getting started creating templates and using <a href="http://www.sourcefabric.org/en/products/newscoop_overview/" rel="nofollow">Newscoop</a> at its full power. Newscoop is a content management system (CMS) specialized for news sites, magazines and mass media publications. Of course, my theme "The Journalist" is already ported to this new CMS.

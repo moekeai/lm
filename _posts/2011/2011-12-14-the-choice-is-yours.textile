@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2011-12-14 17:05:28
-edit: 2013-03-19 20:55:49
-title: "The Choice Is Yours"
-category: hope-for-the-future
-slug: the-choice-is-yours
+layout:     post
+date:       2011-12-14 17:05:28
+edit:       2013-03-19 20:55:49
+title:      "The Choice Is Yours"
+category:   hope-for-the-future
+slug:       the-choice-is-yours
 ---
 
 Can you choose what to do? I bet you do. We live in a world where the only way forward is to make choices. Letting others make the choices for us is a step backward.

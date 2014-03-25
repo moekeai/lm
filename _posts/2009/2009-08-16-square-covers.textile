@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2009-08-16 17:33:18
-edit: 2013-03-19 20:48:43
-title: "Square Covers"
-category: meaningful-labor
-slug: square-covers
+layout:     post
+date:       2009-08-16 17:33:18
+edit:       2013-03-19 20:48:43
+title:      "Square Covers"
+category:   meaningful-labor
+slug:       square-covers
 ---
 
 Over the last year or so, I started collecting <a href="https://www.dropbox.com/gallery/63362/1/Covers?h=eb60c0" rel="nofollow">album covers</a> and squaring each one for better use in media players like iTunes. The purpose of all this was to build my first web app using Django.

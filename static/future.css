@@ -122,6 +122,8 @@ img {
   margin-left: 140px; }
   .post p, .post ul, .post ol {
     margin: 10px 0; }
+  .post ul {
+    list-style: square; }
   .post ul li, .post ol li {
     line-height: 24px; }
   .post a {
@@ -214,6 +216,10 @@ html {
   .meta .time,
   .meta .topic {
     width: 50%; }
+
+  .post p img {
+    width: 100%;
+    height: auto; }
 
   .grid {
     width: 100%;

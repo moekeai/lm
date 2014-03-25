@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2009-05-20 06:51:02
-edit: 2013-03-19 20:08:24
-title: "Do You Believe in God?"
-category: coffee-in-the-morning
-slug: do-you-believe-in-god
+layout:     post
+date:       2009-05-20 06:51:02
+edit:       2013-03-19 20:08:24
+title:      "Do You Believe in God?"
+category:   coffee-in-the-morning
+slug:       do-you-believe-in-god
 ---
 
 Yesterday evening I went to see <a href="http://www.apple.com/trailers/sony_pictures/angelsdemons/" rel="nofollow">Angels & Demons</a> and I didn't even sleep since then; coming to write this post in the morning. It's 5:44 AM and it's a Wednesday. My thoughts are clear like water, if water can be used as a measure of clarity.

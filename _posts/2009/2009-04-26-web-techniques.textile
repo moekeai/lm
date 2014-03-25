@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2009-04-26 20:42:50
-edit: 2013-03-19 20:47:23
-title: "Web Techniques"
-category: meaningful-labor
-slug: web-techniques
+layout:     post
+date:       2009-04-26 20:42:50
+edit:       2013-03-19 20:47:23
+title:      "Web Techniques"
+category:   meaningful-labor
+slug:       web-techniques
 ---
 
 There are techniques that aren't used, from what I know, by today web designers and I want to address them here if it's possible. I think sometimes we are so eager to come up with something better that we are ending up trying reinventing the wheel when we already have the wheel.

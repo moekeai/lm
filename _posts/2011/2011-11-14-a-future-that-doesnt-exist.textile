@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2011-11-14 15:10:52
-edit: 2013-03-19 20:55:22
-title: "A Future That Doesn't Exist"
-category: hope-for-the-future
-slug: a-future-that-doesnt-exist
+layout:     post
+date:       2011-11-14 15:10:52
+edit:       2013-03-19 20:55:22
+title:      "A Future That Doesn't Exist"
+category:   hope-for-the-future
+slug:       a-future-that-doesnt-exist
 ---
 
 I am starting to see a lot of motivational and futuristic videos lately. They promote technology as the core of advancing society and it almost made me cry to see how untrue this is. Just watch Networked Society's <a href="http://www.youtube.com/watch?v=R7cuatm_bqw" rel="nofollow">On the Brink</a> or Microsoft's <a href="http://www.youtube.com/watch?v=a6cNdhOKwi0" rel="nofollow">Productivity Future Vision</a> then wait a minute and think about. Is this what we really want from our future?

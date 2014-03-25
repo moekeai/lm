@@ -1,10 +1,10 @@
 ---
-layout: post
-date: 2011-05-04 23:33:01
-edit: 2013-03-19 20:54:38
-title: "Berlin Alexanderplatz"
-category: reciprocal-affection
-slug: berlin-alexanderplatz
+layout:     post
+date:       2011-05-04 23:33:01
+edit:       2013-03-19 20:54:38
+title:      "Berlin Alexanderplatz"
+category:   reciprocal-affection
+slug:       berlin-alexanderplatz
 ---
 
 After my trip in Germany was over, I made myself a present: a compact camera, a Nikon P300. Then, by taking a picture in low light of some books, I noticed that in our small library there’s a special book. This book is called <a href="http://en.wikipedia.org/wiki/Berlin_Alexanderplatz" rel="nofollow">Berlin Alexanderplatz</a> and was written by Alfred Döblin. After this coincidence occurred, I decided that Berlin deserves an article in my journal. Why? Because Alexanderplatz is one of the nicest places in Berlin and before I left the city, I went back to Charlie Checkpoint, somewhere near Alexanderplatz to buy some souvenirs.

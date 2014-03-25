@@ -13,13 +13,13 @@ These are a couple of tips and tricks about how to speed up your web development
 
 I highly recommend using Sublime Text because it is not only very fast and has a robust set of features, but because of its plugins support. You have to install <a href="https://sublime.wbond.net/" ref="nofollow">Package Control</a> which is a plugin package manager with an interactive user interface. You also get a repository of plugins with a web based interface. Here are my list of plugins:
 
-1. Tag
-2. Sass
-3. Smart Match
-2. TrailingSpaces
-3. SideBarEnhacements
-4. SublimeOnSaveBuild
-5. Soda Light 3 theme
+* Tag
+* Sass
+* Smart Match
+* TrailingSpaces
+* SideBarEnhacements
+* SublimeOnSaveBuild
+* Soda Light 3 theme
 
 #### Build Sass on file save
 
