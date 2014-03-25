@@ -12,18 +12,22 @@ ErrorDocument 404 /404.html
 #php_value zlib.output_compression_level -1
 
 <IfModule mod_mime.c>
-    AddType video/ogg .ogv
-    AddType video/mp4 .m4v
-    AddType video/webm .webm
-    AddType image/svg+xml  svg svgz
-    AddEncoding gzip       svgz
+    AddType video/ogg   .ogv
+    AddType video/mp4   .m4v
+    AddType video/webm  .webm
+    AddType application/vnd.ms-fontobject    .eot
+    AddType application/x-font-opentype      .otf
+    AddType application/x-font-ttf           .ttf
+    AddType application/font-woff            .woff
+    AddType image/svg+xml   .svg .svgz
+    AddEncoding gzip        .svgz
 </IfModule>
 
 <FilesMatch "\.(html|js|css|xml)$">
 SetOutputFilter DEFLATE
 </FilesMatch>
 
-<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css)$">
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|eot|ttf|woff)$">
 Header set Expires "access plus 1 month"
 Header set Cache-Control "max-age=2419200, public"
 </FilesMatch>
