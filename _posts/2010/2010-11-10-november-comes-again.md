@@ -5,23 +5,24 @@ edit:       2013-03-19 20:52:43
 title:      "November Comes Again"
 category:   les-fleurs-du-mal
 slug:       november-comes-again
+images:     6
 ---
 
-!/images/14.jpg(Leaf)!
+**![Leaf](/images/hd/november-leaf.jpg)**
 
-!/images/15.jpg(Dreamer)!
+**![Dreamer](/images/hd/november-man.jpg)**
 
 Autumn has the power to bring people back together, to bring nature closer to humans hearts. It feels like crying inside and laughing outside &mdash; and in the same time, enjoy everything in between.
 
-!/images/18.jpg(Help Net)!
+**![Help Net](/images/hd/november-help.jpg)**
 
-!/images/19.jpg(Western Union)!
+**![Western Union](/images/hd/november-western.jpg)**
 
 November has definitely something special, that electrical feeling that makes everything stand up by itself, no matter if it's just a sign posted on a wall.
 
-!/images/17.jpg(Piraeus Bank Bucharest)!
+**![Piraeus Bank Bucharest](/images/hd/november-office.jpg)**
 
-!/images/20.jpg(Domino Steps)!
+**![Domino Steps](/images/hd/november-glass.jpg)**
 
 Even buildings don't remain indifferent when this month makes its appearance. It's like watching that drama film that you saw tens of times in the past. But now you're feeling like you are watching the same movie again like it's the first time and you're seeing those peculiar details, here and there, in almost every scene. November is marvelous.
 

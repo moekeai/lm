@@ -105,6 +105,9 @@ img {
     width: 140px;
     color: #bbbbbb;
     float: left; }
+  .archive li span {
+    color: #bbbbbb;
+    padding-left: 8px; }
 .archive.year {
   margin-bottom: 20px; }
 
@@ -135,6 +138,10 @@ img {
     border-bottom: white 2px solid;
     padding-bottom: 20px;
     margin-bottom: 30px; }
+  .post strong > img {
+    margin-left: -140px;
+    width: 128%;
+    height: auto; }
   .post .clear {
     margin-left: -140px; }
     .post .clear img {
@@ -195,7 +202,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   .content {
     width: 85%; }
 
@@ -217,7 +224,9 @@ html {
   .meta .topic {
     width: 50%; }
 
-  .post p img {
+  .post p img,
+  .post strong > img {
+    margin-left: 0;
     width: 100%;
     height: auto; }
 

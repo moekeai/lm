@@ -7,4 +7,14 @@
         {% endif %}
     </b>
     <a href="{{ post.url }}">{{ post.title }}</a>
+    {% if post.images == 1 %}
+        <span>&bull;</span>
+    {% elsif post.images == 2 %}
+        <span>&bull; &bull;</span>
+    {% elsif post.images == 6 %}
+        <span>&bull; &bull; &bull; &bull; &bull; &bull;</span>
+    {% endif %}
+    {% if post.syntax %}
+        <span>‹ ›</span>
+    {% endif %}
 </li>

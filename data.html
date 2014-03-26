@@ -1,0 +1,22 @@
+---
+layout: default
+title: Lucian Marin
+section: data
+permalink: /data/
+---
+
+{% assign tv = site.data.tv | sort: 'year' %}
+
+<h1 class="title">TV</h1>
+
+<ul class="archive">
+    {% for item in tv %}
+        <li>
+            <b>{{ item.year }}</b>
+            <a href="http://www.imdb.com/title/{{ item.imdb }}/">
+                {{ item.name }}
+            </a>
+            <span>{{ item.note }}</span>
+        </li>
+    {% endfor %}
+</ul>

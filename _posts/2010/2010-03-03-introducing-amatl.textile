@@ -12,8 +12,6 @@ In today's world where millions of documents are electronic we need a format tha
 
 ??From the start, I want to say that the idea, concept, examples and eventually writing the specification, are all mine. So, go ahead, read the lines below and blame me for things that aren't the way they should be.??
 
-!/images/9.png(Amatl)!
-
 The name, Amatl, comes from a form of paper that was manufactured in pre-Columbian Mesoamerica. There are <a href="http://en.wikipedia.org/wiki/Amatl" rel="nofollow">more details about it</a> on Wikipedia, of course. My Amatl is based on HTML5 and CSS (2.1 now and 3.0 in the future), two standards that raised the bar with what we can do in terms of layout, embedding fonts, typography, grid and images or blocks positioning. Basically, Amatl is actually a file format that wants to display paper documents inside browsers without any additional tools or software. The format isn't intended at replacing Adobe's PDF format or Microsoft's XPS; it should be used as a complementary format, open and supported by the entire industry. The closest resembles to it can be <a href="http://en.wikipedia.org/wiki/EPUB" rel="nofollow">EPUB format</a> but they are two completely different concepts. 
 
 h4. Compatibility
