@@ -29,6 +29,8 @@ body {
 a {
   color: black;
   text-decoration: none; }
+  a img {
+    border: 0 none; }
 
 ul {
   list-style: none; }
@@ -49,10 +51,27 @@ img {
   height: 32px;
   line-height: 32px; }
   .menu .logo {
+    background-color: #888888;
+    float: left;
     display: block;
     width: 32px;
     height: 32px;
-    float: left; }
+    position: relative; }
+    .menu .logo:before, .menu .logo:after {
+      background-color: white;
+      display: block;
+      position: absolute;
+      content: " "; }
+    .menu .logo:before {
+      width: 4px;
+      height: 16px;
+      top: 8px;
+      left: 14px; }
+    .menu .logo:after {
+      width: 16px;
+      height: 4px;
+      top: 14px;
+      left: 8px; }
   .menu ul {
     float: left; }
     .menu ul li {
@@ -105,20 +124,18 @@ img {
     width: 140px;
     color: #bbbbbb;
     float: left; }
-  .archive li span {
+  .archive li i {
     color: #bbbbbb;
     padding-left: 8px; }
 .archive.year {
   margin-bottom: 20px; }
 
 .handle:after {
-  content: "at";
-  padding: 0 5px;
+  content: " at ";
   color: #bbbbbb; }
 
 .domain:after {
-  content: "dot";
-  padding: 0 5px;
+  content: " dot ";
   color: #bbbbbb; }
 
 .post {

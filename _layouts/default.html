@@ -7,6 +7,7 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/static/future.css" />
     <link rel="apple-touch-icon" href="/static/touch.png" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
     {% if page.permalink == "/peculiar/" %}
         <link rel="stylesheet" href="/static/peculiar.css" />
     {% endif %}
@@ -20,9 +21,7 @@
 
 <div class="menu">
     <div class="content">
-        <a href="/" class="logo">
-            {% include svg-logo.html %}
-        </a>
+        <a href="/" class="logo"></a>
         <ul>
             <li class="archive {% if page.section == None or page.section == "archive" or page.section == "category" %}selected{% endif %}">
                 <a href="/archive/">Archive</a>
