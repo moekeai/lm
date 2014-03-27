@@ -3,7 +3,6 @@ layout:     post
 date:       2012-11-01 17:00:44
 edit:       2013-03-19 20:59:00
 title:      "Design the Flying Car"
-tag:        "Quantum Levitation"
 category:   hope-for-the-future
 slug:       design-the-flying-car
 ---
@@ -16,4 +15,4 @@ Design is pure intellectual joy. It means to create, yet it means to engineer. D
 
 I want in my life time (flying) levitating cars to become a reality. I know it's possible. I know that it's hard to get to even create a demo of a car powered by wireless current levitating on a magnetic field. Imagine clean streets, no air pollution, no sound pollution, no wheels, cars levitating twenty inches above the surface of Earth. Ten feet above, another car levitating and driving at insane speed without causing accidents. Twenty feet above, another car and so on.
 
-The needed technology, <a href="http://www.quantumlevitation.com/" rel="nofollow">Quantum Levitation</a>, to make levitating cars possible is available today, yet no one is focusing on this. All the today corporations are thinking how to make quick money &mdash; advertising, constructions, phones, tablets, you name it. Nobody is thinking about the future because nobody is getting money from the future. The world needs real designers, a modern day Leonardo da Vinci.
+The needed technology, [Quantum Levitation](http://www.quantumlevitation.com/), to make levitating cars possible is available today, yet no one is focusing on this. All the today corporations are thinking how to make quick money &mdash; advertising, constructions, phones, tablets, you name it. Nobody is thinking about the future because nobody is getting money from the future. The world needs real designers, a modern day Leonardo da Vinci.

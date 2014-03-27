@@ -3,7 +3,7 @@ layout:     post
 date:       2013-09-20 20:00
 title:      "Speed Up Your Web Development"
 category:   meaningful-labor
-slug:       speed-up-web-development
+slug:       speed-up-webdev
 syntax:     true
 ---
 

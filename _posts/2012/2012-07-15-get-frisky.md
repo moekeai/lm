@@ -11,4 +11,4 @@ I am a very complicated man, I change my mind every now and then. A few months a
 
 I was pretty sure I can build the entire app myself. I could learn to develop the app with Django and a NoSQL database. I also thought I could deploy the newly created app on an old PC which will run an Ubuntu server. But all this time I got the feeling that this will never happen. Instead, I tried to run a blog where I post interesting black and white photographs just to promote my idea.
 
-This week I changed my mind. I'm thinking the name <a href="http://friskr.com/" class="follow">Friskr</a> works better for a modern magazine. What do you think?
+This week I changed my mind. I’m thinking the name [Friskr](http://friskr.com/) works better for a modern magazine. What do you think?

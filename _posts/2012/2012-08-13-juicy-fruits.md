@@ -4,7 +4,7 @@ date:       2012-08-13 18:37:10
 edit:       2013-03-19 20:57:57
 title:      "Juicy Fruits in the Mix"
 category:   meaningful-labor
-slug:       juicy-fruits-in-the-mix
+slug:       juicy-fruits
 images:     1
 ---
 

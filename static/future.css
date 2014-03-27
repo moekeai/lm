@@ -149,6 +149,11 @@ img {
   .post a {
     color: #888888;
     text-decoration: underline; }
+  .post p:last-child > em:first-child {
+    color: #888888; }
+  .post blockquote {
+    margin-left: 40px;
+    color: #888888; }
   .post pre {
     font-size: 12px; }
   .post.single {

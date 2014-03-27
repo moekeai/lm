@@ -13,4 +13,4 @@ The thing is that we are afraid of making wrong choices. It's not a bad thing to
 
 Be stressed about the right choices you already made and don't be worried that you gonna make some wrong ones too. The right choices are the ones that get you far, bring you satisfactions and you will almost die for to make it through. The wrong choices are there to keep you focused on what is important. I won't tell you what is important because in the end, I'm not you.
 
-??After all that being said, he made the -right- wrong choice to write this entire article on his iPhone using Simplenote app.??
+*After all that being said, he made the (right) wrong choice to write this entire article on his iPhone using Simplenote app.*
