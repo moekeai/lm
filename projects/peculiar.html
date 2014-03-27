@@ -1,18 +1,10 @@
 ---
-layout: default
-title: Lucian Marin
-subtitle: Peculiar
-section: work
-permalink: /peculiar/
+layout:     default
+title:      Lucian Marin
+subtitle:   Peculiar
+section:    work
+permalink:  /peculiar/
 ---
-
-{% comment %}
-    {% jsonball tw from url http://urls.api.twitter.com/1/urls/count.json?url=http://lucianmarin.com/peculiar/ %}
-
-    {% jsonball fb from url http://graph.facebook.com/?id=http://lucianmarin.com/peculiar/ %}
-
-    {% jsonball su from url http://www.stumbleupon.com/services/1.01/badge.getinfo?url=http://lucianmarin.com/peculiar/ %}
-{% endcomment %}
 
 <div class="post single">
     <p>Peculiar is a free icon package made only in CSS. It was created for sites and web applications that depend on fewer HTTP requests as possible or don't need to use any image at all. The package contains 45 pictograms that are available in 16&sup2; pixels size. More icons are about to come in the future.</p>
@@ -27,10 +19,6 @@ permalink: /peculiar/
 
     <p>Peculiar is <a href="/images/peculiar-retina.png" rel="nofollow">Retina-ready</a> by design, meaning that the same code is used for both regular and Retina displays. If you want to develop web apps for iPhone 4S and iPad 3, this icon set will be your friend.</p>
 
-    {% comment %}
-        {{ tw.count }} {{ fb.shares }} {{ su.result.views }}
-    {% endcomment %}
-
     <h4>Supporting this project</h4>
 
     <p>Peculiar has been feature on <a href="/archive/an-iconic-book.html" class="follow">The Icon Handbook</a> by John Hicks.</p>
@@ -39,6 +27,16 @@ permalink: /peculiar/
 
     <p>Donations are greatly appreciated and it will guaratee that this project will stay forever free and open. You can use <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QLLL49GNTUVME" rel="nofollow">PayPal</a> to show your support.</p>
 </div>
+
+{% comment %}
+    {% jsonball tw from url http://urls.api.twitter.com/1/urls/count.json?url=http://lucianmarin.com/peculiar/ %}
+
+    {% jsonball fb from url http://graph.facebook.com/?id=http://lucianmarin.com/peculiar/ %}
+
+    {% jsonball su from url http://www.stumbleupon.com/services/1.01/badge.getinfo?url=http://lucianmarin.com/peculiar/ %}
+
+    {{ tw.count }} {{ fb.shares }} {{ su.result.views }}
+{% endcomment %}
 
 <ul class="archive">
     <li>

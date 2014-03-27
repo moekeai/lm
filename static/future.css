@@ -183,17 +183,14 @@ img {
   color: #888888;
   font-size: 14px;
   margin-bottom: 20px; }
-  .meta .icon {
-    width: 140px;
-    height: 40px;
-    margin-top: 0;
-    float: left; }
   .meta .time,
   .meta .topic {
+    width: 250px;
     height: 40px;
     float: left;
-    width: 33%;
     text-transform: lowercase; }
+  .meta .time {
+    margin-left: 140px; }
   .meta a {
     color: #888888; }
   .meta h4 {
@@ -239,7 +236,8 @@ html {
   .quote .text,
   .post .clear,
   .peculiar,
-  .footer p {
+  .footer p,
+  .meta .time {
     margin-left: 0; }
 
   .meta .time,
