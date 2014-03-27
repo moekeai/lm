@@ -14,12 +14,12 @@ For example Kevin Rose thinks that getting [more followers](http://www.techcrunc
 The question that I want to address to Digg, Google or any other company: how do we measure the relevance of a news story in time? And yes, it sounds like: how do we predict the future with today available tools and technology?
 
 > "There's no present. There's only the immediate future and the recent past."
-> --- George Carlin
+> — George Carlin
 
 Present is a complex state of mind. You can't separate it in two, three or one hundred, because it won't be right.
 
 > "Content precedes design. Design in the absence of content is not design, it's decoration."
-> --- Jeffrey Zeldman
+> — Jeffrey Zeldman
 
 Design is also a structure or a form. And thinking this way around, it precedes content. It is actually the base that the content stands on; so without it, it won't be content.
 

@@ -14,6 +14,6 @@ But since always dreams don't manage to become reality, I decided to make [this 
 
 **![Square Covers](/images/hd/covers.jpg)**
 
-My favourite covers, and albums, are Sneaky Sound System's—an Australian & electronic band—because of clever use of patterns and typography.
+My favourite covers, and albums, are Sneaky Sound System's — an Australian & electronic band — because of clever use of patterns and typography.
 
 *After all that being said, he will keep on listening "Dirge" by (life) Death in Vegas.*

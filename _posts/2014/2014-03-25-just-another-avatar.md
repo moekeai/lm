@@ -17,4 +17,4 @@ The funny thing is when people get hurt. It feels not funny at all. Probably is 
 
 Life happens while we are sitting in front of a desk 24/7. We're living in the modern world. Nobody is a slave on a rich man plantation now, they are slaves to the big corporations. Corporate people that are milking other corporate people's shaking hands.
 
-Talking about hands, even sitting in front of a desk all day long can cause lots of health problems &mdash; from neck and back pain to [ulnar nerve](http://en.wikipedia.org/wiki/Ulnar_nerve_entrapment) becoming trapped or pinched.
+Talking about hands, even sitting in front of a desk all day long can cause lots of health problems — from neck and back pain to [ulnar nerve](http://en.wikipedia.org/wiki/Ulnar_nerve_entrapment) becoming trapped or pinched.
