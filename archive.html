@@ -5,46 +5,10 @@ permalink:  /archive/
 section:    archive
 ---
 
-{% comment %}
-<div class="entry archive">
-    <ol>
-        <li>
-            <a href="http://markdawn.com/post/51/">
-                Insanely Simple <i><b>december</b> 2013</i>
-            </a>
-        </li>
-        <li>
-            <a href="http://markdawn.com/post/36/">
-                Hesitation Marks The Day <i><b>november</b> 2013</i>
-            </a>
-        </li>
-        <li>
-            <a href="http://markdawn.com/post/13/">
-                Empowering Free Spirits <i><b>octomber</b> 2013</i>
-            </a>
-        </li>
-        <li>
-            <a href="http://markdawn.com/post/3/">
-                Speed Up Your Web Development <i><b>september</b> 2013</i>
-            </a>
-        </li>
-        <li>
-            <a href="http://markdawn.com/post/1/">
-                Why did I create Markdawn? <i><b>september</b> 2013</i>
-            </a>
-        </li>
-    </ol>
-</div>
-{% endcomment %}
-
-
-{% comment %}
-    <ol>
-        {% for post in site.posts %}
-            {% include item.html %}
-        {% endfor %}
-    </ol>
-{% endcomment %}
+<ul class="selector">
+    <li class="selected"><a href="/archive/">Year</a></li>
+    <li><a href="/archive/topics.html">Topic</a></li>
+</ul>
 
 {% for post in site.posts %}
     {% capture month %}{{ post.date | date: '%Y' }}{% endcapture %}

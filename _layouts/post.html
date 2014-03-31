@@ -7,11 +7,19 @@ layout: default
 <div class="meta">
     <div class="time">
         <h4>Published</h4>
-        <p><a href="{{ page.url }}">{{ page.date | date: "%e %B %Y" }}</a></p>
+        <p>
+            <a href="/archive/">
+                {{ page.date | date: "%e %B %Y" }}
+            </a>
+        </p>
     </div>
     <div class="topic">
         <h4>Topic</h4>
-        <p><a href="/archive/topics.html">{{ page.category | replace: '-', ' ' }}</a></p>
+        <p>
+            <a href="/archive/topics.html">
+                {{ page.category | replace: '-', ' ' }}
+            </a>
+        </p>
     </div>
 </div>
 

@@ -5,6 +5,8 @@ url: http://lucianmarin.com
 pygments: true
 permalink: /archive/:title.html
 
+markdown: redcarpet
+
 relative_permalinks: false
 
 exclude: [readme.md]

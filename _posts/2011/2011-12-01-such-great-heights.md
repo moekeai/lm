@@ -3,7 +3,7 @@ layout:     post
 date:       2011-12-01 19:01:55
 edit:       2013-03-19 20:55:35
 title:      "Such Great Heights"
-category:   les-fleurs-du-mal
+category:   exhibition-of-light
 slug:       such-great-heights
 images:     1
 ---

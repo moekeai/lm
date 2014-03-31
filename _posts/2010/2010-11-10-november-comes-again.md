@@ -3,7 +3,7 @@ layout:     post
 date:       2010-11-10 12:56:30
 edit:       2013-03-19 20:52:43
 title:      "November Comes Again"
-category:   les-fleurs-du-mal
+category:   exhibition-of-light
 slug:       november-comes-again
 images:     6
 ---

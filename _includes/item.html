@@ -1,7 +1,7 @@
 <li>
     <b>
-        {% if page.section == "topics" %}
-            {{ post.date | date: "%Y" }}
+        {% if page.permalink == "/archive/topics.html" %}
+            {{ post.date | date: "%Y %B" }}
         {% else %}
             {{ post.date | date: "%B %e" }}
         {% endif %}

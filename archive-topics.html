@@ -2,8 +2,13 @@
 layout:     default
 title:      Lucian Marin
 permalink:  /archive/topics.html
-section:    topics
+section:    archive
 ---
+
+<ul class="selector">
+    <li><a href="/archive/">Year</a></li>
+    <li class="selected"><a href="/archive/topics.html">Topic</a></li>
+</ul>
 
 <h1 class="title">Coffee in the Morning</h1>
 
@@ -13,10 +18,10 @@ section:    topics
     {% endfor %}
 </ul>
 
-<h1 class="title">Les Fleurs du mal</h1>
+<h1 class="title">Exhibition of Light</h1>
 
 <ul class="archive year">
-    {% for post in site.categories.les-fleurs-du-mal %}
+    {% for post in site.categories.exhibition-of-light %}
         {% include item.html %}
     {% endfor %}
 </ul>

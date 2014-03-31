@@ -144,6 +144,21 @@ img
     &.year
         margin-bottom: 20px
 
+.selector
+    background-color: $white
+    font-size: 12px
+    text-transform: uppercase
+    float: right
+    margin-top: 10px
+    li
+        display: inline
+        a
+            padding: 3px 10px
+            color: $grey
+        &.selected a
+            background-color: $silver
+            color: $white
+
 .handle:after
     content: " at "
     color: $silver
@@ -179,11 +194,6 @@ img
         margin-left: -140px
         width: 128%
         height: auto
-    .clear
-        margin-left: -140px
-        img
-            width: 100%
-            height: auto
     .caption
         margin: 20px 0
         &:last-child
@@ -213,6 +223,24 @@ img
         text-transform: uppercase
         font-size: 12px
         color: $silver
+
+dl
+    margin-left: 140px
+    dt
+        font-weight: bold
+        margin-top: 40px
+        &:first-child
+            margin-top: 0
+        a
+            border-bottom: $silver 1px solid
+            transition: border-color $d
+            &:hover
+                border-bottom: $black 1px solid
+    dd
+        margin-top: 10px
+        blockquote
+            margin-left: 40px
+            color: $grey
 
 .grid
     width: 720px
@@ -247,10 +275,10 @@ html
         display: none
     .post,
     .quote .text,
-    .post .clear,
     .peculiar,
     .footer p,
-    .meta .time
+    .meta .time,
+    dl
         margin-left: 0
     .meta .time,
     .meta .topic

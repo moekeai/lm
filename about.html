@@ -7,9 +7,6 @@ permalink:  /about/
 ---
 
 <div class="meta">
-    <div class="icon">
-        &nbsp;
-    </div>
     <div class="time">
         <h4>Site updated</h4>
         <p>{{ site.time | date: "%e %B %Y" }}</p>
@@ -55,8 +52,4 @@ permalink:  /about/
     </li>
 </ul>
 
-{% comment %}
-    <!--
-    <p>We can work together on all of these and sometimes I'm curious to learn more or simply <em>do more</em>.</p>
-    -->
-{% endcomment %}
+<!-- build on {{ site.time | date: "%A, %B %-d, %Y" }} -->

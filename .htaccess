@@ -1,7 +1,6 @@
 #DirectoryIndex index.php index.html
 #Options +FollowSymLinks
 #Options -Indexes
-#ErrorDocument 403 default
 
 ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
@@ -23,7 +22,7 @@ ErrorDocument 404 /404.html
     AddEncoding gzip        .svgz
 </IfModule>
 
-<FilesMatch "\.(html|js|css|xml)$">
+<FilesMatch "\.(html|js|css|xml|svg)$">
 SetOutputFilter DEFLATE
 </FilesMatch>
 
@@ -36,15 +35,14 @@ Header set Cache-Control "max-age=2419200, public"
 Header set Cache-Control "max-age=360, private, proxy-revalidate"
 </FilesMatch>
 
+redirect 301 /test/index.php /journalist/
 redirect 301 /page/themes /journalist
 redirect 301 /page/emoticons /work
 redirect 301 /page/desktops /photo
 redirect 301 /page/work /work
 redirect 301 /page/about /about
-redirect 301 /grid /gallery
 
 redirect 301 /rss/ /rss.xml
-redirect 301 /write http://markdawn.com
 
 redirect 301 /anatomie/pagina/organism/ http://omenesc.ro/
 

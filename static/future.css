@@ -130,6 +130,21 @@ img {
 .archive.year {
   margin-bottom: 20px; }
 
+.selector {
+  background-color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 10px; }
+  .selector li {
+    display: inline; }
+    .selector li a {
+      padding: 3px 10px;
+      color: #888888; }
+    .selector li.selected a {
+      background-color: #bbbbbb;
+      color: white; }
+
 .handle:after {
   content: " at ";
   color: #bbbbbb; }
@@ -164,11 +179,6 @@ img {
     margin-left: -140px;
     width: 128%;
     height: auto; }
-  .post .clear {
-    margin-left: -140px; }
-    .post .clear img {
-      width: 100%;
-      height: auto; }
   .post .caption {
     margin: 20px 0; }
     .post .caption:last-child {
@@ -198,6 +208,24 @@ img {
     text-transform: uppercase;
     font-size: 12px;
     color: #bbbbbb; }
+
+dl {
+  margin-left: 140px; }
+  dl dt {
+    font-weight: bold;
+    margin-top: 40px; }
+    dl dt:first-child {
+      margin-top: 0; }
+    dl dt a {
+      border-bottom: #bbbbbb 1px solid;
+      transition: border-color 0.2s; }
+      dl dt a:hover {
+        border-bottom: black 1px solid; }
+  dl dd {
+    margin-top: 10px; }
+    dl dd blockquote {
+      margin-left: 40px;
+      color: #888888; }
 
 .grid {
   width: 720px;
@@ -234,10 +262,10 @@ html {
 
   .post,
   .quote .text,
-  .post .clear,
   .peculiar,
   .footer p,
-  .meta .time {
+  .meta .time,
+  dl {
     margin-left: 0; }
 
   .meta .time,
