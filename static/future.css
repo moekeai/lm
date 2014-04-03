@@ -155,12 +155,16 @@ img {
 
 .post {
   margin-left: 140px; }
-  .post p, .post ul, .post ol {
+  .post h4 {
+    margin-top: 20px; }
+  .post p, .post ul, .post ol, .post .highlight {
     margin: 10px 0; }
   .post ul {
     list-style: square; }
-  .post ul li, .post ol li {
-    line-height: 24px; }
+  .post ul, .post ol {
+    margin-left: 40px; }
+    .post ul li, .post ol li {
+      line-height: 24px; }
   .post a {
     color: #888888;
     text-decoration: underline; }
@@ -170,7 +174,12 @@ img {
     margin-left: 40px;
     color: #888888; }
   .post pre {
-    font-size: 12px; }
+    white-space: pre-wrap; }
+  .post code {
+    font-family: "Share Tech Mono", monospace;
+    font-size: 13px;
+    line-height: 18px;
+    color: #888888; }
   .post.single {
     border-bottom: white 2px solid;
     padding-bottom: 20px;
@@ -241,9 +250,14 @@ dl {
 
 .footer {
   padding: 20px 0;
-  color: #bbbbbb; }
+  color: #bbbbbb;
+  position: relative; }
   .footer p {
     margin-left: 140px; }
+  .footer img {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
 
 html {
   -webkit-text-size-adjust: 100%;

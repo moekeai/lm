@@ -19,18 +19,22 @@ float: left;
 }
 
 .icon {
-position: relative;
-width:16px;
-height:16px;
-margin: 16px;
-}
-.icon .name {
-width: 32px;
-position: absolute;
-text-align: center;
-top: 18px;
-left: -8px;
-}
+    position: relative;
+    width:16px;
+    height:16px;
+    margin: 16px;
+    }
+    .icon .name {
+        width: 32px;
+        position: absolute;
+        text-align: center;
+        top: 18px;
+        left: -8px;
+        }
+    .icon .name i {
+        font-style: normal;
+        color: #f00;
+        }
 
 .icon-minus-circle {
 background-color: #000;

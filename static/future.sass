@@ -169,11 +169,14 @@ img
 
 .post
     margin-left: 140px
-    p, ul, ol
+    h4
+        margin-top: 20px
+    p, ul, ol, .highlight
         margin: 10px 0
     ul
         list-style: square
     ul, ol
+        margin-left: 40px
         li
             line-height: 24px
     a
@@ -185,7 +188,12 @@ img
         margin-left: 40px
         color: $grey
     pre
-        font-size: 12px
+        white-space: pre-wrap
+    code
+        font-family: "Share Tech Mono", monospace
+        font-size: 13px
+        line-height: 18px
+        color: $grey
     &.single
         border-bottom: $white 2px solid
         padding-bottom: 20px
@@ -257,8 +265,13 @@ dl
 .footer
     padding: 20px 0
     color: $silver
+    position: relative
     p
         margin-left: 140px
+    img
+        position: absolute
+        right: 0
+        bottom: 0
 
 html
     -webkit-text-size-adjust: 100%
