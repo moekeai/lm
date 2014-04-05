@@ -12,7 +12,14 @@
     <link rel="stylesheet" type="text/css" href="/static/peculiar.css" />
 {% endif %}
 {% if page.syntax == true %}
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Share+Tech+Mono" />
+    <style type="text/css">
+        @font-face {
+            font-family: "Share Tech Mono";
+            src: url("/static/sharetech/mono.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+            }
+    </style>
 {% endif %}
 {% include analytics.html %}
 </head>

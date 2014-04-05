@@ -1,34 +1,20 @@
-#DirectoryIndex index.php index.html
-#Options +FollowSymLinks
-#Options -Indexes
+Options All -Indexes
 
 ErrorDocument 403 /403.html
 ErrorDocument 404 /404.html
 
-#php_value register_globals 0
-#php_flag zlib.output_compression On
-#php_value zlib.output_compression 16386
-#php_value zlib.output_compression_level -1
-
 <IfModule mod_mime.c>
-    AddType video/ogg   .ogv
-    AddType video/mp4   .m4v
-    AddType video/webm  .webm
-    AddType application/vnd.ms-fontobject    .eot
-    AddType application/x-font-opentype      .otf
-    AddType application/x-font-ttf           .ttf
-    AddType application/font-woff            .woff
-    AddType image/svg+xml   .svg .svgz
-    AddEncoding gzip        .svgz
+    AddType application/font-woff .woff
+    AddType image/svg+xml .svg
 </IfModule>
 
 <FilesMatch "\.(html|js|css|xml|svg)$">
 SetOutputFilter DEFLATE
 </FilesMatch>
 
-<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|eot|ttf|woff)$">
+<FilesMatch "\.(ico|jpg|jpeg|png|gif|js|css|svg|woff)$">
 Header set Expires "access plus 1 month"
-Header set Cache-Control "max-age=2419200, public"
+Header set Cache-Control "max-age=2592000, public"
 </FilesMatch>
 
 <FilesMatch "\.(html|htm|xml)$">
@@ -41,12 +27,8 @@ redirect 301 /page/emoticons /work
 redirect 301 /page/desktops /photo
 redirect 301 /page/work /work
 redirect 301 /page/about /about
-
 redirect 301 /rss/ /rss.xml
-
 redirect 301 /anatomie/pagina/organism/ http://omenesc.ro/
 
 RedirectMatch 301 /anatomie/pagina/(.*)/ http://omenesc.ro/$1.html
 RedirectMatch 301 /anatomie/(.*) http://omenesc.ro/$1
-
-Options All -Indexes

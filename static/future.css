@@ -1,19 +1,16 @@
 @font-face {
   font-family: "Vegur";
-  src: url("font/vegur-bold.eot");
-  src: url("font/vegur-bold.eot?#iefix") format("embedded-opentype"), url("font/vegur-bold.woff") format("woff"), url("font/vegur-bold.ttf") format("truetype");
+  src: url("vegur/bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: "Vegur";
-  src: url("font/vegur-light.eot");
-  src: url("font/vegur-light.eot?#iefix") format("embedded-opentype"), url("font/vegur-light.woff") format("woff"), url("font/vegur-light.ttf") format("truetype");
+  src: url("vegur/light.woff") format("woff");
   font-weight: 200;
   font-style: normal; }
 @font-face {
   font-family: "Vegur";
-  src: url("font/vegur-regular.eot");
-  src: url("font/vegur-regular.eot?#iefix") format("embedded-opentype"), url("font/vegur-regular.woff") format("woff"), url("font/vegur-regular.ttf") format("truetype");
+  src: url("vegur/regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -46,41 +43,42 @@ img {
   width: 640px;
   margin: 0 auto; }
 
+.logo {
+  background-color: #888888;
+  float: left;
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: relative; }
+  .logo:before, .logo:after {
+    background-color: white;
+    display: block;
+    position: absolute;
+    content: " "; }
+  .logo:before {
+    width: 4px;
+    height: 16px;
+    top: 8px;
+    left: 14px; }
+  .logo:after {
+    width: 16px;
+    height: 4px;
+    top: 14px;
+    left: 8px; }
+
 .menu {
   padding: 24px 0;
   height: 32px;
   line-height: 32px; }
-  .menu .logo {
-    background-color: #888888;
-    float: left;
+  .menu ul, .menu li {
     display: block;
-    width: 32px;
-    height: 32px;
-    position: relative; }
-    .menu .logo:before, .menu .logo:after {
-      background-color: white;
-      display: block;
-      position: absolute;
-      content: " "; }
-    .menu .logo:before {
-      width: 4px;
-      height: 16px;
-      top: 8px;
-      left: 14px; }
-    .menu .logo:after {
-      width: 16px;
-      height: 4px;
-      top: 14px;
-      left: 8px; }
-  .menu ul {
     float: left; }
-    .menu ul li {
-      margin-left: 16px;
-      display: inline; }
-      .menu ul li a {
-        color: #444444; }
-      .menu ul li.selected a {
-        color: #bbbbbb; }
+  .menu li {
+    margin-left: 16px; }
+    .menu li a {
+      color: #444444; }
+    .menu li.selected a {
+      color: #bbbbbb; }
 
 .title {
   font-size: 30px;
@@ -94,12 +92,11 @@ img {
   margin-top: -60px;
   float: left; }
 
-.design {
+.design, .build {
   margin-bottom: 20px; }
-
-.design .icon, .build .icon {
-  float: left;
-  margin-top: 16px; }
+  .design .icon, .build .icon {
+    float: left;
+    margin-top: 16px; }
 
 .quote {
   margin: 40px 0; }
