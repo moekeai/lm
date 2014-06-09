@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>{{ page.title }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimal-ui" />
-    <meta name="description" content="Pro designer with a passion for perfection and deep aesthetics." />
-    <title>{{ page.title }}</title>
+{% if page.section == "index" %}
+    <meta name="description" content="Designer passionate about front-end engineering, usability, web and software development. Living and working as freelancer in Bucharest, Romania." />
+    <meta name="msvalidate.01" content="1BA7BB6D6BFBDDC7EC2C245C606416EE" />
+{% endif %}
     <link rel="stylesheet" type="text/css" href="/static/future.css" />
     <link rel="apple-touch-icon" type="image/png" href="/static/touch.png" />
-    <link rel="alternate" type="application/rss+xml" title="Lucian Marin - RSS Feed" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Lucian Marin - RSS Feed" href="http://feeds.feedburner.com/lucianmarin" />
 {% if page.permalink == "/peculiar/" %}
     <link rel="stylesheet" type="text/css" href="/static/peculiar.css" />
-{% endif %}
-{% if page.syntax == true %}
-    <style type="text/css">
-        @font-face {
-            font-family: "Share Tech Mono";
-            src: url("/static/sharetech/mono.woff") format("woff");
-            font-weight: normal;
-            font-style: normal;
-            }
-    </style>
 {% endif %}
 {% include analytics.html %}
 </head>
@@ -30,10 +23,10 @@
     <div class="content">
         <a href="/" class="logo"></a>
         <ul>
-            <li class="archive {% if page.section == None or page.section == "archive" or page.section == "category" %}selected{% endif %}">
+            <li class="archive {% if page.section == None or page.section == "archive" %}selected{% endif %}">
                 <a href="/archive/">Archive</a>
             </li>
-            <li class="work {% if page.section == "work" or page.section == "projects" %}selected{% endif %}">
+            <li class="work {% if page.section == "work" %}selected{% endif %}">
                 <a href="/work/">Work</a>
             </li>
             <li class="gallery {% if page.section == "gallery" %}selected{% endif %}">
@@ -57,14 +50,14 @@
 
 <div class="footer">
     <div class="content">
-        {% if page.section == "journal" %}
+        {% if page.section == "index" %}
             <p class="sponsor">Sponsored by <a href="http://www.kledinginsider.nl/">Kleding</a></p>
-        {% elsif page.section == "projects" %}
-            <p class="sponsor">Sponsored by <a href="http://www.qdp.com/">QDP</a></p>
         {% elsif page.section == "gallery" %}
             <p class="sponsor">Sponsored by <a href="http://www.shops2b.co.uk/">Shops2b</a></p>
+        {% elsif page.section == "work" %}
+            <p class="sponsor">Follow me on <a href="http://sublevel.net/lucian/">Sublevel</a></p>
         {% elsif page.section != "error" %}
-            <p>Subscribe to <a href="/rss.xml">RSS feed</a></p>
+            <p>Subscribe to <a href="http://feeds.feedburner.com/lucianmarin">RSS feed</a></p>
         {% endif %}
     </div>
 </div>

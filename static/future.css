@@ -1,5 +1,10 @@
 @font-face {
   font-family: "Vegur";
+  src: url("vegur/regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Vegur";
   src: url("vegur/bold.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
@@ -9,8 +14,8 @@
   font-weight: 200;
   font-style: normal; }
 @font-face {
-  font-family: "Vegur";
-  src: url("vegur/regular.woff") format("woff");
+  font-family: "Share Tech Mono";
+  src: url("sharetech/mono.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -18,10 +23,7 @@
   padding: 0; }
 
 body {
-  font-family: "Vegur", Helvetica, Arial, sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  text-rendering: optimizeLegibility; }
+  font: 15px/20px "Vegur", sans-serif; }
 
 a {
   color: black;
@@ -32,9 +34,10 @@ a {
 ul {
   list-style: none; }
 
-b, i {
+b, i, u {
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+  text-decoration: none; }
 
 img {
   display: block; }
@@ -70,12 +73,15 @@ img {
   padding: 24px 0;
   height: 32px;
   line-height: 32px; }
-  .menu ul, .menu li {
+  .menu ul, .menu li, .menu a {
     display: block;
     float: left; }
   .menu li {
-    margin-left: 16px; }
+    margin-left: 8px; }
+    .menu li:first-child {
+      margin-left: 12px; }
     .menu li a {
+      padding: 0 4px;
       color: #444444; }
     .menu li.selected a {
       color: #bbbbbb; }
@@ -97,6 +103,11 @@ img {
   .design .icon, .build .icon {
     float: left;
     margin-top: 16px; }
+
+.frame {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: white 2px solid; }
 
 .quote {
   margin: 40px 0; }
@@ -124,23 +135,60 @@ img {
   .archive li i {
     color: #bbbbbb;
     padding-left: 8px; }
+  .archive li u {
+    color: #bbbbbb;
+    padding: 0 4px; }
 .archive.year {
   margin-bottom: 20px; }
+.archive.space {
+  margin-bottom: 30px; }
 
-.selector {
-  background-color: white;
-  font-size: 12px;
+.share {
+  padding-top: 5px;
+  height: 20px;
+  overflow: hidden; }
+
+.buttons {
+  height: 50px;
+  margin-left: 140px; }
+  .buttons li {
+    display: block;
+    float: left;
+    margin-right: 20px; }
+  .buttons a {
+    display: block;
+    line-height: 30px;
+    float: left;
+    color: #888888;
+    padding: 0 10px;
+    border: #bbbbbb 1px solid;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: border-color 0.2s, color 0.2s; }
+    .buttons a:hover {
+      border-color: #888888;
+      color: black; }
+
+.pick {
+  font: 12px/14px "Share Tech Mono", monospace;
   text-transform: uppercase;
   float: right;
-  margin-top: 10px; }
-  .selector li {
-    display: inline; }
-    .selector li a {
-      padding: 3px 10px;
-      color: #888888; }
-    .selector li.selected a {
-      background-color: #bbbbbb;
-      color: white; }
+  margin-top: -20px;
+  width: 60px; }
+  .pick li {
+    display: block;
+    float: left;
+    width: 30px;
+    text-align: center; }
+    .pick li a {
+      display: block;
+      width: 30px;
+      padding: 9px 0;
+      color: #888888;
+      transition: background-color 0.2s;
+      background-color: whitesmoke; }
+    .pick li.selected a {
+      background-color: white; }
 
 .handle:after {
   content: " at ";
@@ -240,6 +288,19 @@ dl {
   margin-bottom: 20px; }
   .grid img {
     float: left; }
+  .grid .classic {
+    display: none; }
+
+.image {
+  float: left;
+  width: 240px;
+  height: 180px;
+  background: center center;
+  background-size: 240px 180px;
+  -webkit-transition: background-size 0.2s;
+  transition: background-size 0.2s; }
+  .image:hover {
+    background-size: 280px 210px; }
 
 .peculiar {
   margin-left: -140px;
@@ -276,7 +337,8 @@ html {
   .peculiar,
   .footer p,
   .meta .time,
-  dl {
+  dl,
+  .buttons {
     margin-left: 0; }
 
   .meta .time,
@@ -294,4 +356,8 @@ html {
     margin-left: 0; }
     .grid img {
       width: 33.33%;
-      height: auto; } }
+      height: auto; }
+    .grid .classic {
+      display: block; }
+    .grid .future {
+      display: none; } }

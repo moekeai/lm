@@ -58,5 +58,3 @@ Fish is an interactive shell which can be run on top of bash to preserve your ba
 #### FTP from command line with LFTP
 
 If you want rapid deployment over FTP, a recommend install [lftp](http://lftp.yar.ru) command line tool. It has a mirror function that works pretty well for Jekyll powered sites and blogs. I use it every time I want to push the local changes of this blog to the live site.
-
-

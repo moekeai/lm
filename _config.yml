@@ -2,7 +2,7 @@ name: Lucian Marin
 description: Designer
 url: http://lucianmarin.com
 
-pygments: false
+#pygments: false
 permalink: /archive/:title.html
 
 markdown: redcarpet

@@ -21,14 +21,40 @@ Header set Cache-Control "max-age=2592000, public"
 Header set Cache-Control "max-age=360, private, proxy-revalidate"
 </FilesMatch>
 
-redirect 301 /test/index.php /journalist/
+redirect 301 /amatl /work
+redirect 301 /bluvision /spaceman
+redirect 301 /downloads /work
+redirect 301 /projects /work
+redirect 301 /gallery /photo
+redirect 301 /page /archive
+redirect 301 /bucharest /about
+redirect 301 /test/index.php /spaceman/
+redirect 301 /test /spaceman
 redirect 301 /page/themes /journalist
+redirect 301 /page/changelogs /journalist
 redirect 301 /page/emoticons /work
 redirect 301 /page/desktops /photo
+redirect 301 /page/photography /photo
 redirect 301 /page/work /work
 redirect 301 /page/about /about
+redirect 301 /page/contact /about
 redirect 301 /rss/ /rss.xml
+redirect 301 /start/ http://sublevel.net/
+redirect 301 /wish/ http://sublevel.net/
+redirect 301 /dash/ http://sublevel.net/
+redirect 301 /links/ http://sublevel.net/
+redirect 301 /write/ http://sublevel.net/
 redirect 301 /anatomie/pagina/organism/ http://omenesc.ro/
 
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !\.[^./]+$
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
+
 RedirectMatch 301 /anatomie/pagina/(.*)/ http://omenesc.ro/$1.html
-RedirectMatch 301 /anatomie/(.*) http://omenesc.ro/$1
+RedirectMatch 301 /anatomie/(.*)$ http://omenesc.ro/$1
+RedirectMatch 301 /posts/(.*)$ /archive/$1
+RedirectMatch 301 /article/(.*)$ /archive/$1
+RedirectMatch 301 /archive/(.*)/ /archive/$1.html
+

@@ -17,4 +17,3 @@ World would be a better place if everyone will just care. Take the blame, take t
 A few guys with PhDs in various fields will contradict me saying that I'm wrong because they're the smart-asses who can see the truth. Who the fuck am I? Just another web designer. Probably not even a good designer, just web «something».
 
 *After all that being said, he agrees that some people are heartbroken, others are just broken.*
-

@@ -1,18 +1,24 @@
 @font-face
-    font-family: 'Vegur'
-    src: url('vegur/bold.woff') format('woff')
+    font-family: "Vegur"
+    src: url("vegur/regular.woff") format("woff")
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: "Vegur"
+    src: url("vegur/bold.woff") format("woff")
     font-weight: bold
     font-style: normal
 
 @font-face
-    font-family: 'Vegur'
-    src: url('vegur/light.woff') format('woff')
+    font-family: "Vegur"
+    src: url("vegur/light.woff") format("woff")
     font-weight: 200
     font-style: normal
 
 @font-face
-    font-family: 'Vegur'
-    src: url('vegur/regular.woff') format('woff')
+    font-family: "Share Tech Mono"
+    src: url("sharetech/mono.woff") format("woff")
     font-weight: normal
     font-style: normal
 
@@ -30,10 +36,7 @@ $d: 0.2s
     padding: 0
 
 body
-    font-family: "Vegur", Helvetica, Arial, sans-serif
-    font-size: 15px
-    line-height: 20px
-    text-rendering: optimizeLegibility
+    font: 15px/20px "Vegur", sans-serif
 
 a
     color: $black
@@ -44,9 +47,10 @@ a
 ul
     list-style: none
 
-b, i
+b, i, u
     font-style: normal
     font-weight: normal
+    text-decoration: none
 
 img
     display: block
@@ -66,7 +70,7 @@ img
         background-color: $white
         display: block
         position: absolute
-        content: " "        
+        content: " "
     &:before
         width: 4px
         height: 16px
@@ -82,12 +86,15 @@ img
     padding: 24px 0
     height: 32px
     line-height: 32px
-    ul, li
+    ul, li, a
         display: block
         float: left
     li
-        margin-left: 16px
+        margin-left: 8px
+        &:first-child
+            margin-left: 12px
         a
+            padding: 0 4px
             color: $metal
         &.selected a
             color: $silver
@@ -109,6 +116,11 @@ img
     .icon
         float: left
         margin-top: 16px
+
+.frame
+    margin-top: 20px
+    padding-top: 20px
+    border-top: $white 2px solid
 
 .quote
     margin: 40px 0
@@ -137,23 +149,60 @@ img
         i
             color: $silver
             padding-left: 8px
+        u
+            color: $silver
+            padding: 0 4px
     &.year
         margin-bottom: 20px
+    &.space
+        margin-bottom: 30px
 
-.selector
-    background-color: $white
-    font-size: 12px
+.share
+    padding-top: 5px
+    height: 20px
+    overflow: hidden
+
+.buttons
+    height: 50px
+    margin-left: 140px
+    li
+        display: block
+        float: left
+        margin-right: 20px
+    a
+        display: block
+        line-height: 30px
+        float: left
+        color: $grey
+        padding: 0 10px
+        border: $silver 1px solid
+        text-decoration: none
+        border-radius: 2px
+        transition: border-color $d, color $d
+        &:hover
+            border-color: $grey
+            color: $black
+
+.pick
+    font: 12px/14px "Share Tech Mono", monospace
     text-transform: uppercase
     float: right
-    margin-top: 10px
+    margin-top: -20px
+    width: 60px
     li
-        display: inline
+        display: block
+        float: left
+        width: 30px
+        text-align: center
         a
-            padding: 3px 10px
+            display: block
+            width: 30px
+            padding: 9px 0
             color: $grey
+            transition: background-color 0.2s
+            background-color: whitesmoke
         &.selected a
-            background-color: $silver
-            color: $white
+            background-color: $white
 
 .handle:after
     content: " at "
@@ -253,6 +302,19 @@ dl
     margin-bottom: 20px
     img
         float: left
+    .classic
+        display: none
+
+.image
+    float: left
+    width: 240px
+    height: 180px
+    background: center center
+    background-size: 240px 180px
+    -webkit-transition: background-size $d
+    transition: background-size $d
+    &:hover
+        background-size: 280px 210px
 
 .peculiar
     margin-left: -140px
@@ -287,7 +349,8 @@ html
     .peculiar,
     .footer p,
     .meta .time,
-    dl
+    dl,
+    .buttons
         margin-left: 0
     .meta .time,
     .meta .topic
@@ -303,3 +366,7 @@ html
         img
             width: 33.33%
             height: auto
+        .classic
+            display: block
+        .future
+            display: none

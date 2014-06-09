@@ -12,7 +12,7 @@ images:     6
 
 **![Dreamer](/images/hd/november-man.jpg)**
 
-Autumn has the power to bring people back together, to bring nature closer to humans hearts. It feels like crying inside and laughing outside &mdash; and in the same time, enjoy everything in between.
+Autumn has the power to bring people back together, to bring nature closer to humans hearts. It feels like crying inside and laughing outside — and in the same time, enjoy everything in between.
 
 **![Help Net](/images/hd/november-help.jpg)**
 
@@ -25,4 +25,3 @@ November has definitely something special, that electrical feeling that makes ev
 **![Domino Steps](/images/hd/november-glass.jpg)**
 
 Even buildings don't remain indifferent when this month makes its appearance. It's like watching that drama film that you saw tens of times in the past. But now you're feeling like you are watching the same movie again like it's the first time and you're seeing those peculiar details, here and there, in almost every scene. November is marvelous.
-
