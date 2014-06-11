@@ -1,5 +1,6 @@
 ---
 layout: default
+share:  true
 ---
 
 <h1 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
@@ -25,6 +26,18 @@ layout: default
 
 <div class="post single">
     {{ content }}
+
+    <div class="share">
+        <div class="social facebook">
+            <div class="fb-like" data-href="http://lucianmarin.com{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+        <div class="social twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lucianmarin.com{{ page.url }}" data-text="{{ page.title }}">Tweet</a>
+        </div>
+        <div class="social google">
+            <div class="g-plus" data-href="http://lucianmarin.com{{ page.url }}" data-action="share" data-annotation="bubble"></div>
+        </div>
+    </div>
 </div>
 
 <ul class="archive browse">

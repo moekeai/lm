@@ -113,14 +113,15 @@ img
 
 .design, .build
     margin-bottom: 20px
-    .icon
+    .icons
         float: left
         margin-top: 16px
 
 .frame
-    margin-top: 20px
-    padding-top: 20px
+    margin: 20px 0
+    padding: 20px 0
     border-top: $white 2px solid
+    border-bottom: $white 2px solid
 
 .quote
     margin: 40px 0
@@ -161,9 +162,21 @@ img
     padding-top: 5px
     height: 20px
     overflow: hidden
+    .social
+        float: left
+        display: block
+        height: 20px
+        &.facebook
+            width: 158px
+        &.twitter
+            width: 118px
+        &.google
+            width: 118px
 
 .buttons
-    height: 50px
+    height: 32px
+    overflow: hidden
+    margin: 30px 0
     margin-left: 140px
     li
         display: block
@@ -305,6 +318,14 @@ dl
     .classic
         display: none
 
+.photo
+    background-color: $silver
+    img
+        transition: opacity $d
+        opacity: 1
+    a:hover img
+        opacity: 0.5
+
 .image
     float: left
     width: 240px
@@ -338,7 +359,7 @@ html
 @media (max-width: 720px)
     .content
         width: 85%
-    .icon,
+    .icons,
     .quote .author,
     .archive li b,
     .me,
@@ -370,3 +391,9 @@ html
             display: block
         .future
             display: none
+    .photo
+        background-color: transparent
+
+@media (max-width: 320px)
+    .content
+        width: 276px

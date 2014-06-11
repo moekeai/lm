@@ -11,6 +11,15 @@ I wanted to create a special logo for [Sublevel](http://sublevel.net/), a new pr
 
 Then I found that you can create very smooth 3D animated logos with CSS, if you carefully tweak *transform* and *animation* properties. In the case below I used to rotate a circle at 180deg on all XYZ axis, equally delay the animation of each circle and position them absolutely on top of each one. The result is pretty spectaluar if you ask a designer that loves static logos.
 
+<div class="frame">
+    <div class="orbital">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </div>
+</div>
+
 **CSS code**
 
     @keyframes outer {
@@ -28,7 +37,7 @@ Then I found that you can create very smooth 3D animated logos with CSS, if you 
         <div class="two"></div>
         <div class="three"></div>
         <div class="four"></div>
-    </div>    
+    </div>
 
 <style type="text/css">
 @-webkit-keyframes outer {
@@ -72,12 +81,3 @@ Then I found that you can create very smooth 3D animated logos with CSS, if you 
     animation: outer 8s 6s infinite;
     }
 </style>
-
-<div class="frame">
-    <div class="orbital">
-        <div class="one"></div>
-        <div class="two"></div>
-        <div class="three"></div>
-        <div class="four"></div>
-    </div>
-</div>

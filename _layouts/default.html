@@ -14,10 +14,15 @@
 {% if page.permalink == "/peculiar/" %}
     <link rel="stylesheet" type="text/css" href="/static/peculiar.css" />
 {% endif %}
-{% include analytics.html %}
+{% if page.share %}
+    {% include share.html %}
+{% endif %}
+    {% include analytics.html %}
 </head>
 
 <body>
+
+<!-- <div id="fb-root"></div> -->
 
 <div class="menu">
     <div class="content">
@@ -56,7 +61,7 @@
             <p class="sponsor">Sponsored by <a href="http://www.shops2b.co.uk/">Shops2b</a></p>
         {% elsif page.section == "work" %}
             <p class="sponsor">Follow me on <a href="http://sublevel.net/lucian/">Sublevel</a></p>
-        {% elsif page.section != "error" %}
+        {% else %}
             <p>Subscribe to <a href="http://feeds.feedburner.com/lucianmarin">RSS feed</a></p>
         {% endif %}
     </div>
