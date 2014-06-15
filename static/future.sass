@@ -47,6 +47,9 @@ a
 ul
     list-style: none
 
+sup
+    line-height: 0
+
 b, i, u
     font-style: normal
     font-weight: normal
@@ -195,6 +198,9 @@ img
         &:hover
             border-color: $grey
             color: $black
+        sup
+            font-size: 11px
+            color: $silver
 
 .pick
     font: 12px/14px "Share Tech Mono", monospace
@@ -317,14 +323,6 @@ dl
         float: left
     .classic
         display: none
-
-.photo
-    background-color: $silver
-    img
-        transition: opacity $d
-        opacity: 1
-    a:hover img
-        opacity: 0.5
 
 .image
     float: left
