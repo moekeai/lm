@@ -5,18 +5,22 @@ permalink:  /archive/
 section:    archive
 ---
 
-<ul class="pick">
-    <li class="selected"><a href="/archive/">Ye<br>ar<br>ly</a></li>
-    <li><a href="/archive/topics.html">To<br>pi<br>cs</a></li>
+<ul class="list">
+    {% for post in site.posts %}
+            {% capture month %}{{ post.date | date: '%Y' }}{% endcapture %}
+            {% capture nmonth %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+            {% if month != nmonth %}
+                {% if forloop.index != 1 %}</div></li>{% endif %}
+                <li>
+                <h3 class="title">{{ post.date | date: '%Y' }}</h3>
+                <div class="post">
+            {% endif %}
+            <p>
+                <b>{{ post.date | date: "%b" }}</b>
+                <i>{{ post.date | date: "%e" }}</i>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+                {% if post.syntax %}<u title="Code">&ordf;</u>{% endif %}
+                {% if post.images %}<u title="Images">&ordm;</u>{% endif %}
+            </p>
+    {% endfor %}
 </ul>
-
-{% for post in site.posts %}
-    {% capture month %}{{ post.date | date: '%Y' }}{% endcapture %}
-    {% capture nmonth %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if month != nmonth %}
-            {% if forloop.index != 1 %}</ul>{% endif %}
-            <h1 class="title">{{ post.date | date: '%Y' }}</h1>
-            <ul class="archive year">
-        {% endif %}
-    {% include item.html %}
-{% endfor %}

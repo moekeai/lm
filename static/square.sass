@@ -1,0 +1,475 @@
+@mixin type
+    font: 14px/20px "Helvetica Neue", "Roboto", "Segoe UI", "Open Sans", "Ubuntu", Helvetica, Arial, sans-serif
+
+@mixin mono
+    font: 12px/15px "Menlo", "Consolas", "DejaVu Sans Mono", "Droid Sans Mono", "Monospace", "Lucida Console", monospace
+
+@mixin small
+    font-size: 13px
+
+@mixin caps
+    font-size: 11px
+    text-transform: uppercase
+
+$black: #000
+$metal: #444
+$grey: #888
+$silver: #bbb
+$snow: #eee
+$white: #fff
+
+$d: 0.2s
+
+*
+    margin: 0
+    padding: 0
+
+body
+    @include type
+    background-color: $white
+    color: $black
+    text-rendering: optimizeLegibility
+
+a
+    color: $black
+    text-decoration: none
+    transition: color $d
+    img
+        border: 0 none
+
+ul
+    list-style: none
+
+sup
+    line-height: 0
+
+b, i, u
+    font-style: normal
+    font-weight: normal
+    text-decoration: none
+
+img
+    display: block
+
+.content
+    width: 640px
+    margin: 0 auto
+
+.logo
+    background-color: $grey
+    float: left
+    display: block
+    width: 32px
+    height: 32px
+    position: relative
+    &:before, &:after
+        background-color: $white
+        display: block
+        position: absolute
+        content: " "
+    &:before
+        width: 4px
+        height: 16px
+        top: 8px
+        left: 14px
+    &:after
+        width: 16px
+        height: 4px
+        top: 14px
+        left: 8px
+
+.icons
+    width: 120px
+    height: 20px
+    padding-top: 4px
+    float: left
+    margin-top: 16px
+    .circle,
+    .square
+        width: 16px
+        height: 16px
+        border: $grey 2px solid
+        float: left
+        position: relative
+        &:first-child
+            margin-right: 20px
+            border-color: $silver
+        &:last-child
+            margin-left: 20px
+            border-color: $black
+    .circle
+        border-radius: 12px
+        .empty
+            background-color: $snow
+            width: 6px
+            height: 4px
+            position: absolute
+            top: -2px
+            left: 5px
+        .horizontal
+            background-color: $black
+            width: 2px
+            height: 8px
+            position: absolute
+            border: $snow 2px solid
+            top: -7px
+            left: 5px
+            border-radius: 4px
+    .square
+        .empty
+            background-color: $snow
+            width: 10px
+            height: 10px
+            position: absolute
+            top: -2px
+            right: -2px
+        .horizontal,
+        .vertical
+            background-color: $black
+            position: absolute
+        .horizontal
+            width: 10px
+            height: 2px
+            top: -2px
+            right: -6px
+        .vertical
+            width: 2px
+            height: 10px
+            top: -6px
+            right: -2px
+
+.menu
+    padding: 24px 0
+    height: 32px
+    line-height: 32px
+    ul, li, a
+        display: block
+        float: left
+    li
+        margin-left: 8px
+        &:first-child
+            margin-left: 12px
+        a
+            padding: 0 4px
+            color: $metal
+        &.selected a
+            color: $silver
+
+.title
+    font-size: 28px
+    letter-spacing: -2px
+    padding: 4px 0 6px 0
+    line-height: 30px
+    margin-bottom: 20px
+    sup
+        font-size: 14px
+        font-weight: normal
+        letter-spacing: 0
+        color: $silver
+        padding-left: 7px
+
+.me
+    margin-top: -60px
+    float: left
+    width: 120px
+
+.design, .build
+    margin-bottom: 20px
+
+.frame
+    margin: 20px 0
+    padding: 20px 0
+    border-top: $white 2px solid
+    border-bottom: $white 2px solid
+
+.quote
+    margin: 40px 0
+    a
+        color: $black
+        &:hover
+            color: $grey
+    u
+        padding: 0 10px
+        color: $silver
+    .text
+        margin-left: 140px
+        border-top: $white 2px solid
+        border-bottom: $white 2px solid
+        padding: 20px 0
+    .author
+        margin-top: 22px
+        float: left
+        color: $silver
+    &.bottom
+        margin-top: 20px
+        margin-bottom: 0
+        .text
+            padding-top: 10px
+            padding-bottom: 0
+            border-bottom: 0 none
+
+.archive
+    li
+        margin: 10px 0
+        a
+            transition: color $d
+            &:hover
+                color: $grey
+        b
+            display: block
+            width: 140px
+            color: $silver
+            float: left
+        i
+            color: $silver
+            padding-left: 8px
+        u
+            color: $silver
+            padding: 0 5px
+    &.year
+        margin-bottom: 20px
+    &.space
+        margin-bottom: 30px
+
+.share
+    padding-top: 5px
+    height: 20px
+    overflow: hidden
+    .social
+        float: left
+        display: block
+        height: 20px
+        &.facebook
+            width: 158px
+        &.twitter
+            width: 118px
+        &.google
+            width: 118px
+
+.buttons
+    height: 32px
+    overflow: hidden
+    margin: 30px 0
+    margin-left: 140px
+    li
+        display: block
+        float: left
+        margin-right: 20px
+    a
+        background-color: $white
+        display: block
+        line-height: 30px
+        float: left
+        color: $grey
+        padding: 0 10px
+        border: $silver 1px solid
+        text-decoration: none
+        border-radius: 4px
+        transition: border-color $d, color $d
+        &:hover
+            border-color: $grey
+            color: $black
+        sup
+            font-size: 11px
+            color: $silver
+
+.pick
+    @include caps
+    @include small
+    text-transform: lowercase
+    float: right
+    margin-top: -20px
+    width: 60px
+    li
+        display: block
+        float: right
+        width: 30px
+        text-align: center
+        a
+            display: block
+            width: 30px
+            padding-top: 50px
+            padding-bottom: 10px
+            color: $grey
+            transition: background-color 0.2s
+            background-color: whitesmoke
+        &.selected a
+            color: $silver
+            background-color: $white
+    &.short
+        font-size: 16px
+        width: 64px
+        li
+            a
+                padding: 4px 0 6px 0
+                color: $silver
+                &:hover,
+                &:focus,
+                &:active
+                    background-color: $white
+            &:first-child
+                border-left: $white 2px solid
+
+.handle:after
+    content: " at "
+    color: $silver
+
+.domain:after
+    content: " dot "
+    color: $silver
+
+.post
+    margin-left: 140px
+    &.up
+        border-top: $white 2px solid
+        padding-top: 10px
+        margin-top: 20px
+        margin-bottom: -10px
+    &.single
+        border-bottom: $white 2px solid
+        padding-bottom: 20px
+        margin-bottom: 30px
+    h4
+        margin-top: 20px
+    p, ul, ol, .highlight
+        margin: 10px 0
+    ul
+        list-style: square
+    ul, ol
+        margin-left: 40px
+        li
+            margin: 5px 0
+    a
+        color: $grey
+        text-decoration: underline
+    p:last-child > em:first-child
+        color: $grey
+    blockquote
+        margin-left: 40px
+        color: $grey
+    pre
+        white-space: pre-wrap
+    code
+        @include mono
+        color: $grey
+    strong > img
+        margin-left: -140px
+        width: 128%
+        height: auto
+    .small
+        color: $grey
+    .lira
+        border-top: #ddd 1px solid
+    .caption
+        margin: 20px 0
+        &:last-child
+            margin-bottom: 0
+
+.main
+    background-color: $snow
+    padding: 20px 0
+
+.meta
+    @include small
+    overflow: hidden
+    color: $grey
+    margin-bottom: 20px
+    .time,
+    .topic
+        width: 250px
+        height: 40px
+        float: left
+        text-transform: lowercase
+    .time
+        margin-left: 140px
+    a
+        color: $grey
+    h4
+        @include caps
+        font-weight: normal
+        color: $silver
+
+dl
+    margin-left: 140px
+    dt
+        font-weight: bold
+        margin-top: 40px
+        &:first-child
+            margin-top: 0
+        a
+            border-bottom: $silver 1px solid
+            transition: border-color $d
+            &:hover
+                border-bottom: $black 1px solid
+    dd
+        margin-top: 10px
+        blockquote
+            margin-left: 40px
+            color: $grey
+
+.grid
+    width: 720px
+    overflow: hidden
+    margin-left: -40px
+    margin-bottom: 20px
+    img
+        float: left
+    a
+        img
+            transition: opacity 0.33s
+            opacity: 1
+        &:hover img
+            opacity: 0.8
+
+.peculiar
+    margin-left: -140px
+    margin-top: 10px
+
+.footer
+    padding: 20px 0
+    color: $silver
+    position: relative
+    p
+        margin-left: 140px
+    img
+        position: absolute
+        right: 0
+        bottom: 0
+
+html
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+
+@media (max-width: 720px)
+    .content
+        width: 90%
+    .icons,
+    .quote .author,
+    .archive li b,
+    .me,
+    .label
+        display: none
+    .post,
+    .quote .text,
+    .peculiar,
+    .footer p,
+    .meta .time,
+    dl,
+    .buttons
+        margin-left: 0
+    .meta .time,
+    .meta .topic
+        width: 50%
+    .post p img,
+    .post strong > img
+        margin-left: 0
+        width: 100%
+        height: auto
+    .grid
+        width: 100%
+        margin-left: 0
+        img
+            width: 33.333%
+            height: auto
+    .photo
+        background-color: transparent

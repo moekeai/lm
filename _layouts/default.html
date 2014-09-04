@@ -4,37 +4,27 @@
     <title>{{ page.title }}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimal-ui" />
-{% if page.section == "index" %}
     <meta name="description" content="Designer passionate about front-end engineering, usability, web and software development. Living and working as freelancer in Bucharest, Romania." />
-    <meta name="msvalidate.01" content="1BA7BB6D6BFBDDC7EC2C245C606416EE" />
-{% endif %}
     <link rel="stylesheet" type="text/css" href="/static/future.css" />
     <link rel="apple-touch-icon" type="image/png" href="/static/touch.png" />
-    <link rel="alternate" type="application/rss+xml" title="Lucian Marin - RSS Feed" href="http://feeds.feedburner.com/lucianmarin" />
-{% if page.permalink == "/peculiar/" %}
-    <link rel="stylesheet" type="text/css" href="/static/peculiar.css" />
-{% endif %}
-{% if page.share %}
-    {% include share.html %}
-{% endif %}
-    {% include analytics.html %}
+    <link rel="alternate" type="application/rss+xml" title="Lucian Marin" href="/feed.rss" />
 </head>
 
 <body>
 
-<!-- <div id="fb-root"></div> -->
-
 <div class="menu">
     <div class="content">
-        <a href="/" class="logo"></a>
         <ul>
-            <li class="archive {% if page.section == None or page.section == "archive" %}selected{% endif %}">
+            <li class="index {% if page.section == "index" %}selected{% endif %}">
+                <a href="/">Journal</a>
+            </li>
+            <li class="archive {% if page.section == "archive" %}selected{% endif %}">
                 <a href="/archive/">Archive</a>
             </li>
             <li class="work {% if page.section == "work" %}selected{% endif %}">
                 <a href="/work/">Work</a>
             </li>
-            <li class="gallery {% if page.section == "gallery" %}selected{% endif %}">
+            <li class="grid {% if page.section == "grid" %}selected{% endif %}">
                 <a href="/photo/">Photo</a>
             </li>
             <li class="about {% if page.section == "about" %}selected{% endif %}">
@@ -44,11 +34,17 @@
     </div>
 </div>
 
+<div class="subtitle">
+    <div class="content">
+        <h1>
+            {{ page.subtitle }}
+            {% if page.section == "archive" %}Archive{% endif %}
+        </h1>
+    </div>
+</div>
+
 <div class="main">
     <div class="content">
-        {% if page.subtitle %}
-            <h1 class="title">{{ page.subtitle }}</h1>
-        {% endif %}
         {{ content }}
     </div>
 </div>
@@ -56,14 +52,17 @@
 <div class="footer">
     <div class="content">
         {% if page.section == "index" %}
-            <p class="sponsor">Sponsored by <a href="http://www.kledinginsider.nl/">Kleding</a></p>
-        {% elsif page.section == "gallery" %}
-            <p class="sponsor">Sponsored by <a href="http://www.shops2b.co.uk/">Shops2b</a></p>
-        {% elsif page.section == "work" %}
-            <p class="sponsor">Follow @<a href="http://sublevel.net/worldcup/">WorldCup</a> live on Sublevel</p>
+            <p>Sponsored by <a href="http://www.kledinginsider.nl/">Kleding</a></p>
         {% else %}
-            <p>Subscribe to <a href="http://feeds.feedburner.com/lucianmarin">RSS feed</a></p>
+            <p>Get a VPS from <a target="_blank" rel="nofollow" href="https://www.digitalocean.com/?refcode=3a552597bc77">DigitalOcean</a>. Win $10.</p>
         {% endif %}
+        <hr>
+        <p>
+            &copy; 2014 Lucian Marin &mdash;
+            <a target="_blank" rel="nofollow" href="http://sublevel.net/lucian/">Sublevel</a>
+            &middot;
+            <a target="_blank" rel="nofollow" href="/feed.rss">RSS</a>
+        </p>
     </div>
 </div>
 

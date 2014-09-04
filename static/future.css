@@ -1,38 +1,45 @@
 @font-face {
-  font-family: "Vegur";
-  src: url("vegur/regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "Lato";
+  src: url("lato/light.woff") format("woff");
+  font-style: normal;
+  font-weight: 300; }
 @font-face {
-  font-family: "Vegur";
-  src: url("vegur/bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal; }
+  font-family: "Lato";
+  src: url("lato/regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal; }
 @font-face {
-  font-family: "Vegur";
-  src: url("vegur/light.woff") format("woff");
-  font-weight: 200;
-  font-style: normal; }
+  font-family: "Lato";
+  src: url("lato/bold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold; }
 @font-face {
-  font-family: "Share Tech Mono";
-  src: url("sharetech/mono.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "Share";
+  src: url("sharetech/regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal; }
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  font: 15px/20px "Vegur", sans-serif; }
+  font: 15px/20px "Lato", "Helvetica Neue", "Roboto", "Segoe UI", "Open Sans", "Ubuntu", Helvetica, Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: black;
+  text-rendering: optimizeLegibility; }
 
 a {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: color 0.2s; }
   a img {
     border: 0 none; }
 
 ul {
   list-style: none; }
+
+ol {
+  list-style-position: inside; }
 
 sup {
   line-height: 0; }
@@ -45,344 +52,248 @@ b, i, u {
 img {
   display: block; }
 
-.content {
-  width: 640px;
-  margin: 0 auto; }
+h1 {
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 70px;
+  letter-spacing: -1px;
+  color: gray; }
 
-.logo {
-  background-color: #888888;
-  float: left;
-  display: block;
-  width: 32px;
-  height: 32px;
+h2 {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 30px;
+  padding: 5px 0;
+  letter-spacing: -1px;
+  margin: 15px 0; }
+
+h3 {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px; }
+  h3 sup {
+    font-size: 13px;
+    padding-left: 2px;
+    color: silver; }
+  h3 a {
+    color: black; }
+    h3 a:hover {
+      color: gray; }
+
+hr {
+  margin: 5px 0;
+  border: 0 none;
+  border-bottom: white 1px solid; }
+
+.content {
+  width: 576px;
+  width: 570px;
+  margin: 0 auto;
   position: relative; }
-  .logo:before, .logo:after {
-    background-color: white;
-    display: block;
-    position: absolute;
-    content: " "; }
-  .logo:before {
-    width: 4px;
-    height: 16px;
-    top: 8px;
-    left: 14px; }
-  .logo:after {
-    width: 16px;
-    height: 4px;
-    top: 14px;
-    left: 8px; }
+
+.footer {
+  font-size: 13px;
+  margin: 30px 0;
+  text-align: right;
+  color: gray; }
+  .footer a:hover {
+    color: #205080; }
+  .footer hr {
+    margin-left: 50%; }
+
+.mode {
+  overflow: hidden;
+  border-bottom: white 1px solid; }
+  .mode ul {
+    display: block; }
+    .mode ul li {
+      display: block;
+      float: left;
+      margin-right: 20px;
+      padding: 10px 0 6px 0; }
+      .mode ul li a {
+        color: gray; }
+      .mode ul li.selected {
+        border-bottom: white 4px solid; }
+      .mode ul li.selected a {
+        color: silver; }
 
 .menu {
-  padding: 24px 0;
-  height: 32px;
-  line-height: 32px; }
-  .menu ul, .menu li, .menu a {
-    display: block;
-    float: left; }
-  .menu li {
-    margin-left: 8px; }
-    .menu li:first-child {
-      margin-left: 12px; }
-    .menu li a {
-      padding: 0 4px;
-      color: #444444; }
-    .menu li.selected a {
-      color: #bbbbbb; }
-
-.title {
-  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin-bottom: -5px;
   line-height: 40px;
-  margin-bottom: 20px; }
-  .title i {
-    font-weight: 200;
-    color: #bbbbbb; }
-
-.me {
-  margin-top: -60px;
-  float: left; }
-
-.design, .build {
-  margin-bottom: 20px; }
-  .design .icons, .build .icons {
-    float: left;
-    margin-top: 16px; }
-
-.frame {
-  margin: 20px 0;
-  padding: 20px 0;
-  border-top: white 2px solid;
-  border-bottom: white 2px solid; }
-
-.quote {
-  margin: 40px 0; }
-  .quote .text {
-    margin-left: 140px;
-    border-top: white 2px solid;
-    border-bottom: white 2px solid;
-    padding: 20px 0; }
-  .quote .author {
-    margin-top: 22px;
-    float: left;
-    color: #bbbbbb; }
-
-.archive li {
-  margin: 10px 0; }
-  .archive li a {
-    transition: color 0.2s; }
-    .archive li a:hover {
-      color: #888888; }
-  .archive li b {
-    display: block;
-    width: 140px;
-    color: #bbbbbb;
-    float: left; }
-  .archive li i {
-    color: #bbbbbb;
-    padding-left: 8px; }
-  .archive li u {
-    color: #bbbbbb;
-    padding: 0 4px; }
-.archive.year {
-  margin-bottom: 20px; }
-.archive.space {
-  margin-bottom: 30px; }
-
-.share {
-  padding-top: 5px;
-  height: 20px;
   overflow: hidden; }
-  .share .social {
+  .menu ul {
+    display: block; }
+    .menu ul li {
+      display: block;
+      float: left;
+      margin-right: 15px;
+      margin-bottom: -5px;
+      border-bottom: white 5px solid; }
+      .menu ul li:last-child {
+        margin-right: 0; }
+      .menu ul li i {
+        color: #30c0c0; }
+      .menu ul li a {
+        color: black; }
+      .menu ul li.selected {
+        border-bottom: #f0f0f0 5px solid; }
+      .menu ul li.selected a {
+        color: gray; }
+
+.subtitle {
+  background-color: white;
+  padding-top: 30px; }
+
+.browse {
+  font-size: 13px;
+  position: absolute;
+  top: -50px;
+  right: 0; }
+  .browse a {
+    margin-left: 20px;
+    color: silver; }
+
+.list li {
+  margin: 20px 0; }
+.list .post p {
+  margin: 5px 0; }
+  .list .post p b, .list .post p i {
+    display: block;
+    float: left;
+    width: 28px;
+    color: gray; }
+  .list .post p i {
+    text-align: right;
+    margin-right: 16px;
+    color: silver; }
+  .list .post p u {
+    color: silver;
+    cursor: help; }
+
+.post small {
+  font-size: 13px;
+  color: gray; }
+.post a {
+  color: #30c0c0; }
+  .post a:hover {
+    color: #205080; }
+.post p, .post ul, .post ol, .post .highlight {
+  margin: 20px 0; }
+.post p strong img {
+  width: 100%;
+  height: auto; }
+.post hr {
+  margin: 10px 0;
+  margin-right: 50%; }
+.post li {
+  padding: 5px 0;
+  padding-left: 10%;
+  border-bottom: white 1px solid; }
+  .post li:first-child {
+    border-top: white 1px solid; }
+.post blockquote {
+  margin-left: 40px;
+  color: gray; }
+.post pre {
+  white-space: pre-wrap; }
+.post code {
+  font: 12px/20px "Share", "Menlo", "Consolas", "DejaVu Sans Mono", "Droid Sans Mono", "Monospace", "Lucida Console", monospace;
+  color: gray; }
+.post .quote {
+  color: gray; }
+  .post .quote img {
+    float: left;
+    padding: 2px;
+    padding-left: 0;
+    padding-right: 8px; }
+.post .highlight {
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+  border: #d0d0d0 1px solid; }
+
+.grid {
+  overflow: hidden; }
+  .grid img {
+    width: 33.333%;
+    height: auto;
+    float: left; }
+  .grid a img {
+    transition: opacity 0.33s;
+    opacity: 1; }
+  .grid a:hover img {
+    opacity: 0.8; }
+
+.gridless {
+  overflow: hidden; }
+  .gridless img {
+    width: 20%;
+    height: auto;
+    float: left; }
+
+.details {
+  font-size: 13px;
+  margin: 20px 0; }
+  .details p {
+    margin: 5px 0; }
+  .details b {
+    width: 75px;
     float: left;
     display: block;
-    height: 20px; }
-    .share .social.facebook {
-      width: 158px; }
-    .share .social.twitter {
-      width: 118px; }
-    .share .social.google {
-      width: 118px; }
+    color: gray; }
+  .details a {
+    color: #30c0c0; }
+    .details a:hover {
+      color: #205080; }
+
+.meta {
+  font-size: 13px;
+  color: gray; }
+  .meta .topic {
+    text-transform: capitalize; }
+  .meta .caption {
+    margin: 20px 0; }
 
 .buttons {
   height: 32px;
-  overflow: hidden;
-  margin: 30px 0;
-  margin-left: 140px; }
+  overflow: hidden; }
   .buttons li {
     display: block;
     float: left;
     margin-right: 20px; }
   .buttons a {
+    background-color: white;
     display: block;
     line-height: 30px;
     float: left;
-    color: #888888;
+    color: gray;
     padding: 0 10px;
-    border: #bbbbbb 1px solid;
+    border: silver 1px solid;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 4px;
     transition: border-color 0.2s, color 0.2s; }
     .buttons a:hover {
-      border-color: #888888;
+      border-color: gray;
       color: black; }
     .buttons a sup {
       font-size: 11px;
-      color: #bbbbbb; }
-
-.pick {
-  font: 12px/14px "Share Tech Mono", monospace;
-  text-transform: uppercase;
-  float: right;
-  margin-top: -20px;
-  width: 60px; }
-  .pick li {
-    display: block;
-    float: left;
-    width: 30px;
-    text-align: center; }
-    .pick li a {
-      display: block;
-      width: 30px;
-      padding: 9px 0;
-      color: #888888;
-      transition: background-color 0.2s;
-      background-color: whitesmoke; }
-    .pick li.selected a {
-      background-color: white; }
+      color: silver; }
 
 .handle:after {
   content: " at ";
-  color: #bbbbbb; }
+  color: silver; }
 
 .domain:after {
   content: " dot ";
-  color: #bbbbbb; }
-
-.post {
-  margin-left: 140px; }
-  .post h4 {
-    margin-top: 20px; }
-  .post p, .post ul, .post ol, .post .highlight {
-    margin: 10px 0; }
-  .post ul {
-    list-style: square; }
-  .post ul, .post ol {
-    margin-left: 40px; }
-    .post ul li, .post ol li {
-      line-height: 24px; }
-  .post a {
-    color: #888888;
-    text-decoration: underline; }
-  .post p:last-child > em:first-child {
-    color: #888888; }
-  .post blockquote {
-    margin-left: 40px;
-    color: #888888; }
-  .post pre {
-    white-space: pre-wrap; }
-  .post code {
-    font-family: "Share Tech Mono", monospace;
-    font-size: 13px;
-    line-height: 18px;
-    color: #888888; }
-  .post.single {
-    border-bottom: white 2px solid;
-    padding-bottom: 20px;
-    margin-bottom: 30px; }
-  .post strong > img {
-    margin-left: -140px;
-    width: 128%;
-    height: auto; }
-  .post .caption {
-    margin: 20px 0; }
-    .post .caption:last-child {
-      margin-bottom: 0; }
-
-.main {
-  background-color: #eeeeee;
-  padding: 20px 0; }
-
-.meta {
-  overflow: hidden;
-  color: #888888;
-  font-size: 14px;
-  margin-bottom: 20px; }
-  .meta .time,
-  .meta .topic {
-    width: 250px;
-    height: 40px;
-    float: left;
-    text-transform: lowercase; }
-  .meta .time {
-    margin-left: 140px; }
-  .meta a {
-    color: #888888; }
-  .meta h4 {
-    font-weight: normal;
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #bbbbbb; }
-
-dl {
-  margin-left: 140px; }
-  dl dt {
-    font-weight: bold;
-    margin-top: 40px; }
-    dl dt:first-child {
-      margin-top: 0; }
-    dl dt a {
-      border-bottom: #bbbbbb 1px solid;
-      transition: border-color 0.2s; }
-      dl dt a:hover {
-        border-bottom: black 1px solid; }
-  dl dd {
-    margin-top: 10px; }
-    dl dd blockquote {
-      margin-left: 40px;
-      color: #888888; }
-
-.grid {
-  width: 720px;
-  margin-left: -40px;
-  overflow: hidden;
-  margin-bottom: 20px; }
-  .grid img {
-    float: left; }
-  .grid .classic {
-    display: none; }
-
-.image {
-  float: left;
-  width: 240px;
-  height: 180px;
-  background: center center;
-  background-size: 240px 180px;
-  -webkit-transition: background-size 0.2s;
-  transition: background-size 0.2s; }
-  .image:hover {
-    background-size: 280px 210px; }
-
-.peculiar {
-  margin-left: -140px;
-  margin-top: 10px; }
-
-.footer {
-  padding: 20px 0;
-  color: #bbbbbb;
-  position: relative; }
-  .footer p {
-    margin-left: 140px; }
-  .footer img {
-    position: absolute;
-    right: 0;
-    bottom: 0; }
+  color: silver; }
 
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-@media (max-width: 720px) {
+@media (max-width: 634px) {
   .content {
-    width: 85%; }
-
-  .icons,
-  .quote .author,
-  .archive li b,
-  .me,
-  .label {
-    display: none; }
-
-  .post,
-  .quote .text,
-  .peculiar,
-  .footer p,
-  .meta .time,
-  dl,
-  .buttons {
-    margin-left: 0; }
-
-  .meta .time,
-  .meta .topic {
-    width: 50%; }
-
-  .post p img,
-  .post strong > img {
-    margin-left: 0;
-    width: 100%;
-    height: auto; }
-
-  .grid {
-    width: 100%;
-    margin-left: 0; }
-    .grid img {
-      width: 33.33%;
-      height: auto; }
-    .grid .classic {
-      display: block; }
-    .grid .future {
-      display: none; }
-
-  .photo {
-    background-color: transparent; } }
-@media (max-width: 320px) {
-  .content {
-    width: 276px; } }
+    width: 90%; } }

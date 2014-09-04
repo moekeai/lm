@@ -2,7 +2,7 @@
 layout:     post
 date:       2013-03-24 15:51:31
 edit:       2013-03-29 16:22:20
-title:      "The Future Of RSS Is Microdata"
+title:      "The Future of RSS is Microdata"
 category:   hope-for-the-future
 slug:       future-of-rss
 ---

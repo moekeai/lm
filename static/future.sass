@@ -1,33 +1,52 @@
 @font-face
-    font-family: "Vegur"
-    src: url("vegur/regular.woff") format("woff")
-    font-weight: normal
+    font-family: "Lato"
+    src: url('lato/light.woff') format('woff')
     font-style: normal
+    font-weight: 300
 
 @font-face
-    font-family: "Vegur"
-    src: url("vegur/bold.woff") format("woff")
+    font-family: "Lato"
+    src: url('lato/regular.woff') format('woff')
+    font-style: normal
+    font-weight: normal
+
+@font-face
+    font-family: "Lato"
+    src: url('lato/bold.woff') format('woff')
+    font-style: normal
     font-weight: bold
-    font-style: normal
 
 @font-face
-    font-family: "Vegur"
-    src: url("vegur/light.woff") format("woff")
-    font-weight: 200
+    font-family: "Share"
+    src: url('sharetech/regular.woff') format('woff')
     font-style: normal
-
-@font-face
-    font-family: "Share Tech Mono"
-    src: url("sharetech/mono.woff") format("woff")
     font-weight: normal
-    font-style: normal
 
-$black: #000
-$metal: #444
-$grey: #888
-$silver: #bbb
-$snow: #eee
-$white: #fff
+@mixin type
+    font: 15px/20px "Lato", "Helvetica Neue", "Roboto", "Segoe UI", "Open Sans", "Ubuntu", Helvetica, Arial, sans-serif
+
+@mixin mono
+    font: 12px/20px "Share", "Menlo", "Consolas", "DejaVu Sans Mono", "Droid Sans Mono", "Monospace", "Lucida Console", monospace
+
+@mixin small
+    font-size: 13px
+
+@mixin caps
+    font-size: 11px
+    text-transform: uppercase
+
+$text: #000000
+$back: #f0f0f0
+
+$dark: #404040 // 25
+$gray: #808080 // 50
+$silver: #c0c0c0 // 75
+
+$highlight: #d0d0d0
+
+$line: #fff
+$link: #30c0c0
+$over: #205080
 
 $d: 0.2s
 
@@ -36,16 +55,23 @@ $d: 0.2s
     padding: 0
 
 body
-    font: 15px/20px "Vegur", sans-serif
+    @include type
+    background-color: $back
+    color: $text
+    text-rendering: optimizeLegibility
 
 a
-    color: $black
+    color: $text
     text-decoration: none
+    transition: color $d
     img
         border: 0 none
 
 ul
     list-style: none
+
+ol
+    list-style-position: inside
 
 sup
     line-height: 0
@@ -58,170 +84,239 @@ b, i, u
 img
     display: block
 
-.content
-    width: 640px
-    margin: 0 auto
+h1
+    font-weight: 300
+    font-size: 40px
+    line-height: 70px
+    letter-spacing: -1px
+    color: $gray
 
-.logo
-    background-color: $grey
-    float: left
-    display: block
-    width: 32px
-    height: 32px
+h2
+    font-weight: normal
+    font-size: 25px
+    line-height: 30px
+    padding: 5px 0
+    letter-spacing: -1px
+    margin: 15px 0
+
+h3
+    font-weight: normal
+    font-size: 20px
+    line-height: 30px
+    sup
+        @include small
+        padding-left: 2px
+        color: $silver
+    a
+        color: $text
+        &:hover
+            color: $gray
+
+hr
+    margin: 5px 0
+    border: 0 none
+    border-bottom: $line 1px solid
+
+.content
+    width: 576px
+    width: 570px
+    margin: 0 auto
     position: relative
-    &:before, &:after
-        background-color: $white
+
+.footer
+    @include small
+    margin: 30px 0
+    text-align: right
+    color: $gray
+    a:hover
+        color: $over
+    hr
+        margin-left: 50%
+
+.mode
+    overflow: hidden
+    border-bottom: $line 1px solid
+    ul
         display: block
-        position: absolute
-        content: " "
-    &:before
-        width: 4px
-        height: 16px
-        top: 8px
-        left: 14px
-    &:after
-        width: 16px
-        height: 4px
-        top: 14px
-        left: 8px
+        li
+            display: block
+            float: left
+            margin-right: 20px
+            padding: 10px 0 6px 0
+            a
+                color: $gray
+            &.selected
+                border-bottom: $line 4px solid
+            &.selected a
+                color: $silver
 
 .menu
-    padding: 24px 0
-    height: 32px
-    line-height: 32px
-    ul, li, a
-        display: block
-        float: left
-    li
-        margin-left: 8px
-        &:first-child
-            margin-left: 12px
-        a
-            padding: 0 4px
-            color: $metal
-        &.selected a
-            color: $silver
-
-.title
-    font-size: 30px
+    padding-top: 20px
+    padding-bottom: 5px
+    margin-bottom: -5px
     line-height: 40px
-    margin-bottom: 20px
-    i
-        font-weight: 200
-        color: $silver
-
-.me
-    margin-top: -60px
-    float: left
-
-.design, .build
-    margin-bottom: 20px
-    .icons
-        float: left
-        margin-top: 16px
-
-.frame
-    margin: 20px 0
-    padding: 20px 0
-    border-top: $white 2px solid
-    border-bottom: $white 2px solid
-
-.quote
-    margin: 40px 0
-    .text
-        margin-left: 140px
-        border-top: $white 2px solid
-        border-bottom: $white 2px solid
-        padding: 20px 0
-    .author
-        margin-top: 22px
-        float: left
-        color: $silver
-
-.archive
-    li
-        margin: 10px 0
-        a
-            transition: color $d
-            &:hover
-                color: $grey
-        b
-            display: block
-            width: 140px
-            color: $silver
-            float: left
-        i
-            color: $silver
-            padding-left: 8px
-        u
-            color: $silver
-            padding: 0 4px
-    &.year
-        margin-bottom: 20px
-    &.space
-        margin-bottom: 30px
-
-.share
-    padding-top: 5px
-    height: 20px
     overflow: hidden
-    .social
+    ul
+        display: block
+        li
+            display: block
+            float: left
+            margin-right: 15px
+            margin-bottom: -5px
+            border-bottom: $line 5px solid
+            &:last-child
+                margin-right: 0
+            i
+                color: $link
+            a
+                color: $text
+            &.selected
+                border-bottom: $back 5px solid
+            &.selected a
+                color: $gray
+
+.subtitle
+    background-color: $line
+    padding-top: 30px
+
+.browse
+    @include small
+    position: absolute
+    top: -50px
+    right: 0
+    a
+        margin-left: 20px
+        color: $silver
+
+.list
+    li
+        margin: 20px 0
+    .post
+        p
+            margin: 5px 0
+            b, i
+                display: block
+                float: left
+                width: 28px
+                color: $gray
+            i
+                text-align: right
+                margin-right: 16px
+                color: $silver
+            u
+                color: $silver
+                cursor: help
+
+.post
+    small
+        @include small
+        color: $gray
+    a
+        color: $link
+        &:hover
+            color: $over
+    p, ul, ol, .highlight
+        margin: 20px 0
+    p strong img
+        width: 100%
+        height: auto
+    hr
+        margin: 10px 0
+        margin-right: 50%
+    li
+        padding: 5px 0
+        padding-left: 10%
+        border-bottom: $line 1px solid
+        &:first-child
+            border-top: $line 1px solid
+    blockquote
+        margin-left: 40px
+        color: $gray
+    pre
+        white-space: pre-wrap
+    code
+        @include mono
+        color: $gray
+    .quote
+        color: $gray
+        img
+            float: left
+            padding: 2px
+            padding-left: 0
+            padding-right: 8px
+    .highlight
+        background-color: $line
+        padding: 5px 15px
+        border-radius: 3px
+        border: $highlight 1px solid
+
+.grid
+    overflow: hidden
+    img
+        width: 33.333%
+        height: auto
+        float: left
+    a
+        img
+            transition: opacity 0.33s
+            opacity: 1
+        &:hover img
+            opacity: 0.8
+
+.gridless
+    overflow: hidden
+    img
+        width: 20%
+        height: auto
+        float: left
+
+.details
+    @include small
+    margin: 20px 0
+    p
+        margin: 5px 0
+    b
+        width: 75px
         float: left
         display: block
-        height: 20px
-        &.facebook
-            width: 158px
-        &.twitter
-            width: 118px
-        &.google
-            width: 118px
+        color: $gray
+    a
+        color: $link
+        &:hover
+            color: $over
+
+.meta
+    @include small
+    color: $gray
+    .topic
+        text-transform: capitalize
+    .caption
+        margin: 20px 0
 
 .buttons
     height: 32px
     overflow: hidden
-    margin: 30px 0
-    margin-left: 140px
     li
         display: block
         float: left
         margin-right: 20px
     a
+        background-color: $line
         display: block
         line-height: 30px
         float: left
-        color: $grey
+        color: $gray
         padding: 0 10px
         border: $silver 1px solid
         text-decoration: none
-        border-radius: 2px
+        border-radius: 4px
         transition: border-color $d, color $d
         &:hover
-            border-color: $grey
-            color: $black
+            border-color: $gray
+            color: $text
         sup
             font-size: 11px
             color: $silver
-
-.pick
-    font: 12px/14px "Share Tech Mono", monospace
-    text-transform: uppercase
-    float: right
-    margin-top: -20px
-    width: 60px
-    li
-        display: block
-        float: left
-        width: 30px
-        text-align: center
-        a
-            display: block
-            width: 30px
-            padding: 9px 0
-            color: $grey
-            transition: background-color 0.2s
-            background-color: whitesmoke
-        &.selected a
-            background-color: $white
 
 .handle:after
     content: " at "
@@ -231,167 +326,10 @@ img
     content: " dot "
     color: $silver
 
-.post
-    margin-left: 140px
-    h4
-        margin-top: 20px
-    p, ul, ol, .highlight
-        margin: 10px 0
-    ul
-        list-style: square
-    ul, ol
-        margin-left: 40px
-        li
-            line-height: 24px
-    a
-        color: $grey
-        text-decoration: underline
-    p:last-child > em:first-child
-        color: $grey
-    blockquote
-        margin-left: 40px
-        color: $grey
-    pre
-        white-space: pre-wrap
-    code
-        font-family: "Share Tech Mono", monospace
-        font-size: 13px
-        line-height: 18px
-        color: $grey
-    &.single
-        border-bottom: $white 2px solid
-        padding-bottom: 20px
-        margin-bottom: 30px
-    strong > img
-        margin-left: -140px
-        width: 128%
-        height: auto
-    .caption
-        margin: 20px 0
-        &:last-child
-            margin-bottom: 0
-
-.main
-    background-color: $snow
-    padding: 20px 0
-
-.meta
-    overflow: hidden
-    color: $grey
-    font-size: 14px
-    margin-bottom: 20px
-    .time,
-    .topic
-        width: 250px
-        height: 40px
-        float: left
-        text-transform: lowercase
-    .time
-        margin-left: 140px
-    a
-        color: $grey
-    h4
-        font-weight: normal
-        text-transform: uppercase
-        font-size: 12px
-        color: $silver
-
-dl
-    margin-left: 140px
-    dt
-        font-weight: bold
-        margin-top: 40px
-        &:first-child
-            margin-top: 0
-        a
-            border-bottom: $silver 1px solid
-            transition: border-color $d
-            &:hover
-                border-bottom: $black 1px solid
-    dd
-        margin-top: 10px
-        blockquote
-            margin-left: 40px
-            color: $grey
-
-.grid
-    width: 720px
-    margin-left: -40px
-    overflow: hidden
-    margin-bottom: 20px
-    img
-        float: left
-    .classic
-        display: none
-
-.image
-    float: left
-    width: 240px
-    height: 180px
-    background: center center
-    background-size: 240px 180px
-    -webkit-transition: background-size $d
-    transition: background-size $d
-    &:hover
-        background-size: 280px 210px
-
-.peculiar
-    margin-left: -140px
-    margin-top: 10px
-
-.footer
-    padding: 20px 0
-    color: $silver
-    position: relative
-    p
-        margin-left: 140px
-    img
-        position: absolute
-        right: 0
-        bottom: 0
-
 html
     -webkit-text-size-adjust: 100%
     -ms-text-size-adjust: 100%
 
-@media (max-width: 720px)
+@media (max-width: 634px)
     .content
-        width: 85%
-    .icons,
-    .quote .author,
-    .archive li b,
-    .me,
-    .label
-        display: none
-    .post,
-    .quote .text,
-    .peculiar,
-    .footer p,
-    .meta .time,
-    dl,
-    .buttons
-        margin-left: 0
-    .meta .time,
-    .meta .topic
-        width: 50%
-    .post p img,
-    .post strong > img
-        margin-left: 0
-        width: 100%
-        height: auto
-    .grid
-        width: 100%
-        margin-left: 0
-        img
-            width: 33.33%
-            height: auto
-        .classic
-            display: block
-        .future
-            display: none
-    .photo
-        background-color: transparent
-
-@media (max-width: 320px)
-    .content
-        width: 276px
+        width: 90%

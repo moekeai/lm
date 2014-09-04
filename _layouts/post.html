@@ -1,45 +1,30 @@
 ---
-layout: default
-share:  true
+layout:     default
+section:    archive
 ---
 
-<h1 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h1>
-
-<div class="meta">
-    <div class="time">
-        <h4>Published</h4>
-        <p>
-            <a href="/archive/">
-                {{ page.date | date: "%e %B %Y" }}
-            </a>
-        </p>
-    </div>
-    <div class="topic">
-        <h4>Topic</h4>
-        <p>
-            <a href="/archive/topics.html">
-                {{ page.category | replace: '-', ' ' }}
-            </a>
-        </p>
-    </div>
+<div class="browse">
+    {% if page.next.url %}
+        <a href="{{ page.next.url }}" title="{{ page.next.title }}">up next</a>
+    {% endif %}
+    {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">previously</a>
+    {% endif %}
 </div>
+
+<h2 class="title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
 
 <div class="post single">
+    <hr>
     {{ content }}
-
-    <div class="share">
-        <div class="social facebook">
-            <div class="fb-like" data-href="http://lucianmarin.com{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-        </div>
-        <div class="social twitter">
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lucianmarin.com{{ page.url }}" data-text="{{ page.title }}">Tweet</a>
-        </div>
-        <div class="social google">
-            <div class="g-plus" data-href="http://lucianmarin.com{{ page.url }}" data-action="share" data-annotation="bubble"></div>
-        </div>
-    </div>
 </div>
 
+<div class="meta">
+    <p class="time">{{ page.date | date: "%B %e, %Y" }}</p>
+    <p class="topic">{{ page.category | replace: '-', ' ' }}</p>
+</div>
+
+{% comment %}
 <ul class="archive browse">
     {% if page.previous.url %}
         <li>
@@ -54,3 +39,4 @@ share:  true
         </li>
     {% endif %}
 </ul>
+{% endcomment %}

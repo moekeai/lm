@@ -2,7 +2,7 @@
 layout:     post
 date:       2012-08-18 03:14:15
 edit:       2013-03-19 20:58:17
-title:      "Character Counter in Textpattern"
+title:      "Textpattern Character Counter"
 category:   meaningful-labor
 slug:       character-counter
 syntax:     true
