@@ -3,4 +3,5 @@ lm
 
 Jekyll version of lucianmarin.com
 
-&copy; 2014 Lucian Marin
+Design and content &copy; Lucian Marin, all rights reserved.
+Code is under MIT license.

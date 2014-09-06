@@ -90,6 +90,10 @@ h1
     line-height: 70px
     letter-spacing: -1px
     color: $gray
+    cursor: default
+    i
+        font-weight: 300
+        color: $line
 
 h2
     font-weight: normal
@@ -105,7 +109,6 @@ h3
     line-height: 30px
     sup
         @include small
-        padding-left: 2px
         color: $silver
     a
         color: $text
@@ -119,7 +122,6 @@ hr
 
 .content
     width: 576px
-    width: 570px
     margin: 0 auto
     position: relative
 
@@ -161,7 +163,7 @@ hr
         li
             display: block
             float: left
-            margin-right: 15px
+            margin-right: 16px
             margin-bottom: -5px
             border-bottom: $line 5px solid
             &:last-child
@@ -169,9 +171,11 @@ hr
             i
                 color: $link
             a
+                padding: 10px 0
                 color: $text
             &.selected
                 border-bottom: $back 5px solid
+                border-radius: 5px
             &.selected a
                 color: $gray
 
@@ -256,12 +260,6 @@ hr
         width: 33.333%
         height: auto
         float: left
-    a
-        img
-            transition: opacity 0.33s
-            opacity: 1
-        &:hover img
-            opacity: 0.8
 
 .gridless
     overflow: hidden
@@ -330,6 +328,6 @@ html
     -webkit-text-size-adjust: 100%
     -ms-text-size-adjust: 100%
 
-@media (max-width: 634px)
+@media (max-width: 640px)
     .content
         width: 90%

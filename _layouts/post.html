@@ -5,10 +5,10 @@ section:    archive
 
 <div class="browse">
     {% if page.next.url %}
-        <a href="{{ page.next.url }}" title="{{ page.next.title }}">up next</a>
+        <a href="{{ page.next.url }}" title="{{ page.next.title }}">Next</a>
     {% endif %}
     {% if page.previous.url %}
-        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">previously</a>
+        <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">Previous</a>
     {% endif %}
 </div>
 
@@ -23,20 +23,3 @@ section:    archive
     <p class="time">{{ page.date | date: "%B %e, %Y" }}</p>
     <p class="topic">{{ page.category | replace: '-', ' ' }}</p>
 </div>
-
-{% comment %}
-<ul class="archive browse">
-    {% if page.previous.url %}
-        <li>
-            <b>Previously</b>
-            <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
-        </li>
-    {% endif %}
-    {% if page.next.url %}
-        <li>
-            <b>Up next</b>
-            <a href="{{ page.next.url }}">{{ page.next.title }}</a>
-        </li>
-    {% endif %}
-</ul>
-{% endcomment %}

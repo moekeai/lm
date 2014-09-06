@@ -57,7 +57,11 @@ h1 {
   font-size: 40px;
   line-height: 70px;
   letter-spacing: -1px;
-  color: gray; }
+  color: gray;
+  cursor: default; }
+  h1 i {
+    font-weight: 300;
+    color: white; }
 
 h2 {
   font-weight: normal;
@@ -73,7 +77,6 @@ h3 {
   line-height: 30px; }
   h3 sup {
     font-size: 13px;
-    padding-left: 2px;
     color: silver; }
   h3 a {
     color: black; }
@@ -87,7 +90,6 @@ hr {
 
 .content {
   width: 576px;
-  width: 570px;
   margin: 0 auto;
   position: relative; }
 
@@ -129,7 +131,7 @@ hr {
     .menu ul li {
       display: block;
       float: left;
-      margin-right: 15px;
+      margin-right: 16px;
       margin-bottom: -5px;
       border-bottom: white 5px solid; }
       .menu ul li:last-child {
@@ -137,9 +139,11 @@ hr {
       .menu ul li i {
         color: #30c0c0; }
       .menu ul li a {
+        padding: 10px 0;
         color: black; }
       .menu ul li.selected {
-        border-bottom: #f0f0f0 5px solid; }
+        border-bottom: #f0f0f0 5px solid;
+        border-radius: 5px; }
       .menu ul li.selected a {
         color: gray; }
 
@@ -221,11 +225,6 @@ hr {
     width: 33.333%;
     height: auto;
     float: left; }
-  .grid a img {
-    transition: opacity 0.33s;
-    opacity: 1; }
-  .grid a:hover img {
-    opacity: 0.8; }
 
 .gridless {
   overflow: hidden; }
@@ -294,6 +293,6 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-@media (max-width: 634px) {
+@media (max-width: 640px) {
   .content {
     width: 90%; } }

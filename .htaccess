@@ -41,6 +41,8 @@ redirect 301 /bucharest /about
 redirect 301 /test/index.php /journalist/
 redirect 301 /test /journalist
 
+redirect 301 /markdawn/ http://markdawn.com/
+redirect 301 /sublevel/ http://sublevel.net/
 redirect 301 /start/ http://sublevel.net/
 redirect 301 /wish/ http://sublevel.net/
 redirect 301 /dash/ http://sublevel.net/

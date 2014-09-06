@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimal-ui" />
     <meta name="description" content="Designer passionate about front-end engineering, usability, web and software development. Living and working as freelancer in Bucharest, Romania." />
-    <link rel="stylesheet" type="text/css" href="/static/future.css" />
+    <link rel="stylesheet" type="text/css" href="/static/fashion.css" />
     <link rel="apple-touch-icon" type="image/png" href="/static/touch.png" />
     <link rel="alternate" type="application/rss+xml" title="Lucian Marin" href="/feed.rss" />
 </head>
@@ -16,7 +16,7 @@
     <div class="content">
         <ul>
             <li class="index {% if page.section == "index" %}selected{% endif %}">
-                <a href="/">Journal</a>
+                <a href="/">Lucian</a>
             </li>
             <li class="archive {% if page.section == "archive" %}selected{% endif %}">
                 <a href="/archive/">Archive</a>
@@ -38,6 +38,7 @@
     <div class="content">
         <h1>
             {{ page.subtitle }}
+            {% if page.section == "index" %}<i>Marin</i>{% endif %}
             {% if page.section == "archive" %}Archive{% endif %}
         </h1>
     </div>
